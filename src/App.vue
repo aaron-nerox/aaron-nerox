@@ -1,9 +1,11 @@
 <template>
-  <div id="nav">
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
+  <div id="app">
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
-  <!-- <router-view/> -->
 </template>
 
 <style>
@@ -13,6 +15,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 /* #nav {

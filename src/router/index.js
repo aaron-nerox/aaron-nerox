@@ -1,15 +1,15 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Splash from '../views/SplashScreen.vue'
+import SplashScreen from '../views/SplashScreen.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Aaron nerox',
-    component: Splash
+    name: 'Loading',
+    component: SplashScreen
   },
   {
     path: '/Home',
-    name: 'Aaron nerox',
+    name: 'Aaron',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
