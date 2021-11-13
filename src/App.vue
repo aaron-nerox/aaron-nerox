@@ -9,12 +9,34 @@
 </template>
 
 <style>
+@font-face{
+  font-family: 'poppins_bold';
+  src: url('./assets/fonts/Poppins_Bold.ttf');
+}
+
+@font-face{
+  font-family: 'poppins_regular';
+  src: url('./assets/fonts/Poppins_Regular.ttf');
+}
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  scroll-behavior: smooth;
+}
+
+.title{
+  font-family: 'popping_bold';
+}
+
+.text{
+  font-family: 'poppins_regular';
+}
+
+.shadow-set{
+  background-color: #000000;
+  border: 2px solid #C9C9C9;
+  box-shadow: inset -2px 1px 0px 0.5px #FCFCFA, -3px 2px 0px 0.5px #000000;
 }
 
 .fade-enter-active,
@@ -28,16 +50,25 @@
   opacity: 0;
 }
 
-/* #nav {
-  padding: 30px;
+::-webkit-scrollbar{
+  width: 10px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+::-webkit-scrollbar-track-piece{
+  background-color: #C9C9C9;
+  
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-} */
+::-webkit-scrollbar-thumb{
+  background: #000000;
+  border-radius: 2px;
+  transition: 3000ms ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #333333;
+}
+
+
+
 </style>
