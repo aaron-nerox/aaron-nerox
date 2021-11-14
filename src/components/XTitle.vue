@@ -18,8 +18,9 @@ export default {
 <style scoped>
 .main-container{
   max-width: 50%;
-  height: 50px;
+  max-height: 50px;
   border-radius: 15px;
+  margin: 20px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -46,7 +47,6 @@ export default {
   text-align: center;
   font-family: 'poppins_semibold';
   font-size: 1.5em;
-  margin-top: 25px;
   width: 60%;
 }
 
