@@ -6,7 +6,7 @@
               <img src="../assets/images/main_header_upper_logo.svg" alt="header_image">
             </kinesis-element>
           </div>
-          <a href="#about-me">
+          <a href="#about">
             <kinesis-element :strength="30" type="depth">
                 <img src="../assets/icons/down_arrow.svg" alt="header_image" class="arrow-icon">
             </kinesis-element>
@@ -31,6 +31,7 @@ export default {
 .main-container{
   height: 100vh;
   width: 100%;
+  margin: 0px;
   background: url('../assets/backgrounds/header_background.jpg');
   background-size: cover;
   background-repeat: no-repeat;

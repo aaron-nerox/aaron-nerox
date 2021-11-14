@@ -19,7 +19,6 @@ export default {
 .main-container{
   max-width: 50%;
   height: 50px;
-  margin: 15px;
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
