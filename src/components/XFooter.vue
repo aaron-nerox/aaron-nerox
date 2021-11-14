@@ -11,7 +11,7 @@
       <div class="social-item"><img src="../assets/icons/linkedin.svg" alt="social icon" class="social-icon"></div>
       <div class="social-item"><img src="../assets/icons/youtube.svg" alt="social icon" class="social-icon"></div>
     </div>
-    <p class="poppins">Forged by Aaron from love &#10083; and monochrome &#9775;</p>
+    <p class="text">Forged by Aaron from love &#10083; and monochrome &#9775;</p>
   </div>
 </template>
 

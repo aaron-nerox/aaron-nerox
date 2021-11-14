@@ -15,13 +15,16 @@
 }
 
 @font-face{
+  font-family: 'poppins_semibold';
+  src: url('./assets/fonts/Poppins_SemiBold.ttf');
+}
+
+@font-face{
   font-family: 'poppins_regular';
   src: url('./assets/fonts/Poppins_Regular.ttf');
 }
 
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+html{
   scroll-behavior: smooth;
 }
 
@@ -68,7 +71,5 @@
 ::-webkit-scrollbar-thumb:hover{
   background: #333333;
 }
-
-
 
 </style>
