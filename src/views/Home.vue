@@ -1,12 +1,13 @@
 <template>
   <div class="main-container">
     <x-header />
+
     <section id="about">
       <x-title mode="light">Who is aaron?</x-title>
       <div class="x-container">
         <div class="y-container">
           <img src="../assets/images/main_image.jpg" alt="aaron" class="main-image">
-          <x-button>Check my skills</x-button>
+          <x-button class="x-button">Check my skills</x-button>
         </div>
         <div class="text-container">
           <p class="text">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing a masters degree. I work as a mobile developer and brand identity designer with some UI/UX.  
@@ -17,6 +18,26 @@
 
     <section id="work">
       <x-title mode="dark">What i do?</x-title>
+      <div class="x-container">
+        <div class="light-grid-work">
+          <div class="light-inner-work">
+            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
+            <p class="text">I am an android developer with experience of 4 years. In order to achieve beautiful apps, i use either java or kotlin combined with best practices.</p>
+          </div>
+        </div>
+        <div class="light-grid-work">
+          <div class="light-inner-work">
+            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
+            <p class="text">I work on front end web a lot. And in order for me to get creative with it, i chose Vuejs framework to create unique and unparalleled experiences on the web.</p>
+          </div>
+        </div>
+        <div class="light-grid-work">
+          <div class="light-inner-work">
+            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
+            <p class="text">I worked on brand identity design for more than 4 years. i always try to stand out with my ideas even though it is a bit hard, it is always worth the shot.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="brands-nerostarx">
@@ -33,6 +54,22 @@
 
     <section id="contact">
       <x-title mode="dark">Contact me</x-title>
+      <div class="x-container">
+        <div class="light-grid-contact">
+          <div class="light-inner-contact">
+            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
+            <p class="text">If you need me to help you create a unique mobile experience for your users or you want a brand identity to be the face of your company, send me an email and we will chat about it.</p>
+            <x-button>Send me a message</x-button>
+          </div>
+        </div>
+        <div class="light-grid-contact">
+          <div class="light-inner-contact">
+            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
+            <p class="text">If you need a special request or you need a fast response, there is no better than the phone. Don't hesitate to call and chat over what you want, i am sure that we'll get a great deal.</p>
+            <x-button>Call me</x-button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <x-footer/>
@@ -105,8 +142,19 @@ section{
   align-items: center;
 }
 
+.x-container-work{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .y-container{
   min-width: 30%;
+  width: 30%;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -125,10 +173,71 @@ section{
 }
 
 .main-image{
-  width: 60%;
+  width: 70%;
   border-radius: 15px;
   margin: 15px;
   border: 1px solid #000000;
-  box-shadow: -3px 3px 0px 0.5px #C9C9C9;
+  box-shadow: -5px 5px 0px 0.5px #C9C9C9;
+}
+
+.x-button{
+  width: 70%;
+}
+
+.light-grid-work{
+  max-width: 23%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  background-color: #FCFCFA;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #C9C9C9;
+  box-shadow: inset -2px 2px 0px 0.5px #000000, -3px 3px 0px 0.5px #FCFCFA;
+  transition: 300ms ease-in-out;
+}
+
+.light-grid-work:hover{
+  transform: translate(0px, -10px);
+}
+
+.light-inner-work{
+  height: 50vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-logo{
+  width: 50%;
+}
+
+.light-grid-contact{
+  max-width: 40%;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  background-color: #FCFCFA;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #C9C9C9;
+  box-shadow: inset -2px 2px 0px 0.5px #000000, -3px 3px 0px 0.5px #FCFCFA;
+  transition: 300ms ease-in-out;
+}
+
+.light-inner-contact{
+  height: 45vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-logo{
+  width: 25%;
+  margin: 0px;
 }
 </style>
