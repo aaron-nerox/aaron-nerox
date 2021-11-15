@@ -41,6 +41,7 @@
     </section>
 
     <section id="brands-nerostarx">
+      <br>
       <x-title mode="light">Brands i created for work</x-title>
       <div class="x-container-full-width">
         <img src="../assets/images/nerostarx_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
