@@ -29,7 +29,7 @@ html{
 }
 
 .title{
-  font-family: 'popping_bold';
+  font-family: 'poppins_bold';
 }
 
 .text{

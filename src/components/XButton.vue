@@ -16,7 +16,7 @@ export default {
 .main-container{
     outline: none;
     border: none;
-    width: fit-content;
+    width: fit-content !important;
     background-color: #000000;
     color: #FCFCFA;
     font-family: 'poppins_semibold';
