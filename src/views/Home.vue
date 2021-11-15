@@ -116,7 +116,7 @@ export default {
   },
   methods:{
     navigateTo(path){
-      this.$router.push({path: '/'+path});
+      this.$router.replace({path: '/'+path});
     },
     call(){
       window.open('tel:+213540160173')
