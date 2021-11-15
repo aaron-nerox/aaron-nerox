@@ -5,11 +5,27 @@
     <hr class="divider"/>
     <p class="text footer-text">Follow me on social media</p>
     <div class="social-accounts-container">
-      <div class="social-item"><img src="../assets/icons/instagram.svg" alt="social icon" class="social-icon"></div>
-      <div class="social-item"><img src="../assets/icons/twitter.svg" alt="social icon" class="social-icon"></div>
-      <div class="social-item"><img src="../assets/icons/github.svg" alt="social icon" class="social-icon"></div>
-      <div class="social-item"><img src="../assets/icons/linkedin.svg" alt="social icon" class="social-icon"></div>
-      <div class="social-item"><img src="../assets/icons/youtube.svg" alt="social icon" class="social-icon"></div>
+
+      <div class="social-item" @click="navigate('https://www.google.com')">
+        <img src="../assets/icons/instagram.svg" alt="social icon" class="social-icon">
+      </div>
+
+      <div class="social-item" @click="navigate('https://www.google.com')">
+        <img src="../assets/icons/twitter.svg" alt="social icon" class="social-icon">
+      </div>
+
+      <div class="social-item" @click="navigate('https://www.google.com')">
+        <img src="../assets/icons/github.svg" alt="social icon" class="social-icon">
+      </div>
+
+      <div class="social-item" @click="navigate('https://www.google.com')">
+        <img src="../assets/icons/linkedin.svg" alt="social icon" class="social-icon">
+      </div>
+
+      <div class="social-item" @click="navigate('https://www.google.com')">
+        <img src="../assets/icons/youtube.svg" alt="social icon" class="social-icon">
+      </div>
+      
     </div>
     <p class="text">Forged by Aaron from love &#10083; and monochrome &#9775;</p>
   </div>
@@ -18,6 +34,11 @@
 <script>
 export default {
     name: "XFooter",
+    methods: {
+      navigate(link){
+        window.open(link,"_blank")
+      }
+    }
 }
 </script>
 
@@ -66,6 +87,11 @@ export default {
   display: grid;
   align-items: center;
   justify-content: center;
+  transition: 200ms ease-in-out;
+}
+
+.social-item:hover{
+  transform: translateY(-4px);
 }
 
 .social-icon{

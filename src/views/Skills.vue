@@ -1,12 +1,12 @@
 <template>
   <div>
-    this is the x
+      skills go here
   </div>
 </template>
 
 <script>
 export default {
-    name: "TheX",
+    name: "Skills"
 }
 </script>
 

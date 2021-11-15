@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    this is kitsune
+  </div>
 </template>
 
 <script>

@@ -7,7 +7,7 @@
       <div class="x-container">
         <div class="y-container">
           <img src="../assets/images/main_image.jpg" alt="aaron" class="main-image">
-          <x-button class="x-button">Check my skills</x-button>
+          <x-button class="x-button" @onButtonClick="navigateTo('Home/skills')">Check my skills</x-button>
         </div>
         <div class="text-container">
           <p class="text">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing a masters degree. I work as a mobile developer and brand identity designer with some UI/UX.  
@@ -47,7 +47,7 @@
         <div class="y-container-align-left">
           <p class="title">Nerostarx</p>
           <p class="text">Nerostarx is a brand that is made to empower young brand designers and brand strategists. It focuses on brand stories and brand visual identities. It also shows you how  construct a brand only from a given story and the strategies to do that.</p>
-          <x-button>Check my brandfolio</x-button>
+          <x-button @onButtonClick="navigateTo('Nerostarx')">Check my brandfolio</x-button>
         </div>
       </div>
     </section>
@@ -57,7 +57,7 @@
         <div class="y-container-align-right">
           <p class="title">Kitsune</p>
           <p class="text">Kitsune is my newest brand, it focuses on art and creating supernatural characters. it also focuses on creating collectibles like custom emojis, imaginary creatures and more of that good art.</p>
-          <x-button>Check my creations</x-button>
+          <x-button @onButtonClick="navigateTo('Kitsune')">Check my creations</x-button>
         </div>
         <img src="../assets/images/kitsune_image.jpg" alt="brand_image" class="sub-brand-image-right" id="kitsune-brand">
       </div>
@@ -69,7 +69,7 @@
         <div class="y-container-align-left">
           <p class="title">The X</p>
           <p class="text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
-          <x-button>Check my app list</x-button>
+          <x-button @onButtonClick="navigateTo('TheX')">Check my app list</x-button>
         </div>
       </div>
     </section>
@@ -81,14 +81,14 @@
           <div class="light-inner-contact">
             <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
             <p class="text">If you need me to help you create a unique mobile experience for your users or you want a brand identity to be the face of your company, send me an email and we will chat about it.</p>
-            <x-button>Send me a message</x-button>
+            <x-button @onButtonClick="sendMail">Send me a message</x-button>
           </div>
         </div>
         <div class="light-grid-contact">
           <div class="light-inner-contact">
             <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
             <p class="text">If you need a special request or you need a fast response, there is no better than the phone. Don't hesitate to call and chat over what you want, i am sure that we'll get a great deal.</p>
-            <x-button>Call me</x-button>
+            <x-button @onButtonClick="call">call: +213 540 16 01 73</x-button>
           </div>
         </div>
       </div>
@@ -112,6 +112,18 @@ export default {
     XTitle,
     XButton,
     XFooter,
+  },
+  methods:{
+    navigateTo(path){
+      this.$router.push({path: '/'+path});
+    },
+    call(){
+      window.open('tel:+213540160173')
+    },
+    sendMail(){
+      window.open('mailto:kechaoui.haroune@gmail.com')
+    }
+
   }
 }
 </script>

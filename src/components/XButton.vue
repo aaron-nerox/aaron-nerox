@@ -1,5 +1,5 @@
 <template>
-  <button class="main-container">
+  <button class="main-container" @click="emitAction">
       <p>
           <slot></slot>
       </p>
@@ -8,7 +8,12 @@
 
 <script>
 export default {
-
+    name: "XButton",
+    methods:{
+        emitAction(){
+            this.$emit("onButtonClick")
+        }
+    }
 }
 </script>
 
@@ -22,11 +27,11 @@ export default {
     font-family: 'poppins_semibold';
     font-size: 1.1em;
     border-radius: 1000px;
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 
 .main-container:hover{
-    transform: translate(0px, -3px);
+    transform: translate(0px, -4px);
 }
 
 .main-container>p{

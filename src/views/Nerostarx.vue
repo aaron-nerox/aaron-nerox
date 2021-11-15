@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    this is nerostarx
+  </div>
 </template>
 
 <script>
