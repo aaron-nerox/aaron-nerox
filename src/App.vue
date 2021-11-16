@@ -36,6 +36,10 @@ html{
   font-family: 'poppins_regular';
 }
 
+.center{
+  text-align: center;
+}
+
 .main-site-button{
   position: fixed;
   z-index: 5;

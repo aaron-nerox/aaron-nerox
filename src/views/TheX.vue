@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="parent-container">
     <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
     <kinesis-container class="header-thex">
       
@@ -7,7 +7,7 @@
       <img src="../assets/images/thex-boxleft.svg" alt="texture" class="thex-logo-box boxleft">
       <img src="../assets/images/thex-boxright.svg" alt="texture" class="thex-logo-box boxright">
 
-      <kinesis-element class="thex-logo-core-animation" :strength="-100" type="rotate">
+      <kinesis-element class="thex-logo-core-animation" :strength="-200" type="rotate">
         <img src="../assets/images/thex-core.png" alt="texture" class="thex-logo-core">
       </kinesis-element>
 
@@ -16,6 +16,8 @@
         <img src="../assets/backgrounds/thex_background_texture.svg" alt="texture" >
       </kinesis-element>
     </kinesis-container>
+
+    <p class="thex-text center">MADE BY AARON TO BUILD THE UNKNOWN X &#128160;</p>
   </div>
 </template>
 
@@ -31,10 +33,37 @@ export default {
 </script>
 
 <style scoped>
+.parent-container{
+  background-color: #000;
+  color: #FFF;
+  display: grid;
+}
+
+@font-face {
+  font-family: 'montserrat_light';
+  src: url('../assets/fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat_semibold';
+  src: url('../assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+.thex-title{
+  font-family: 'montserrat_semibold';
+  font-size: 1.5em;
+}
+
+.thex-text{
+  font-family: 'montserrat_light';
+  font-size: 1.1em;
+}
+
 @keyframes floating {
   from {transform: translateY(-10px)}
   to{transform: translateY(5px)}
 }
+
 .header-thex{
   height: 100vh;
   width: 100%;
