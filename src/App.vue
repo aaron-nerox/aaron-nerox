@@ -36,6 +36,20 @@ html{
   font-family: 'poppins_regular';
 }
 
+.main-site-button{
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  margin: 20px;
+  transition: 200ms ease-in-out;
+}
+
+.main-site-button:hover{
+  transform: translateY(-5px);
+}
+
 .shadow-set{
   background-color: #000000;
   border: 2px solid #C9C9C9;

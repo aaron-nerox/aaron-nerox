@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 8000 4500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-11331,-11333.7)">
+        <g id="Main-logo-extended" serif:id="Main logo extended" transform="matrix(1.77778,0,0,1.00365,11331,11319.4)">
+            <rect x="0" y="14.296" width="4500" height="4483.63" style="fill:none;"/>
+            <g id="The-X" serif:id="The X" transform="matrix(0.402784,0,0,0.713455,1343.74,650.836)">
+                <g transform="matrix(1,0,0,1.28067,0,-981.707)">
+                    <path d="M2250,2523.45L3330.8,3010.57L2250,3497.7L1169.2,3010.57L2250,2523.45Z" style="fill:none;stroke:white;stroke-width:14.8px;"/>
+                </g>
+                <g transform="matrix(1,-0.577211,0,1,0,674.877)">
+                    <rect x="1169.2" y="1626.15" width="1080.8" height="1247.7" style="fill:none;stroke:white;stroke-width:22.15px;"/>
+                </g>
+                <g transform="matrix(1,0.577211,0,1,0,-1922.57)">
+                    <rect x="2250" y="1626.15" width="1080.8" height="1247.7" style="fill:none;stroke:white;stroke-width:12.88px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

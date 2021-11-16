@@ -23,7 +23,7 @@ export default {
     methods:{
       setSplashTimeout(time){
           setTimeout(()=> {
-              this.$router.replace({path: '/Home'});
+              this.$router.push({path: '/Home'});
               } , time);
       }
     },

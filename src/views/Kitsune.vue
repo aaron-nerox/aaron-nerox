@@ -66,7 +66,7 @@ export default {
     name: "Kitsune",
     methods:{
       goIndex(){
-        this.$router.replace({path: '/'})
+        this.$router.push({path: '/'})
       }
     }
 }
@@ -76,20 +76,6 @@ export default {
 @font-face{
   font-family: 'assassin_ninja';
   src: url('../assets/fonts/AssassinNinja.ttf');
-}
-
-.main-site-button{
-  position: fixed;
-  z-index: 5;
-  right: 0;
-  bottom: 0;
-  width: 70px;
-  margin: 20px;
-  transition: 200ms ease-in-out;
-}
-
-.main-site-button:hover{
-  transform: translateY(-5px);
 }
 
 .kitsune-title{
