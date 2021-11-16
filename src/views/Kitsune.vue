@@ -53,7 +53,7 @@
       </div>
 
       <section class="showroom-section">
-
+        <p class="kitsune-title announcment">Collectibles and art pieces are dropping soon, stay tuned.</p>
       </section>
 
       <p class="kitsune-text">Summoned by Aaron from the japanease flames &#128293;</p>
@@ -173,5 +173,12 @@ export default {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.announcment{
+  font-size: 1.8em;
 }
 </style>
