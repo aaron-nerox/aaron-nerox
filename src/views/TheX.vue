@@ -16,14 +16,46 @@
         <img src="../assets/backgrounds/thex_background_texture.svg" alt="texture" >
       </kinesis-element>
     </kinesis-container>
-
+    <br><br>
+    <p class="thex-title center">MY ANDROID APPS</p>
+    <br>
+    <section class="app-section">
+      <div class="app-section-container">
+        <img src="../assets/icons/airsort.png" alt="app icon" class="app-icon">
+        <div class="app-details">
+          <p class="thex-title">Airsort: Create your own organized canvas</p>
+          <p class="thex-text">Airsot is a beautiful gallery app. Made for the sol purpose of helping the users better organize thier gallery.</p>
+          <p class="thex-text">Airsot provides it's users with a secure folder to hide media, it also gives you a set of shortcuts to create better organized folders.</p>
+          <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.airsort" 
+          availability="GET IT ON" />
+        </div>
+      </div>
+      <br><br>
+      <div class="app-section-container">
+        <img src="../assets/icons/neowalls.png" alt="app icon" class="app-icon">
+        <div class="app-details">
+          <p class="thex-title">Neowalls: An online wallpaper platforme</p>
+          <p class="thex-text">If you came looking for wallpapers, Neowalls provides you with a growing collection of beautiful wallpapers.</p>
+          <p class="thex-text">If you are a designer, Artist Or a photographer Neowalls has a good place for you, where you will be able to share your work and your social media to build and grow your community.</p>
+          <p class="thex-text">Neowalls gives you the possibility to download or save for later any wallpaper you want.</p>
+          <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
+          availability="GET IT ON" />
+        </div>
+      </div>
+    </section>
+    <br><br>
     <p class="thex-text center">MADE BY AARON TO BUILD THE UNKNOWN X &#128160;</p>
   </div>
 </template>
 
 <script>
+import GooglePlayButton from "../components/GooglePlayButton.vue"
+
 export default {
     name: "TheX",
+    components: {
+      GooglePlayButton
+    },
     methods:{
       goIndex(){
         this.$router.push({path: '/'})
@@ -140,5 +172,25 @@ export default {
   transform: translate(-7px,8px);
 }
 
+.app-section{
+  min-height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.app-section-container{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app-icon{
+  width: 25%;
+  margin: 40px;
+}
 
 </style>

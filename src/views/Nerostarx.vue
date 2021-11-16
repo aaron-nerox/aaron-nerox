@@ -18,9 +18,9 @@
     <p class="nerostarx-title section-title">Most liked brands that i created</p>
     <section id="aaron">
       <div class="x-container-full-width">
-        <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
+        <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
-          <p class="nerostarx-title">The X</p>
+          <p class="nerostarx-title">Aaron Nerox</p>
           <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
           <x-button>Soon on behance</x-button>
         </div>
@@ -31,7 +31,7 @@
       <div class="x-container-full-width">
         <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
-          <p class="nerostarx-title">The X</p>
+          <p class="nerostarx-title">The X by aaron</p>
           <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
           <x-button>Soon on behance</x-button>
         </div>
@@ -40,9 +40,9 @@
     <br><br>
     <section id="kitsune">
       <div class="x-container-full-width">
-        <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
+        <img src="../assets/images/kitsune_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
-          <p class="nerostarx-title">The X</p>
+          <p class="nerostarx-title">Kitsune by aaron</p>
           <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
           <x-button>Soon on behance</x-button>
         </div>
@@ -51,9 +51,9 @@
     <br><br>
     <section id="thestarwberry">
       <div class="x-container-full-width">
-        <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
+        <img src="../assets/images/strawberry_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
-          <p class="nerostarx-title">The X</p>
+          <p class="nerostarx-title">The strawberry store</p>
           <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
           <x-button>Soon on behance</x-button>
         </div>
@@ -137,13 +137,13 @@ export default {
 }
 
 .logo-main{
-  width: 50%;
-  margin: 20px;
+  width: 40%;
+  margin-bottom: 45px;
   transition: 300ms ease-in-out;
 }
 
 .logo-main:hover{
-  width: 55%;
+  width: 45%;
 }
 
 
@@ -210,6 +210,6 @@ export default {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-left: none;
-  box-shadow: -4px 7px 16px 1px rgba(192,54,255,0.46);
+  box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
 }
 </style>
