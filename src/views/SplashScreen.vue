@@ -57,4 +57,12 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+@media only screen and (max-width: 720px){
+  .background{
+    height: 100vh;
+    width: max-content;
+    overflow: hidden;
+  }
+}
 </style>
