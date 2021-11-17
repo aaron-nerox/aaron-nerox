@@ -82,4 +82,19 @@ export default {
   font-size: 1.3em;
 }
 
+@media only screen and (max-width: 720px){
+  .grid-container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .title{
+    font-family: 'poppins_semibold';
+    font-size: 1em;
+  }
+}
+
 </style>

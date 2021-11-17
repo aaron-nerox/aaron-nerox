@@ -50,4 +50,16 @@ export default {
   width: 60%;
 }
 
+@media only screen and (max-width: 720px){
+  .main-container{
+    max-width: 80%;
+  }
+
+  .x-title{
+    text-align: center;
+    font-family: 'poppins_semibold';
+    font-size: 1.1em;
+    width: 80%;
+  }
+}
 </style>
