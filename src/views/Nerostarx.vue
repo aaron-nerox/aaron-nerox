@@ -15,13 +15,14 @@
       </kinesis-container>
     </div>
     <br><br>
-    <p class="nerostarx-title section-title">Most liked brands that i created</p>
+    <p class="nerostarx-title section-title">Best brands that i crafted with love</p>
     <section id="aaron">
       <div class="x-container-full-width">
         <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">Aaron Nerox</p>
-          <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
+          <p class="nerostarx-text">This brand identity is my newest and most unique one. This brand representes my 
+            latest resolve to give people a crystal clear view of both the design and development worlds through the eyes of a student. The style and colors reflect how i see the world, it is just magestic in monochromatic colors.</p>
           <x-button>Soon on behance</x-button>
         </div>
       </div>
@@ -32,7 +33,7 @@
         <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">The X by aaron</p>
-          <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
+          <p class="nerostarx-text">The x by aaron brand has an interesting story. It inherited the beautiful inner cube gradient from nerostarx, and it means that i support a diverse range of things. the insides of the cube are invisible to say that there is always something unknown and i call that "The X". </p>
           <x-button>Soon on behance</x-button>
         </div>
       </div>
@@ -43,7 +44,7 @@
         <img src="../assets/images/kitsune_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">Kitsune by aaron</p>
-          <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
+          <p class="nerostarx-text">This brand is designed to be familiar to supernatural artists. It is based around the kitsune legend from japan which is a really interesting one to read about.</p>
           <x-button>Soon on behance</x-button>
         </div>
       </div>
@@ -54,7 +55,7 @@
         <img src="../assets/images/strawberry_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">The strawberry store</p>
-          <p class="nerostarx-text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
+          <p class="nerostarx-text">A fun project that i made in my free time. It is all about a store that sells a wide range of traditional and modern strawberry flavored milk drinks. The combination of traditional and modern is shown in the style of the logo and its colors.</p>
           <x-button>Soon on behance</x-button>
         </div>
       </div>

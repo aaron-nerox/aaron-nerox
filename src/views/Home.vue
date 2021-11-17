@@ -27,13 +27,13 @@
         </div>
         <div class="light-grid-work">
           <div class="light-inner-work">
-            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
+            <img src="../assets/icons/vuejs.svg" alt="tech logo" class="tech-logo">
             <p class="text">I work on front end web a lot. And in order for me to get creative with it, i chose Vuejs framework to create unique and unparalleled experiences on the web.</p>
           </div>
         </div>
         <div class="light-grid-work">
           <div class="light-inner-work">
-            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
+            <img src="../assets/icons/design.svg" alt="tech logo" class="tech-logo">
             <p class="text">I worked on brand identity design for more than 4 years. i always try to stand out with my ideas even though it is a bit hard, it is always worth the shot.</p>
           </div>
         </div>
