@@ -213,4 +213,6 @@ export default {
   border-left: none;
   box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
 }
+
+@media only screen and (max-width: 720px){}
 </style>

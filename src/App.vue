@@ -90,4 +90,6 @@ html{
   background: #333333;
 }
 
+@media only screen and (max-width: 720px){}
+
 </style>

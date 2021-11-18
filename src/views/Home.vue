@@ -360,4 +360,138 @@ section{
   width: 25%;
   margin: 0px;
 }
+
+@media only screen and (max-width: 720px){
+  .x-container{
+    width: 95%;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .y-container{
+    min-width: 50%;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .light-grid-work{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    background-color: #FCFCFA;
+    margin: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #C9C9C9;
+    box-shadow: inset -2px 2px 0px 0.5px #000000, -3px 3px 0px 0.5px #FCFCFA;
+    transition: 300ms ease-in-out;
+  }
+
+  .light-inner-work{
+    height: 40vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .light-grid-contact{
+    min-width: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .light-inner-contact{
+    height: fit-content;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-logo{
+    width:35%;
+    margin: 0px;
+  }
+
+  .x-container-full-width{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .y-container-align-left{
+    width: 95%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+  }
+
+  .y-container-align-left>p.title{
+    font-size: 2.3em;
+    margin: 0px;
+  }
+
+  .y-container-align-left>p.text{
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .y-container-align-right{
+    width: 95%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .y-container-align-right>p.title{
+    font-size: 2.3em;
+    margin: 0px;
+  }
+
+  .y-container-align-right>p.text{
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sub-brand-image{
+    width: 80%;
+    border: 2px solid #FCFCFA;
+    box-shadow: -4px 4px 0px 0.5px #C9C9C9;
+  }
+
+  .sub-brand-image-right{
+    width: 80%;
+    border: 2px solid #FCFCFA;
+    box-shadow: -4px 4px 0px 0.5px #C9C9C9;
+  }
+
+  #nerostarx-brand{
+    border-radius: 15px;
+  }
+
+  #kitsune-brand{
+    border-radius: 15px;
+  }
+}
 </style>

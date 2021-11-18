@@ -193,4 +193,5 @@ export default {
   margin: 40px;
 }
 
+@media only screen and (max-width: 720px){}
 </style>

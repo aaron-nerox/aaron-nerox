@@ -181,4 +181,6 @@ export default {
 .announcment{
   font-size: 1.8em;
 }
+
+@media only screen and (max-width: 720px){}
 </style>
