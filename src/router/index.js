@@ -47,11 +47,21 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "thex" */ '../views/TheX.vue')
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "not found" */ '../views/NotFound.vue')
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes
 })
+
+router.resolve({
+  name: 'NotFound',
+  params: { pathMatch: ['not', 'found'] },
+}).href
 
 export default router
