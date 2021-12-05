@@ -1,10 +1,11 @@
 <template>
   <div class="main-container">
-    <kinesis-container>
+    <kinesis-container v-if="this.screenwidth > 720">
       <kinesis-element :strength="3">
         <img src="../assets/backgrounds/splash_background.svg" alt="" class="background">
       </kinesis-element>
     </kinesis-container>
+    <div v-else class="splash-background"></div>
     <x-spinner class="spinner"/>
   </div>
 </template>
@@ -19,6 +20,11 @@ export default {
       XSpinner,
       KinesisContainer,
       KinesisElement
+    },
+    data(){
+      return{
+        screenwidth: window.innerWidth,
+      }
     },
     methods:{
       setSplashTimeout(time){
@@ -63,6 +69,14 @@ export default {
     height: 100vh;
     width: max-content;
     overflow: hidden;
+  }
+
+  .splash-background{
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/backgrounds/splash_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 </style>
