@@ -131,7 +131,7 @@ export default {
 }
 
 .thex-logo-backbone{
-  width: 85%;
+  width: 16.5%;
   margin: auto;
   grid-column: 1;
   grid-row: 1;
@@ -193,5 +193,93 @@ export default {
   margin: 40px;
 }
 
-@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 720px){
+  .texture{
+    display: none;
+  }
+
+  .thex-logo-core-animation{
+    width: 30%;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 3;
+  }
+
+  .thex-logo-core{
+    width: 100%;
+    margin: auto; 
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 500ms;
+    transition: 300ms ease-in-out;
+  }
+
+  .thex-logo-backbone{
+    width: 50%;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+  }
+
+  .thex-logo-box{
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 4;
+    transition: 200ms ease-in-out;
+  }
+
+  .boxtop{
+    width: 56.5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(-6px);
+  }
+
+  .boxright{
+    width: 53%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(7.5px,7.5px);
+  }
+
+  .boxleft{
+    width: 53%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(-6.5px,7.5px);
+  }
+
+  .app-section{
+    min-height: 100vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .app-section-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .app-icon{
+    width: 45%;
+    margin: 0px;
+    margin-top: 40px;
+  }
+
+
+}
 </style>
