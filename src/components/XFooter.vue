@@ -6,23 +6,23 @@
     <p class="text footer-text">Follow me on social media</p>
     <div class="social-accounts-container">
 
-      <div class="social-item" @click="navigate('https://www.google.com')">
+      <div class="social-item" @click="navigate('https://www.instagram.com/aaron.nerox')">
         <img src="../assets/icons/instagram.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.google.com')">
+      <div class="social-item" @click="navigate('https://www.twitter.com')">
         <img src="../assets/icons/twitter.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.google.com')">
+      <div class="social-item" @click="navigate('https://github.com/TheX-ByAaron')">
         <img src="../assets/icons/github.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.google.com')">
+      <div class="social-item" @click="navigate('https://www.linkedin.com/in/kechaoui-haroune-833137179/')">
         <img src="../assets/icons/linkedin.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.google.com')">
+      <div class="social-item" @click="navigate('https://www.youtube.com/channel/UCWN7ZdIKbHpBwMCigvxEKww')">
         <img src="../assets/icons/youtube.svg" alt="social icon" class="social-icon">
       </div>
       
