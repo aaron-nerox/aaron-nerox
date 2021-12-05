@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nerostarx-main-container">
     <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
     <div class="nerostarx-header">
       <div class="nerostarx-main-logo">
@@ -154,7 +154,6 @@ export default {
   z-index: 1;
   grid-column: 1;
   grid-row: 1;
-
 }
 
 .arrow-call{
@@ -214,5 +213,118 @@ export default {
   box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
 }
 
-@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 720px){
+  section{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .nerostarx-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../assets/backgrounds/nerostarx_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    overflow: hidden;
+  }
+  
+  .nerostarx-main-container{
+    width: 100%;
+  }
+  .nerostarx-main-logo{
+    width: 100%;
+    margin: auto;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .logo-main{
+    width: 80%;
+    margin-bottom: 45px;
+    transition: 300ms ease-in-out;
+  }
+
+  .animation-container{
+    width: 90%;
+    margin: auto;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .nerostarx-text{
+    font-family: 'modulus_bold';
+    font-size: 1em;
+  }
+
+  .nerostarx-title{
+    font-family: 'modulus_bold';
+    font-size: 1.3em;
+  }
+
+  .section-title{
+    font-family: 'modulus_bold';
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .arrow-call{
+    width: 100px;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 3;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 500ms;
+  }
+
+  .x-container-full-width{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 80%;
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .y-container-align-left{
+    width: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 35px;
+  }
+
+  .y-container-align-left>p.nerostarx-title{
+    font-size: 1.6em;
+    margin: 0px;
+  }
+
+  .y-container-align-left>p.nerostarx-text{
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sub-brand-image{
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
+  }
+}
 </style>
