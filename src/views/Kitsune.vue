@@ -2,6 +2,7 @@
   <div id="parent-container">
     <div id="particles">
       <vue-particles 
+      class="inner-particles"
       color="#FF720F"
           :particleOpacity="0.6"
           :particlesNumber="90"
@@ -56,7 +57,7 @@
         <p class="kitsune-title announcment">Collectibles and art pieces are dropping soon, stay tuned.</p>
       </section>
 
-      <p class="kitsune-text">Summoned by Aaron from the japanease flames &#128293;</p>
+      <p class="kitsune-text responsive-text">Summoned by Aaron from the japanease flames &#128293;</p>
     </div>
   </div>
 </template>
@@ -182,5 +183,35 @@ export default {
   font-size: 1.8em;
 }
 
-@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 720px){
+  #particles{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+  }
+
+  .header-container{
+    height: 100vh;
+    width: 100%;
+    display: Grid;
+    align-content: center;
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .kitsune-logo{
+    margin: 10px;
+    width: 80%;
+  }
+
+  .responsive-text{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 </style>

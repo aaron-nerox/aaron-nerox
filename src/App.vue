@@ -90,6 +90,16 @@ html{
   background: #333333;
 }
 
-@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 720px){
+  .main-site-button{
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    margin: 10px;
+    transition: 200ms ease-in-out;
+  }
+}
 
 </style>
