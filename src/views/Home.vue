@@ -80,14 +80,14 @@
       <div class="x-container">
         <div class="light-grid-contact">
           <div class="light-inner-contact">
-            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
+            <img src="../assets/icons/message.svg" alt="tech logo" class="contact-logo">
             <p class="text">If you need me to help you create a unique mobile experience for your users or you want a brand identity to be the face of your company, send me an email and we will chat about it.</p>
             <x-button @onButtonClick="sendMail">Send me a message</x-button>
           </div>
         </div>
         <div class="light-grid-contact">
           <div class="light-inner-contact">
-            <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="contact-logo">
+            <img src="../assets/icons/call.svg" alt="tech logo" class="contact-logo">
             <p class="text">If you need a special request or you need a fast response, there is no better than the phone. Don't hesitate to call and chat over what you want, i am sure that we'll get a great deal.</p>
             <x-button @onButtonClick="call">call: +213 540 16 01 73</x-button>
           </div>
@@ -357,11 +357,14 @@ section{
 }
 
 .contact-logo{
-  width: 25%;
-  margin: 0px;
+  width: 15%;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 720px){
+  .text-container{
+    text-align: center;
+  }
   .x-container{
     width: 95%;
     margin-top: 10px;
@@ -376,6 +379,26 @@ section{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #brands-nerostarx{
+    padding: 0px;
+    height: max-content;
+    background-image: url('../assets/backgrounds/background_section3.svg');
+  }
+
+  #brands-kitsune{
+    margin-top: 15px;
+    padding: 0px;
+    padding-bottom: 25px;
+    height: max-content;
+    background-image: url('../assets/backgrounds/background_section3_inverted.svg');
+  }
+
+  #brands-thex{
+    padding: 0px;
+    height: max-content;
+    background-image: url('../assets/backgrounds/background_section3.svg');
   }
 
   .light-grid-work{
@@ -395,7 +418,7 @@ section{
   }
 
   .light-inner-work{
-    height: 40vh;
+    height: 50vh;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -493,5 +516,16 @@ section{
   #kitsune-brand{
     border-radius: 15px;
   }
+
+  .contact-logo{
+    width: 25%;
+    margin: 0px;
+    margin-top: 4px;
+  }
 }
+
+@media only screen and (min-width: 1366px){
+
+}
+
 </style>

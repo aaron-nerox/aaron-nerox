@@ -27,7 +27,7 @@
       </div>
       
     </div>
-    <p class="text">Forged by Aaron from love &#10083; and monochrome &#9775;</p>
+    <p class="text responsive-margin">Forged by Aaron from love &#10083; and monochrome &#9775;</p>
   </div>
 </template>
 
@@ -58,6 +58,8 @@ export default {
 
 .footer-text{
   font-size: 1.2em;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .divider{
@@ -99,6 +101,21 @@ export default {
   width: 30px;
 }
 
+@media only screen and (max-width: 720px){
+  .social-item{
+    width: 35px;
+    height: 35px;
+  }
 
+  .social-icon{
+    margin-right: 3px;
+    width: 20px;
+  }
+
+  .responsive-margin{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
 
 </style>

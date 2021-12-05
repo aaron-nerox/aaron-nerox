@@ -69,4 +69,48 @@ export default {
   margin-top: 8%;
 }
 
+@media only screen and (max-width: 720px){
+  .main-container{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background: url('../assets/backgrounds/header_mobile_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .animations-container{
+    margin-top: 5%; 
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .logo-background{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-image: url('../assets/images/main_header_logo_white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 15px;
+    padding-bottom: 21px;
+
+  }
+
+  .arrow-icon{
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
+    margin: 10px;
+    margin-top: 20%;
+  }
+
+}
+
 </style>
