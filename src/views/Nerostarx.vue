@@ -23,7 +23,7 @@
           <p class="nerostarx-title">Aaron Nerox</p>
           <p class="nerostarx-text">This brand identity is my newest and most unique one. This brand representes my 
             latest resolve to give people a crystal clear view of both the design and development worlds through the eyes of a student. The style and colors reflect how i see the world, it is just magestic in monochromatic colors.</p>
-          <x-button>Soon on behance</x-button>
+          <x-button @click="navigate('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</x-button>
         </div>
       </div>
     </section>
@@ -34,7 +34,7 @@
         <div class="y-container-align-left">
           <p class="nerostarx-title">The X by aaron</p>
           <p class="nerostarx-text">The x by aaron brand has an interesting story. It inherited the beautiful inner cube gradient from nerostarx, and it means that i support a diverse range of things. the insides of the cube are invisible to say that there is always something unknown and i call that "The X". </p>
-          <x-button>Soon on behance</x-button>
+          <x-button @click="navigate('https://www.behance.net/gallery/133711717/The-X-Developer-studio-brand-design')">Check on behance</x-button>
         </div>
       </div>
     </section>
@@ -76,6 +76,9 @@ export default {
     methods:{
       goIndex(){
         this.$router.push({path: '/'})
+      },
+      navigate(link){
+        window.open(link,"_blank")
       }
     }
 }
@@ -209,8 +212,8 @@ export default {
   left: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border: solid #333 4px;
   border-left: none;
-  box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
 }
 
 @media only screen and (max-width: 720px){
@@ -324,7 +327,7 @@ export default {
   .sub-brand-image{
     width: 80%;
     border-radius: 15px;
-    box-shadow: -4px 7px 16px 1px rgba(255, 209, 156, 0.46);
+    
   }
 }
 </style>
