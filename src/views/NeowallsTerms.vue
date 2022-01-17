@@ -170,6 +170,10 @@ export default {
         width: 60%;
         margin: 10px;
     }
+
+    .text-adjust{
+        text-align: right;
+    }
 }
 
 
