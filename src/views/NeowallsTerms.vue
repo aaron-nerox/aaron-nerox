@@ -165,5 +165,12 @@ export default {
     text-align: justify;
 }
 
+@media only screen and (max-width: 720px){
+    .logo-size{
+        width: 60%;
+        margin: 10px;
+    }
+}
+
 
 </style>
