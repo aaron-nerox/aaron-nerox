@@ -45,7 +45,15 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "thex" */ '../views/TheX.vue')
+    component: () => import(/* webpackChunkName: "neowalls" */ '../views/TheX.vue')
+  },
+  {
+    path: '/product/neowalls/guidelines',
+    name: 'Neowalls',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "thex" */ '../views/NeowallsTerms.vue')
   },
   {
     path: '/:pathMatch(.*)*',
