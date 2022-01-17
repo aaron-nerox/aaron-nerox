@@ -172,7 +172,7 @@ export default {
     }
 
     .text-adjust{
-        text-align: right;
+        text-align: left;
     }
 }
 
