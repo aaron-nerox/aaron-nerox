@@ -14,6 +14,7 @@
       </kinesis-element>
     </kinesis-container>
     <br>
+
     <section class="app-section">
       <p class="thex-title center">MY ANDROID APPS</p>
       <div class="app-section-container">
@@ -40,7 +41,9 @@
       </div>
     </section>
     <br><br>
-    <p class="thex-text center">MADE BY AARON TO BUILD THE UNKNOWN X &#128160;</p>
+    <div class="thex-footer">
+      <p class="thex-title center">MADE BY AARON TO BUILD THE UNKNOWN X &#128160;</p>
+    </div>
   </div>
 </template>
 
@@ -70,7 +73,6 @@ export default {
 .thex-title{
   font-family: 'montserrat_semibold';
   font-size: 1.5em;
-  margin-bottom: 0px;
 }
 
 .thex-text{
@@ -81,6 +83,11 @@ export default {
 @keyframes floating {
   from {transform: translateY(-10px)}
   to{transform: translateY(5px)}
+}
+
+@keyframes gradient {
+  from {background-color: #c024f0;}
+  to{background-color: #10bbff;}
 }
 
 .header-thex{
@@ -160,6 +167,19 @@ export default {
 .app-icon{
   width: 25%;
   margin: 40px;
+}
+
+.thex-footer{
+  height: 70px;
+  width: 100%;
+  font-size: 0.8em;
+  animation-name: gradient;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 1500ms;
+  display: grid;
+  align-content: center;
+  justify-items: center;
 }
 
 @media only screen and (max-width: 720px){

@@ -57,6 +57,7 @@ html{
   bottom: 0;
   width: 70px;
   margin: 20px;
+  margin-bottom: 90px;
   transition: 200ms ease-in-out;
 }
 
@@ -108,6 +109,7 @@ html{
     bottom: 0;
     width: 70px;
     margin: 10px;
+    margin-bottom: 80px;
     transition: 200ms ease-in-out;
   }
 }
