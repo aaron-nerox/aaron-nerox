@@ -193,6 +193,7 @@ section{
 #branding{
   background-image: url('../assets/backgrounds/background_section3.svg');
   background-position-y: bottom;
+  padding-bottom: 20px;
 }
 
 #contact{
@@ -366,7 +367,7 @@ section{
   }
 
   .promo-image{
-    width: 100%;
+    width: 90%;
     margin: 0px;
   }
 
@@ -376,6 +377,7 @@ section{
 
   .side-align{
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 90%;
     display: inline-flex;
     flex-direction: column;
