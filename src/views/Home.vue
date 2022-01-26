@@ -79,17 +79,16 @@
     <section id="branding">
       <x-title mode="light">My best shot at branding</x-title>
       <div class="x-container full-width">
-        <img src="../assets/images/promo_neowalls.png" alt="neowalls_cover" class="promo-image"/>
+        <img src="../assets/images/aaron_promo.png" alt="aaron_cover" class="promo-image"/>
         <div class="side-align">
-          <img src="../assets/icons/neowalls_logo_extended.svg" alt="neowalls_logo" class="promo-logo"/>
-          <p class="text text-container">Neowalls is a community based online wallpaper app for artists, photographers and customization enthusiasts. 
-            The goal of this app is pretty clear, it is made to create a place for creatives 
-            to connect and grow a community with people that enjoy creativity.</p>
+          <img src="../assets/icons/aaron_logo.svg" alt="aaron_logo" class="promo-logo"/>
+          <p class="text text-container">This brand identity is my newest and most unique one. 
+            This brand representes my latest resolve to give people a crystal clear view of both 
+            the design and development worlds through the eyes of a student.</p>
           <div class="x-container full-width">
-            <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
-              availability="GET IT ON" />
-              <div class="hr-spacer"></div>
-            <x-button @onButtonClick="navigateTo('TheX')">See more work</x-button>
+            <x-button @onButtonClick="redirect('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</x-button>
+            <div class="hr-spacer"></div>
+            <x-button @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
           </div>
         </div>
       </div>
