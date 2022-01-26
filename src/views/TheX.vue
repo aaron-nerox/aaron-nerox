@@ -71,16 +71,6 @@ export default {
   display: grid;
 }
 
-@font-face {
-  font-family: 'montserrat_light';
-  src: url('../assets/fonts/Montserrat-Light.ttf');
-}
-
-@font-face {
-  font-family: 'montserrat_semibold';
-  src: url('../assets/fonts/Montserrat-SemiBold.ttf');
-}
-
 .thex-title{
   font-family: 'montserrat_semibold';
   font-size: 1.5em;

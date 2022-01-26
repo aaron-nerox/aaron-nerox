@@ -42,7 +42,20 @@
 
     <section id="android">
       <x-title mode="light">My latest android project</x-title>
-      
+      <div>
+        <img src="../assets/images/promo_neowalls.png" alt="neowalls_cover" />
+        <div>
+          <img src="../assets/icons/neowalls_logo_extended.svg" alt="neowalls_logo"/>
+          <p class="text">Neowalls is a community based online wallpaper app for artists, photographers and customization enthusiasts. 
+            The goal of this app is pretty clear, it is made to create a place for creatives 
+            to connect and grow a community with people that enjoy creativity.</p>
+          <div>
+            <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
+              availability="GET IT ON" />
+            <x-button @onButtonClick="navigateTo('TheX')">More work</x-button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="uiux">
@@ -85,6 +98,7 @@ import XFooter from '../components/XFooter.vue'
 import XHeader from '../components/XHeader.vue'
 import XTitle from '../components/XTitle.vue'
 import XButton from '../components/XButton.vue'
+import GooglePlayButton from '../components/GooglePlayButton.vue'
 
 export default {
   name: 'Home',
@@ -92,6 +106,7 @@ export default {
     XHeader,
     XTitle,
     XButton,
+    GooglePlayButton,
     XFooter,
   },
   methods:{
