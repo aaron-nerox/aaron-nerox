@@ -16,7 +16,7 @@
     <br>
 
     <section class="app-section">
-      <p class="thex-title center">MY ANDROID APPS</p>
+      <p class="thex-title center">&#11041; MY ANDROID APPS</p>
       <div class="app-section-container">
         <img src="../assets/icons/airsort.png" alt="app icon" class="app-icon">
         <div class="app-details">
@@ -40,7 +40,41 @@
         </div>
       </div>
     </section>
-    <br><br>
+
+    <section class="app-section">
+      <p class="thex-title center">&#11041; MY OPEN SOURCE PROJECTS</p>
+      <div class="opensrc-section-container">
+        <GithubCard
+          title="The strawberry app"
+          link="goolge.com"
+          icon="strawberry.png" />
+
+          <GithubCard
+          title="Milky store app"
+          link="goolge.com"
+          icon="milky_app.png" />
+
+          <GithubCard
+          title="Milky store backend"
+          link="goolge.com"
+          icon="milky_backend.png" />
+
+          <GithubCard
+          title="SNTF-trainy app"
+          link="goolge.com"
+          icon="sntf.png" />
+
+          <GithubCard
+          title="Emerald live"
+          link="goolge.com"
+          icon="emerald_logo.png" />
+
+          <GithubCard
+          title="ArtPlace app"
+          link="goolge.com"
+          icon="artplace.png" />
+      </div>
+    </section>
     <div class="thex-footer">
       <p class="thex-title center">MADE BY AARON TO BUILD THE UNKNOWN X &#128160;</p>
     </div>
@@ -49,11 +83,13 @@
 
 <script>
 import GooglePlayButton from "../components/GooglePlayButton.vue"
+import GithubCard from "../components/GithubCard.vue"
 
 export default {
     name: "TheX",
     components: {
-      GooglePlayButton
+      GooglePlayButton,
+      GithubCard
     },
     methods:{
       goIndex(){
@@ -68,6 +104,11 @@ export default {
   background-color: #000;
   color: #FFF;
   display: grid;
+}
+
+section{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .thex-title{
@@ -160,8 +201,13 @@ export default {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.opensrc-section-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .app-icon{
