@@ -40,39 +40,19 @@
       </div>
     </section>
 
-    <section id="brands-nerostarx">
-      <br>
-      <x-title mode="light">Brands i created for work</x-title>
-      <div class="x-container-full-width">
-        <img src="../assets/images/nerostarx_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
-        <div class="y-container-align-left">
-          <p class="title">Nerostarx</p>
-          <p class="text">Nerostarx is a brand that is made to empower young brand designers and brand strategists. It focuses on brand stories and brand visual identities. It also shows you how  construct a brand only from a given story and the strategies to do that.</p>
-          <x-button @onButtonClick="navigateTo('Nerostarx')">Check my brandfolio</x-button>
-        </div>
-      </div>
+    <section id="android">
+      <x-title mode="light">My latest android project</x-title>
+      
     </section>
 
-    <section id="brands-kitsune">
-      <div class="x-container-full-width">
-        <div class="y-container-align-right">
-          <p class="title">Kitsune</p>
-          <p class="text">Kitsune is my newest brand, it focuses on art and creating supernatural characters. it also focuses on creating collectibles like custom emojis, imaginary creatures and more of that good art.</p>
-          <x-button @onButtonClick="navigateTo('Kitsune')">Check my creations</x-button>
-        </div>
-        <img src="../assets/images/kitsune_image.jpg" alt="brand_image" class="sub-brand-image-right" id="kitsune-brand">
-      </div>
+    <section id="uiux">
+      <x-title mode="light">My all time best UI/UX project</x-title>
+      
     </section>
 
-    <section id="brands-thex">
-      <div class="x-container-full-width">
-        <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
-        <div class="y-container-align-left">
-          <p class="title">The X</p>
-          <p class="text">Since kitsune and nerostarx are my artistic and strategic side. I decided to show off my developer side in the form of The X. The X is a brand that focuses on developing android and web apps while teaching tips and tricks to people.</p>
-          <x-button @onButtonClick="navigateTo('TheX')">Check my app list</x-button>
-        </div>
-      </div>
+    <section id="branding">
+      <x-title mode="light">My best shot at branding</x-title>
+      
     </section>
 
     <section id="contact">
@@ -151,23 +131,20 @@ section{
   background-image: url('../assets/backgrounds/background_section2.svg');
 }
 
-#brands-nerostarx{
-  padding: 0px;
-  height: 100vh;
+#android{
   background-image: url('../assets/backgrounds/background_section3.svg');
+  background-position-y: bottom;
 }
 
-#brands-kitsune{
-  margin-left: auto;
-  padding: 0px;
-  height: 100vh;
+#uiux{
   background-image: url('../assets/backgrounds/background_section3_inverted.svg');
+  background-position-y: 0%;
+  
 }
 
-#brands-thex{
-  padding: 0px;
-  height: 100vh;
+#branding{
   background-image: url('../assets/backgrounds/background_section3.svg');
+  background-position-y: bottom;
 }
 
 #contact{
@@ -176,27 +153,6 @@ section{
 
 .x-container{
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.x-container-work{
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.x-container-full-width{
-  width: 100%;
-  min-height: 80%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
@@ -267,73 +223,6 @@ section{
   width: 50%;
 }
 
-.sub-brand-image{
-  width: 50%;
-  left: 0;
-  border: 2px solid #FCFCFA;
-  border-left: none;
-  box-shadow: -4px 4px 0px 0.5px #C9C9C9;
-}
-
-.sub-brand-image-right{
-  width: 50%;
-  right: 0;
-  border: 2px solid #FCFCFA;
-  border-right: none;
-  box-shadow: -4px 4px 0px 0.5px #C9C9C9;
-}
-
-#nerostarx-brand{
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-#kitsune-brand{
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-.y-container-align-left{
-  width: 35%;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-  margin: 35px;
-}
-
-.y-container-align-left>p.title{
-  font-size: 2.3em;
-  margin: 0px;
-}
-
-.y-container-align-left>p.text{
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.y-container-align-right{
-  width: 35%;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: end;
-  margin: 35px;
-  margin-left: auto;
-}
-
-.y-container-align-right>p.title{
-  font-size: 2.3em;
-  margin: 0px;
-}
-
-.y-container-align-right>p.text{
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .light-grid-contact{
   max-width: 40%;
   display: grid;
@@ -381,13 +270,13 @@ section{
     align-items: center;
   }
 
-  #brands-nerostarx{
+  #android{
     padding: 0px;
     height: max-content;
     background-image: url('../assets/backgrounds/background_section3.svg');
   }
 
-  #brands-kitsune{
+  #uiux{
     margin-top: 15px;
     padding: 0px;
     padding-bottom: 25px;
@@ -395,7 +284,7 @@ section{
     background-image: url('../assets/backgrounds/background_section3_inverted.svg');
   }
 
-  #brands-thex{
+  #branding{
     padding: 0px;
     height: max-content;
     background-image: url('../assets/backgrounds/background_section3.svg');
@@ -443,78 +332,6 @@ section{
   .contact-logo{
     width:35%;
     margin: 0px;
-  }
-
-  .x-container-full-width{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .y-container-align-left{
-    width: 95%;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 35px;
-  }
-
-  .y-container-align-left>p.title{
-    font-size: 2.3em;
-    margin: 0px;
-  }
-
-  .y-container-align-left>p.text{
-    font-size: 1.2em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .y-container-align-right{
-    width: 95%;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 35px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .y-container-align-right>p.title{
-    font-size: 2.3em;
-    margin: 0px;
-  }
-
-  .y-container-align-right>p.text{
-    font-size: 1.2em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .sub-brand-image{
-    width: 80%;
-    border: 2px solid #FCFCFA;
-    box-shadow: -4px 4px 0px 0.5px #C9C9C9;
-  }
-
-  .sub-brand-image-right{
-    width: 80%;
-    border: 2px solid #FCFCFA;
-    box-shadow: -4px 4px 0px 0.5px #C9C9C9;
-  }
-
-  #nerostarx-brand{
-    border-radius: 15px;
-  }
-
-  #kitsune-brand{
-    border-radius: 15px;
   }
 
   .contact-logo{
