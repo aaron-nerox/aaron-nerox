@@ -61,12 +61,38 @@
 
     <section id="uiux">
       <x-title mode="light">My all time best UI/UX project</x-title>
-      
+      <div class="x-container full-width">
+        <img src="../assets/images/promo_emerald.png" alt="emerald_cover" class="promo-image"/>
+        <div class="side-align">
+          <img src="../assets/icons/emerald_ds_extended.svg" alt="emerald_logo" class="promo-logo"/>
+          <p class="text text-container">The need for a design system that bridges the gap between the major 
+            mobile operating systems and the web is what made emerald design system a reality.</p>
+          <div class="x-container full-width">
+            <x-button @onButtonClick="redirect('google.com')">Check on behance</x-button>
+            <div class="hr-spacer"></div>
+            <x-button @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="branding">
       <x-title mode="light">My best shot at branding</x-title>
-      
+      <div class="x-container full-width">
+        <img src="../assets/images/promo_neowalls.png" alt="neowalls_cover" class="promo-image"/>
+        <div class="side-align">
+          <img src="../assets/icons/neowalls_logo_extended.svg" alt="neowalls_logo" class="promo-logo"/>
+          <p class="text text-container">Neowalls is a community based online wallpaper app for artists, photographers and customization enthusiasts. 
+            The goal of this app is pretty clear, it is made to create a place for creatives 
+            to connect and grow a community with people that enjoy creativity.</p>
+          <div class="x-container full-width">
+            <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
+              availability="GET IT ON" />
+              <div class="hr-spacer"></div>
+            <x-button @onButtonClick="navigateTo('TheX')">See more work</x-button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -113,6 +139,9 @@ export default {
   methods:{
     navigateTo(path){
       this.$router.replace({path: '/'+path});
+    },
+    redirect(link){
+      window.open(link,"_blank")
     },
     call(){
       window.open('tel:+213540160173')
