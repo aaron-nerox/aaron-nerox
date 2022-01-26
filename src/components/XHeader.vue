@@ -6,11 +6,9 @@
               <img src="../assets/images/main_header_upper_logo.svg" alt="header_image">
             </kinesis-element>
           </div>
-          <a href="#about">
-            <kinesis-element :strength="30" type="depth">
-                <img src="../assets/icons/down_arrow.svg" alt="header_image" class="arrow-icon">
-            </kinesis-element>
-          </a>
+          <div class="cta-wrapper large-text">
+            <a href="#about" class="button-container">Explore my protfolio</a>
+          </div>
       </kinesis-container>
   </div>
 </template>
@@ -22,7 +20,7 @@ export default {
     name: "XHeader",
     components: {
       KinesisContainer,
-      KinesisElement
+      KinesisElement,
     }
 }
 </script>
@@ -61,12 +59,35 @@ export default {
 
 }
 
-.arrow-icon{
+.cta-wrapper{
+  width: fit-content;
+  margin: 100px;
   margin-right: auto;
   margin-left: auto;
-  width: 5%;
-  margin: 10px;
-  margin-top: 8%;
+  transition: 200ms ease-in-out;
+}
+
+.cta-wrapper:hover{
+  transform: translate(0px, -4px);
+}
+
+.large-text{
+  font-size: 1.3em;
+}
+
+.button-container{
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  width: fit-content !important;
+  background-color: #000000;
+  color: #FCFCFA;
+  font-family: 'poppins_semibold';
+  border-radius: 1000px;
 }
 
 @media only screen and (max-width: 720px){
@@ -103,12 +124,25 @@ export default {
 
   }
 
-  .arrow-icon{
-    margin-right: auto;
-    margin-left: auto;
-    width: 20%;
-    margin: 10px;
-    margin-top: 20%;
+  .large-text{
+      font-size: 1em;
+  }
+
+  .button-container{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    width: fit-content !important;
+    background-color: #FCFCFA;
+    color: #000000;
+    font-family: 'poppins_semibold';
+    font-size: 1.1em;
+    border-radius: 1000px;
+    transition: 200ms ease-in-out;
   }
 
 }

@@ -1,5 +1,5 @@
 <template>
-  <button class="main-container" @click="emitAction">
+  <button class="x-main-container" @click="emitAction">
       <p>
           <slot></slot>
       </p>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.main-container{
+.x-main-container{
     outline: none;
     border: none;
     width: fit-content !important;
@@ -30,11 +30,11 @@ export default {
     transition: 200ms ease-in-out;
 }
 
-.main-container:hover{
+.x-main-container:hover{
     transform: translate(0px, -4px);
 }
 
-.main-container>p{
+.x-main-container>p{
     margin: 0px;
     padding: 8px;
     padding-right: 20px;
