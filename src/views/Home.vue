@@ -42,17 +42,18 @@
 
     <section id="android">
       <x-title mode="light">My latest android project</x-title>
-      <div>
-        <img src="../assets/images/promo_neowalls.png" alt="neowalls_cover" />
-        <div>
-          <img src="../assets/icons/neowalls_logo_extended.svg" alt="neowalls_logo"/>
-          <p class="text">Neowalls is a community based online wallpaper app for artists, photographers and customization enthusiasts. 
+      <div class="x-container full-width">
+        <img src="../assets/images/promo_neowalls.png" alt="neowalls_cover" class="promo-image"/>
+        <div class="side-align">
+          <img src="../assets/icons/neowalls_logo_extended.svg" alt="neowalls_logo" class="promo-logo"/>
+          <p class="text text-container">Neowalls is a community based online wallpaper app for artists, photographers and customization enthusiasts. 
             The goal of this app is pretty clear, it is made to create a place for creatives 
             to connect and grow a community with people that enjoy creativity.</p>
-          <div>
+          <div class="x-container full-width">
             <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
               availability="GET IT ON" />
-            <x-button @onButtonClick="navigateTo('TheX')">More work</x-button>
+              <div class="hr-spacer"></div>
+            <x-button @onButtonClick="navigateTo('TheX')">See more work</x-button>
           </div>
         </div>
       </div>
@@ -138,6 +139,10 @@ section{
   text-align: center;
 }
 
+.hr-spacer{
+  width: 15px;
+}
+
 #about{
   background-image: url('../assets/backgrounds/background_section1.svg');
 }
@@ -194,6 +199,26 @@ section{
   text-align: left;
   border: 2px solid #C9C9C9;
   box-shadow: inset -2px 2px 0px 0.5px #FCFCFA, -3px 3px 0px 0.5px #000000;
+}
+
+.full-width{
+  width: 95%;
+}
+
+.promo-image{
+  width: 55%;
+  margin: 0px;
+}
+
+.promo-logo{
+  width: 50%;
+}
+
+.side-align{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .main-image{
@@ -266,6 +291,9 @@ section{
 }
 
 @media only screen and (max-width: 720px){
+  .hr-spacer{
+    height: 15px;
+  }
   .text-container{
     text-align: center;
   }
@@ -303,6 +331,27 @@ section{
     padding: 0px;
     height: max-content;
     background-image: url('../assets/backgrounds/background_section3.svg');
+  }
+
+  .full-width{
+    width: 90%;
+  }
+
+  .promo-image{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .promo-logo{
+    width: 50%;
+  }
+
+  .side-align{
+    margin-top: 20px;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .light-grid-work{
