@@ -46,33 +46,39 @@
       <div class="opensrc-section-container">
         <GithubCard
           title="The strawberry app"
-          link="goolge.com"
-          icon="strawberry.png" />
+          link="https://github.com/TheX-ByAaron/TheStrawberryMarket"
+          icon="strawberry.png" 
+          description="An online strawberry milk store android app built using kotlin, android studio and emerald design system."/>
 
           <GithubCard
           title="Milky store app"
-          link="goolge.com"
-          icon="milky_app.png" />
+          link="https://github.com/TheX-ByAaron/milky-store"
+          icon="milky_app.png" 
+          description="This is an android store template app. Built using kotlin, android studio and emerald design system."/>
 
           <GithubCard
           title="Milky store backend"
-          link="goolge.com"
-          icon="milky_backend.png" />
+          link="https://github.com/TheX-ByAaron/MilkyStoreBackend"
+          icon="milky_backend.png" 
+          description="The backend for milky store. Built using kotlin ktor server-side framework, intelij Idea and bases on REST APIs."/>
 
           <GithubCard
           title="SNTF-trainy app"
-          link="goolge.com"
-          icon="sntf.png" />
+          link="https://github.com/TheX-ByAaron/SNTF-Trainy"
+          icon="sntf.png" 
+          description="A mobile train booking application that is a redesign for the algerian train mobile app SNTF."/>
 
           <GithubCard
           title="Emerald live"
-          link="goolge.com"
-          icon="emerald_logo.png" />
+          link="https://github.com/TheX-ByAaron/Emerald_live"
+          icon="emerald_logo.png" 
+          description="This is the live preview website for the emerald design system. built using Vuesj."/>
 
           <GithubCard
           title="ArtPlace app"
-          link="goolge.com"
-          icon="artplace.png" />
+          link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
+          icon="artplace.png" 
+          description="A playground mobile app that is completely built using the shiny new jetpack compose for android."/>
       </div>
     </section>
     <div class="thex-footer">
@@ -300,6 +306,14 @@ section{
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .opensrc-section-container{
+    width: 100%;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-columns: auto;
   }
 
   .app-icon{

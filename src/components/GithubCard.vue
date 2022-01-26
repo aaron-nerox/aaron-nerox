@@ -3,6 +3,7 @@
       <br><br>
       <img :src="resolveImageUrl(icon)" alt="project-icon" class="project-logo"/>
       <p class="title large-size">{{title}}</p>
+      <p class="text normal-text">{{description}}</p>
       <x-button @onButtonClick="navigate" >Check repository</x-button>
       <br><br>
   </div>
@@ -16,6 +17,7 @@ export default {
     props: {
         icon: String,
         title: String,
+        description: String,
         link: String
     },
     components: {
@@ -42,6 +44,7 @@ export default {
     color: black;
     margin: 20px;
     clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    text-align: center;
     transition: 200ms ease-in-out;
 }
 
@@ -55,5 +58,28 @@ export default {
 
 .large-size{
     font-size: 1.3em;
+}
+
+.normal-text{
+    width: 80%;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 720px){
+    .card-container{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+        text-align: center;
+        transition: 200ms ease-in-out;
+    }
+
+    .large-size{
+        font-size: 0.9em;
+    }
 }
 </style>
