@@ -2,10 +2,7 @@
   <div class="parent-container">
     <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
     <kinesis-container class="header-thex">
-      
-      <img src="../assets/images/thex-boxtop.svg" alt="texture" class="thex-logo-box boxtop">
-      <img src="../assets/images/thex-boxleft.svg" alt="texture" class="thex-logo-box boxleft">
-      <img src="../assets/images/thex-boxright.svg" alt="texture" class="thex-logo-box boxright">
+      <img src="../assets/images/thex-box.svg" alt="texture" class="thex-logo-box box">
 
       <kinesis-element class="thex-logo-core-animation" :strength="-200" type="rotate">
         <img src="../assets/images/thex-core.png" alt="texture" class="thex-logo-core">
@@ -16,10 +13,9 @@
         <img src="../assets/backgrounds/thex_background_texture.svg" alt="texture" >
       </kinesis-element>
     </kinesis-container>
-    <br><br>
-    <p class="thex-title center">MY ANDROID APPS</p>
     <br>
     <section class="app-section">
+      <p class="thex-title center">MY ANDROID APPS</p>
       <div class="app-section-container">
         <img src="../assets/icons/airsort.png" alt="app icon" class="app-icon">
         <div class="app-details">
@@ -74,6 +70,7 @@ export default {
 .thex-title{
   font-family: 'montserrat_semibold';
   font-size: 1.5em;
+  margin-bottom: 0px;
 }
 
 .thex-text{
@@ -87,11 +84,12 @@ export default {
 }
 
 .header-thex{
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   display: grid;
   background: #000;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .texture{
@@ -135,31 +133,12 @@ export default {
   transition: 200ms ease-in-out;
 }
 
-.boxtop{
+.box{
   width: 18.9%;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
   margin-left: auto;
-  transform: translateY(-6px);
-}
-
-.boxright{
-  width: 17.5%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  transform: translate(8px,8px);
-}
-
-.boxleft{
-  width: 17.5%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  transform: translate(-7px,8px);
 }
 
 .app-section{
@@ -184,6 +163,18 @@ export default {
 }
 
 @media only screen and (max-width: 720px){
+  .header-thex{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../assets/backgrounds/thex_mobile_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    color: #FFF;
+    display: grid;
+  }
+
   .texture{
     display: none;
   }
@@ -221,31 +212,12 @@ export default {
     transition: 200ms ease-in-out;
   }
 
-  .boxtop{
+  .box{
     width: 56.5%;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: auto;
     margin-left: auto;
-    transform: translateY(-6px);
-  }
-
-  .boxright{
-    width: 53%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translate(7.5px,7.5px);
-  }
-
-  .boxleft{
-    width: 53%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translate(-6.5px,7.5px);
   }
 
   .app-section{
