@@ -133,6 +133,7 @@ export default {
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+
     outline: none;
     border: none;
     text-decoration: none;

@@ -4,16 +4,16 @@
 
     <section id="about">
       <x-title mode="light">Who is aaron?</x-title>
-      <div class="x-container">
-        <div class="y-container">
+        <div class="x-container">
           <img src="../assets/images/main_image.jpg" alt="aaron" class="main-image">
-          <x-button class="x-button" @onButtonClick="navigateTo('Home/skills')">Check my skills</x-button>
+          <div class="side-align full-width">
+            <p class="text text-container">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing 
+              a masters degree. I work as a mobile developer and brand identity designer with some UI/UX. I am on a 
+              mission to show people the world of design and development through the perspective of a student.</p>
+
+            <x-button class="x-button" @onButtonClick="navigateTo('Home/skills')">Check my skills</x-button>
+          </div>
         </div>
-        <div class="text-container">
-          <p class="text">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing a masters degree. I work as a mobile developer and brand identity designer with some UI/UX.  
-                I am on a mission to show people the world of design and development through the perspective of a student.</p>
-        </div>
-      </div>
     </section>
 
     <section id="work">
@@ -68,7 +68,7 @@
           <p class="text text-container">The need for a design system that bridges the gap between the major 
             mobile operating systems and the web is what made emerald design system a reality.</p>
           <div class="x-container full-width">
-            <x-button @onButtonClick="redirect('google.com')">Check on behance</x-button>
+            <x-button @onButtonClick="redirect('https://www.behance.net/gallery/135931393/Emerald-design-system')">Check on behance</x-button>
             <div class="hr-spacer"></div>
             <x-button @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
           </div>
@@ -251,7 +251,7 @@ section{
 }
 
 .main-image{
-  width: 70%;
+  width: 25%;
   border-radius: 15px;
   margin: 15px;
   border: 1px solid #000000;
@@ -260,6 +260,7 @@ section{
 
 .x-button{
   width: 70%;
+  margin: 15px;
 }
 
 .light-grid-work{
@@ -325,6 +326,7 @@ section{
   }
   .text-container{
     text-align: center;
+    width: 100%
   }
   .x-container{
     width: 95%;
@@ -340,6 +342,10 @@ section{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+  }
+  .x-button{
+    width: 70%;
+    
   }
 
   #android{
@@ -362,17 +368,21 @@ section{
     background-image: url('../assets/backgrounds/background_section3.svg');
   }
 
+  .main-image{
+    width: 70%;
+  }
+
   .full-width{
     width: 90%;
   }
 
   .promo-image{
-    width: 90%;
+    width: 100%;
     margin: 0px;
   }
 
   .promo-logo{
-    width: 50%;
+    display: none;
   }
 
   .side-align{

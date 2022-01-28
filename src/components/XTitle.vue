@@ -52,14 +52,14 @@ export default {
 
 @media only screen and (max-width: 720px){
   .main-container{
-    max-width: 80%;
+    max-width: 85%;
   }
 
   .x-title{
     text-align: center;
     font-family: 'poppins_semibold';
     font-size: 1.1em;
-    width: 80%;
+    width: 90%;
   }
 }
 </style>
