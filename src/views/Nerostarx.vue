@@ -4,14 +4,31 @@
     <kinesis-container class="nerostarx-header">
       <div class="header-content">
         <img src="../assets/images/nerostarx-logo.png" class="logo-main">
-        <p class="nerostarx-title section-title">Learn how branding and product design meet together here</p>
-        <a href="#aaron">
+        <p class="section-title header-title">Learn how branding and product design meet together here</p>
+        <a href="#highlights">
           <kinesis-element :strength="30" type="depth">
               <img src="../assets/icons/downchevron.svg" alt="texture" class="arrow-call">
           </kinesis-element>
         </a>
       </div>
     </kinesis-container>
+
+    <p class="section-title">Highlighted design projects</p>
+    <section id="highlights">
+      <div class="x-container-full-width">
+        <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+        <div class="y-container-align-left">
+          <div class="x-container-full-width">
+            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+          </div>
+          <div class="x-container-full-width">
+            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <p class="nerostarx-title section-title">Best brands that i crafted with love</p>
 
@@ -115,6 +132,25 @@ export default {
   to{transform: translateY(5px)}
 }
 
+.nerostarx-text{
+  font-family: 'modulus_bold';
+  font-size: 1.2em;
+  
+}
+
+.nerostarx-title{
+  font-family: 'modulus_bold';
+  font-size: 1.7em;
+}
+
+.section-title{
+  font-family: 'modulus_bold';
+  font-size: 2.3em;
+  text-align: center;
+  color: rgba(6, 11, 80, 0.931);
+  
+}
+
 .nerostarx-main-container{
   min-height: 100vh;
   width: 100%;
@@ -135,6 +171,9 @@ export default {
   align-content: center;
   justify-items: center;
   overflow: hidden;
+}
+
+.header-title{
   color: white;
 }
 
@@ -145,22 +184,6 @@ export default {
   flex-direction: column;
   align-items: center;
   
-}
-
-.nerostarx-text{
-  font-family: 'modulus_bold';
-  font-size: 1.2em;
-}
-
-.nerostarx-title{
-  font-family: 'modulus_bold';
-  font-size: 1.7em;
-}
-
-.section-title{
-  font-family: 'modulus_bold';
-  font-size: 2.3em;
-  text-align: center;
 }
 
 .logo-main{
@@ -198,10 +221,8 @@ section{
 
 .x-container-full-width{
   width: 95%;
-  min-height: 80%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -219,12 +240,24 @@ section{
 .y-container-align-left>p.nerostarx-title{
   font-size: 2.5em;
   margin: 0px;
+  color: rgba(6, 11, 80, 0.931);
 }
 
 .y-container-align-left>p.nerostarx-text{
   text-align: justify;
   font-size: 1.5em;
   margin-bottom: 20px;
+  color: rgba(6, 11, 80, 0.931);
+}
+
+.highlight{
+  margin: 10px;
+  transition: 300ms ease-in-out;
+}
+
+.highlight:hover{
+  box-shadow: 8px 8px 16px 0 rgba(63, 28, 145, 0.418);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .sub-brand-image{
@@ -311,7 +344,6 @@ section{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    min-height: 80%;
     margin-top: 10px;
     display: inline-flex;
     flex-direction: column;
@@ -319,7 +351,7 @@ section{
   }
 
   .y-container-align-left{
-    width: 90%;
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +368,7 @@ section{
     font-size: 1.1em;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
+    width: 80%;
   }
 
   .sub-brand-image{
