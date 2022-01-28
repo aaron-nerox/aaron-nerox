@@ -1,10 +1,15 @@
 <template>
-    <div class="play-store" @click="openApp">
-        <img class="button-icon" src="../assets/icons/store.svg" >
-        <div class="button-text">
-        <p class="zit-text" id="head-button">{{availability}}</p>
-        <p class="zit-text" id="text-button">Google Play</p>
+    <div :class="['play-store', this.darkMode? 'dark-mode' : 'light-mode']" 
+            @click="openApp">
+
+        <div class="inner-google-play">
+            <img class="button-icon" src="../assets/icons/store.svg" >
+            <div class="button-text">
+            <p class="zit-text" id="head-button">{{availability}}</p>
+            <p class="zit-text" id="text-button">Google Play</p>
+            </div>
         </div>
+
     </div>
 </template>
 
@@ -12,7 +17,8 @@
     export default {
         props: {
             applink: String,
-            availability: String
+            availability: String,
+            darkMode: Boolean
         },
         methods:{
             openApp(){
@@ -26,26 +32,35 @@
 
 <style scoped>
 .play-store{
-    background: white;
-    color: black;
     border-radius: 100000px;
-    -webkit-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.3); 
-    box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.2);
-    height: 40px;
-    max-width: 190px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: fit-content;
+    max-width: fit-content;
     transition: all ease-in-out 200ms;
     font-family: 'montserrat_semibold';
 }
 
 .play-store:hover{
     transform: translateY(-5px);
+}
+
+.inner-google-play{
+    margin: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.light-mode{
+    background-color: white;
+    color: black;
 }
 
 .button-icon{
@@ -74,24 +89,21 @@
     font-size: 0.9em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1281px) {
+@media only screen and (max-width: 720px){
     .play-store{
-        background: white;
+        background-color: black;
+        min-width: 90%;
+        padding: 15px;
+    }
+
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+
+    .light-mode{
+        background-color: white;
         color: black;
-        border-radius: 100000px;
-        -webkit-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.3); 
-        box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.2);
-        height: 40px;
-        width: 140px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin: 20px;
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        transition: all ease-in-out 200ms;
     }
 }
 </style>
