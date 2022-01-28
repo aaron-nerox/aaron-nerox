@@ -16,15 +16,38 @@
     <p class="section-title">Highlighted design projects</p>
     <section id="highlights">
       <div class="x-container-full-width">
-        <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+        <div class="sub-brand-image highlight">
+                <img src="../assets/images/emerald_image.jpg" alt="brand_image" class="highlight-image">
+                <div class="highlight-button">
+                  <x-button  @click="navigate('https://www.behance.net/gallery/135931393/Emerald-design-system')">Learn more</x-button>
+                </div>
+              </div>
         <div class="y-container-align-left">
-          <div class="x-container-full-width">
-            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
-            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
-          </div>
-          <div class="x-container-full-width">
-            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
-            <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image highlight" id="nerostarx-brand">
+          <div class="highlight-container">
+              <div class="highlight">
+                <img src="../assets/images/neowalls_image.jpg" alt="brand_image" class="highlight-image">
+                <div class="highlight-button">
+                  <x-button @click="navigate('https://www.behance.net/gallery/124238713/Neowalls-online-wallpaper-mobile-app')">Learn more</x-button>
+                </div>
+              </div>
+              <div class="highlight">
+                <img src="../assets/images/daily_adventurer.jpg" alt="brand_image" class="highlight-image">
+                <div class="highlight-button">
+                  <x-button @click="navigate('https://www.behance.net/gallery/134525865/The-daily-adventurer-brand-identity-design')">Learn more</x-button>
+                </div>
+              </div>
+              <div class="highlight">
+                <img src="../assets/images/cse_image.jpg" alt="brand_image" class="highlight-image">
+                <div class="highlight-button">
+                  <x-button @click="navigate('https://www.behance.net/gallery/133863929/CSE-Brand-identity-refresh')">Learn more</x-button>
+                </div>
+              </div>
+              <div class="highlight">
+                <img src="../assets/images/nerostarx_blueprint.jpg" alt="brand_image" class="highlight-image">
+                <div class="highlight-button">
+                  <x-button @click="navigate('https://www.behance.net/gallery/133633819/Neroxtarx-design-studio-visual-identity')">Learn more</x-button>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -99,11 +122,13 @@
 
 <script>
 import GalacticButton from '../components/GalacticButton.vue'
+import XButton from '../components/XButton.vue'
 
 export default {
     name: "Nerostarx",
     components: {
       GalacticButton,
+      XButton,
     },
     methods:{
       goIndex(){
@@ -250,14 +275,58 @@ section{
   color: rgba(6, 11, 80, 0.931);
 }
 
+.highlight-container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .highlight{
+  width: 90%;
+  height: fit-content;
+  display: grid;
+  border-radius: 15px;
+  box-shadow: 4px 4px 16px 0 rgba(63, 28, 145, 0.233);
+  border: 2px solid rgba(255, 255, 255, 0.479);
   margin: 10px;
+  padding: 0px;
   transition: 300ms ease-in-out;
 }
 
 .highlight:hover{
   box-shadow: 8px 8px 16px 0 rgba(63, 28, 145, 0.418);
   border: 2px solid rgb(255, 255, 255);
+}
+
+.highlight-image{
+  width: 100%;
+  border-radius: 15px;
+  margin: 0px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.highlight-button{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 15px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 3;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  backdrop-filter: blur( 4px );
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
+
+.highlight-button:hover{
+  opacity: 1;
 }
 
 .sub-brand-image{
@@ -352,16 +421,17 @@ section{
 
   .y-container-align-left{
     width: 100%;
+    margin: 0px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 35px;
   }
 
   .y-container-align-left>p.nerostarx-title{
     font-size: 1.6em;
     margin: 0px;
+    margin-top: 25px;
   }
 
   .y-container-align-left>p.nerostarx-text{
@@ -369,6 +439,19 @@ section{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 80%;
+  }
+
+  .highlight-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .highlight{
+    width: 90%;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .sub-brand-image{
