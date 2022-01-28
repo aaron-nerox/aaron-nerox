@@ -1,77 +1,92 @@
 <template>
+  <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
   <div class="nerostarx-main-container">
-    <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
-    <div class="nerostarx-header">
-      <div class="nerostarx-main-logo">
+    <kinesis-container class="nerostarx-header">
+      <div class="header-content">
         <img src="../assets/images/nerostarx-logo.png" class="logo-main">
+        <p class="nerostarx-title section-title">Learn how branding and product design meet together here</p>
         <a href="#aaron">
-          <img src="../assets/icons/down-arrow-nerostarx.png" alt="texture" class="arrow-call">
+          <kinesis-element :strength="30" type="depth">
+              <img src="../assets/icons/downchevron.svg" alt="texture" class="arrow-call">
+          </kinesis-element>
         </a>
       </div>
-      <kinesis-container class="animation-container">
-        <kinesis-element :strength="50">
-          <img src="../assets/backgrounds/nerostarx_background_texture.svg" alt="texture">
-        </kinesis-element>
-      </kinesis-container>
-    </div>
-    <br><br>
+    </kinesis-container>
+
     <p class="nerostarx-title section-title">Best brands that i crafted with love</p>
+
     <section id="aaron">
       <div class="x-container-full-width">
         <img src="../assets/images/aaron_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">Aaron Nerox</p>
           <p class="nerostarx-text">This brand identity is my newest and most unique one. This brand representes my 
-            latest resolve to give people a crystal clear view of both the design and development worlds through the eyes of a student. The style and colors reflect how i see the world, it is just magestic in monochromatic colors.</p>
-          <x-button @click="navigate('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</x-button>
+            latest resolve to give people a crystal clear view of both the design and development worlds through 
+            the eyes of a student. The style and colors reflect how i see the world, it is just magestic in 
+            monochromatic colors.</p>
+          <galactic-button @click="navigate('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</galactic-button>
         </div>
       </div>
     </section>
+
     <br><br>
+
     <section id="thex">
       <div class="x-container-full-width">
         <img src="../assets/images/thex_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">The X by aaron</p>
-          <p class="nerostarx-text">The x by aaron brand has an interesting story. It inherited the beautiful inner cube gradient from nerostarx, and it means that i support a diverse range of things. the insides of the cube are invisible to say that there is always something unknown and i call that "The X". </p>
-          <x-button @click="navigate('https://www.behance.net/gallery/133711717/The-X-Developer-studio-brand-design')">Check on behance</x-button>
+          <p class="nerostarx-text">The x by aaron brand has an interesting story. It inherited the beautiful
+             inner cube gradient from nerostarx, and it means that i support a diverse range of things. the 
+             insides of the cube are invisible to say that there is always something unknown and i call that "The X". </p>
+          <galactic-button @click="navigate('https://www.behance.net/gallery/133711717/The-X-Developer-studio-brand-design')">Check on behance</galactic-button>
         </div>
       </div>
     </section>
+
     <br><br>
+
     <section id="kitsune">
       <div class="x-container-full-width">
         <img src="../assets/images/kitsune_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">Kitsune by aaron</p>
-          <p class="nerostarx-text">This brand is designed to be familiar to supernatural artists. It is based around the kitsune legend from japan which is a really interesting one to read about.</p>
-          <x-button>Soon on behance</x-button>
+          <p class="nerostarx-text">This brand is designed to be familiar to supernatural artists. It 
+            is based around the kitsune legend from japan which is a really interesting one to read about.</p>
+          <galactic-button>Soon on behance</galactic-button>
         </div>
       </div>
     </section>
+
     <br><br>
+
     <section id="thestarwberry">
       <div class="x-container-full-width">
         <img src="../assets/images/strawberry_image.jpg" alt="brand_image" class="sub-brand-image" id="nerostarx-brand">
         <div class="y-container-align-left">
           <p class="nerostarx-title">The strawberry store</p>
-          <p class="nerostarx-text">A fun project that i made in my free time. It is all about a store that sells a wide range of traditional and modern strawberry flavored milk drinks. The combination of traditional and modern is shown in the style of the logo and its colors.</p>
-          <x-button>Soon on behance</x-button>
+          <p class="nerostarx-text">A fun project that i made in my free time. It is all about a store 
+            that sells a wide range of traditional and modern strawberry flavored milk drinks. The combination 
+            of traditional and modern is shown in the style of the logo and its colors.</p>
+          <galactic-button>Soon on behance</galactic-button>
         </div>
       </div>
     </section>
+
     <br><br>
-    <p class="nerostarx-text center">Creafted from ⚝ by aaron</p>
+    <div class="nerostarx-footer">
+      <p class="nerostarx-title center">Creafted from ⚝ by aaron</p>
+    </div>
   </div>
 </template>
 
 <script>
-import XButton from '../components/XButton.vue'
+import GalacticButton from '../components/GalacticButton.vue'
 
 export default {
     name: "Nerostarx",
     components: {
-      XButton,
+      GalacticButton,
     },
     methods:{
       goIndex(){
@@ -100,8 +115,18 @@ export default {
   to{transform: translateY(5px)}
 }
 
+.nerostarx-main-container{
+  min-height: 100vh;
+  width: 100%;
+  height: fit-content;
+  background-image: url('../assets/backgrounds/nerostarx-white-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .nerostarx-header{
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-image: url('../assets/backgrounds/nerostarx_background.jpg');
   background-repeat: no-repeat;
@@ -110,6 +135,16 @@ export default {
   align-content: center;
   justify-items: center;
   overflow: hidden;
+  color: white;
+}
+
+.header-content{
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .nerostarx-text{
@@ -128,18 +163,6 @@ export default {
   text-align: center;
 }
 
-.nerostarx-main-logo{
-  width: 100%;
-  margin: auto;
-  z-index: 3;
-  grid-column: 1;
-  grid-row: 1;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
 .logo-main{
   width: 40%;
   margin-bottom: 45px;
@@ -148,15 +171,6 @@ export default {
 
 .logo-main:hover{
   width: 45%;
-}
-
-
-.animation-container{
-  width: 100%;
-  margin: auto;
-  z-index: 1;
-  grid-column: 1;
-  grid-row: 1;
 }
 
 .arrow-call{
@@ -176,8 +190,14 @@ export default {
   animation-duration: 500ms;
 }
 
-.x-container-full-width{
+section{
+  background-color: transparent;
   width: 100%;
+  display: grid;
+}
+
+.x-container-full-width{
+  width: 95%;
   min-height: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -188,12 +208,12 @@ export default {
 }
 
 .y-container-align-left{
-  width: 40%;
+  width: 55%;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: start;
-  margin: 35px;
+  margin-left: 25px;
 }
 
 .y-container-align-left>p.nerostarx-title{
@@ -202,51 +222,45 @@ export default {
 }
 
 .y-container-align-left>p.nerostarx-text{
+  text-align: justify;
   font-size: 1.5em;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .sub-brand-image{
-  width: 50%;
-  left: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border: solid #333 4px;
-  border-left: none;
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 4px 4px 16px 0 rgba(63, 28, 145, 0.233);
+  border: 2px solid rgba(255, 255, 255, 0.479);
+}
+
+.nerostarx-footer{
+  display: grid;
+  height: 70px;
+  background-image: url('../assets/backgrounds/nerostarx_background.jpg');
+  background-size: cover;
+  margin: 0px;
+  color: white;
+}
+
+.nerostarx-footer p{
+  margin: auto;
 }
 
 @media only screen and (max-width: 720px){
+
   section{
     margin-right: auto;
     margin-left: auto;
   }
 
-  .nerostarx-header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url('../assets/backgrounds/nerostarx_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    overflow: hidden;
+  .nerostarx-header p{
+    width: 80%;
   }
   
   .nerostarx-main-container{
+    background-position-x: 50%;
     width: 100%;
-  }
-  .nerostarx-main-logo{
-    width: 100%;
-    margin: auto;
-    z-index: 3;
-    grid-column: 1;
-    grid-row: 1;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    
   }
 
   .logo-main{
@@ -277,6 +291,9 @@ export default {
     font-family: 'modulus_bold';
     font-size: 1.6em;
     text-align: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .arrow-call{
@@ -284,9 +301,6 @@ export default {
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
-    grid-column: 1;
-    grid-row: 1;
-    z-index: 3;
     animation-name: floating;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -298,7 +312,7 @@ export default {
     margin-right: auto;
     margin-left: auto;
     min-height: 80%;
-    margin-top: 30px;
+    margin-top: 10px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -322,10 +336,11 @@ export default {
     font-size: 1.1em;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 90%;
   }
 
   .sub-brand-image{
-    width: 80%;
+    width: 90%;
     border-radius: 15px;
     
   }
