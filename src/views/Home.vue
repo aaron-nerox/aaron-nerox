@@ -10,7 +10,6 @@
             <p class="text text-container">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing 
               a masters degree. I work as a mobile developer and brand identity designer with some UI/UX. I am on a 
               mission to show people the world of design and development through the perspective of a student.</p>
-
             <x-button class="x-button" @onButtonClick="navigateTo('Home/skills')">Check my skills</x-button>
           </div>
         </div>
@@ -50,10 +49,12 @@
             The goal of this app is pretty clear, it is made to create a place for creatives 
             to connect and grow a community with people that enjoy creativity.</p>
           <div class="x-container full-width">
-            <google-play-button applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
+            <google-play-button 
+            :darkMode="true" 
+            applink="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls" 
               availability="GET IT ON" />
               <div class="hr-spacer"></div>
-            <x-button @onButtonClick="navigateTo('TheX')">See more work</x-button>
+            <x-button class="x-button" @onButtonClick="navigateTo('TheX')">See more work</x-button>
           </div>
         </div>
       </div>
@@ -68,9 +69,9 @@
           <p class="text text-container">The need for a design system that bridges the gap between the major 
             mobile operating systems and the web is what made emerald design system a reality.</p>
           <div class="x-container full-width">
-            <x-button @onButtonClick="redirect('https://www.behance.net/gallery/135931393/Emerald-design-system')">Check on behance</x-button>
+            <x-button class="x-button" @onButtonClick="redirect('https://www.behance.net/gallery/135931393/Emerald-design-system')">Check on behance</x-button>
             <div class="hr-spacer"></div>
-            <x-button @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
+            <x-button class="x-button" @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
           </div>
         </div>
       </div>
@@ -86,9 +87,9 @@
             This brand representes my latest resolve to give people a crystal clear view of both 
             the design and development worlds through the eyes of a student.</p>
           <div class="x-container full-width">
-            <x-button @onButtonClick="redirect('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</x-button>
+            <x-button class="x-button" @onButtonClick="redirect('https://www.behance.net/gallery/133566979/Aaron-nerox-personal-brand-identity')">Check on behance</x-button>
             <div class="hr-spacer"></div>
-            <x-button @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
+            <x-button class="x-button" @onButtonClick="navigateTo('Nerostarx')">See more work</x-button>
           </div>
         </div>
       </div>
@@ -241,6 +242,7 @@ section{
 
 .promo-logo{
   width: 50%;
+  margin-left: 10px;
 }
 
 .side-align{
@@ -260,7 +262,8 @@ section{
 
 .x-button{
   width: 70%;
-  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .light-grid-work{
@@ -324,10 +327,12 @@ section{
   .hr-spacer{
     height: 15px;
   }
+
   .text-container{
     text-align: center;
     width: 100%
   }
+
   .x-container{
     width: 95%;
     margin-top: 10px;
@@ -343,33 +348,33 @@ section{
     flex-direction: column;
     align-items: center;
   }
+
   .x-button{
-    width: 70%;
-    
+    min-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
   }
 
   #android{
-    padding: 0px;
+    padding-top: 15px;
     height: max-content;
-    background-image: url('../assets/backgrounds/background_section3.svg');
   }
 
   #uiux{
-    margin-top: 15px;
-    padding: 0px;
+    padding-top: 15px;
     padding-bottom: 25px;
     height: max-content;
-    background-image: url('../assets/backgrounds/background_section3_inverted.svg');
   }
 
   #branding{
-    padding: 0px;
+    padding-top: 15px;
     height: max-content;
-    background-image: url('../assets/backgrounds/background_section3.svg');
   }
 
   .main-image{
-    width: 70%;
+    width: 95%;
+    margin: 0px;
   }
 
   .full-width{
@@ -395,7 +400,7 @@ section{
   }
 
   .light-grid-work{
-    max-width: 80%;
+    max-width: 90%;
     display: grid;
     grid-template-columns: auto;
     text-align: center;
@@ -411,14 +416,14 @@ section{
   }
 
   .light-inner-work{
-    height: 50vh;
+    height: fit-content;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
   }
 
   .light-grid-contact{
-    min-width: 80%;
+    min-width: 90%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -434,14 +439,8 @@ section{
   }
 
   .contact-logo{
-    width:35%;
-    margin: 0px;
-  }
-
-  .contact-logo{
-    width: 25%;
-    margin: 0px;
-    margin-top: 4px;
+    width: 20%;
+    margin: 10px;
   }
 }
 
