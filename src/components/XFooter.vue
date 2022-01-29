@@ -102,6 +102,10 @@ export default {
 }
 
 @media only screen and (max-width: 720px){
+  .footer-logo{
+    width: 70%;
+  }
+
   .social-item{
     width: 35px;
     height: 35px;
