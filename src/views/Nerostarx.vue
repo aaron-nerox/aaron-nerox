@@ -1,6 +1,6 @@
 <template>
-  <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
   <div class="nerostarx-main-container">
+    <img src="../assets/icons/main-site.svg" alt="main site" class="main-site-button" @click="goIndex()">
     <kinesis-container class="nerostarx-header">
       <div class="header-content">
         <img src="../assets/images/nerostarx-logo.png" class="logo-main">
@@ -14,6 +14,9 @@
     </kinesis-container>
 
     <p class="section-title">Highlighted design projects</p>
+    <p class="nerostarx-title center">These projects are a mix of my best shots at both the brand identity design 
+      and product design. These projects highlight my key capabilities. If you want to know more just click on any highlight.</p>
+
     <section id="highlights">
       <div class="x-container-full-width">
         <div class="sub-brand-image highlight">
@@ -132,11 +135,17 @@ export default {
     },
     methods:{
       goIndex(){
-        this.$router.push({path: '/'})
+        this.$router.push({path: '/Home'});
       },
       navigate(link){
-        window.open(link,"_blank")
+        window.open(link,"_blank");
+      },
+      SmoothTop(time){
+          setTimeout(()=> {window.scrollTo(0,0)} , time);
       }
+    },
+    created(){
+      this.SmoothTop(700);
     }
 }
 </script>

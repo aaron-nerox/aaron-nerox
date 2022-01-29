@@ -99,8 +99,14 @@ export default {
     },
     methods:{
       goIndex(){
-        this.$router.push({path: '/'})
+        this.$router.push({path: '/Home'});
+      },
+      SmoothTop(time){
+          setTimeout(()=> {window.scrollTo(0,0)} , time);
       }
+    },
+    created(){
+      this.SmoothTop(700);
     }
 }
 </script>
