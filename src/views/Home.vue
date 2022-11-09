@@ -7,9 +7,10 @@
         <div class="x-container">
           <img src="../assets/images/main_image.jpg" alt="aaron" class="main-image">
           <div class="side-align full-width">
-            <p class="text text-container">I am Kechaoui Haroune (aka Aaron), I am a computer science student perusing 
-              a masters degree. I work as a mobile developer and brand identity designer with some UI/UX. I am on a 
-              mission to show people the world of design and development through the perspective of a student.</p>
+            <p class="text text-container">I am Haroune Kechaoui (call me Aaron), I am a fresh software engineer 
+              and an aspiring mobile engineer/architect. I work currently as an IT consultant. I worked before as 
+              a mobile developer using the power of kotlin to bring solutions to life. This page shows a glimps on 
+              who am i and what are my skills.</p>
             <x-button class="x-button" @onButtonClick="navigateTo('Home/skills')">Check my skills</x-button>
           </div>
         </div>
@@ -18,6 +19,7 @@
     <section id="work">
       <x-title mode="dark">What i do?</x-title>
       <div class="x-container">
+
         <div class="light-grid-work">
           <div class="light-inner-work">
             <img src="../assets/icons/android_kotlin.svg" alt="tech logo" class="tech-logo">
@@ -36,6 +38,7 @@
             <p class="text">I worked on brand identity design for more than 4 years. i always try to stand out with my ideas even though it is a bit hard, it is always worth the shot.</p>
           </div>
         </div>
+        
       </div>
     </section>
 
