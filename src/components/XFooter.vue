@@ -10,15 +10,15 @@
         <img src="../assets/icons/instagram.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.twitter.com')">
+      <!-- <div class="social-item" @click="navigate('https://www.twitter.com')">
         <img src="../assets/icons/twitter.svg" alt="social icon" class="social-icon">
-      </div>
+      </div> -->
 
       <div class="social-item" @click="navigate('https://github.com/TheX-ByAaron')">
         <img src="../assets/icons/github.svg" alt="social icon" class="social-icon">
       </div>
 
-      <div class="social-item" @click="navigate('https://www.linkedin.com/in/kechaoui-haroune-833137179/')">
+      <div class="social-item" @click="navigate('https://www.linkedin.com/in/haroune-kechaoui-833137179/')">
         <img src="../assets/icons/linkedin.svg" alt="social icon" class="social-icon">
       </div>
 
