@@ -15,7 +15,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'splash': "url('./src/assets/images/splash_background_mobile.svg')"
+        'splash': "url('./src/assets/images/splash_background_mobile.svg')",
+        'diamond': "url('./src/assets/icons/ic_diamond_red.svg')"
       }
     },
   },
