@@ -6,7 +6,7 @@ const splashScreen = ref(true)
 
 watchEffect(()=>{
     setTimeout(()=>{
-        splashScreen.value = false
+        // splashScreen.value = false
     }, 2800)
 })
 </script>

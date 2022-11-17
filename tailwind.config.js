@@ -12,7 +12,11 @@ module.exports = {
       'primary': '#F75656',
       'primary-light': '#FFF4F4'
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'splash': "url('./src/assets/images/splash_background_mobile.svg')"
+      }
+    },
   },
   plugins: [],
 }
