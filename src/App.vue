@@ -7,17 +7,6 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-@keyframes slidup {
-  from {
-    transform: translateY(-40);
-    opacity: 0.6;
-  }
-  to{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -44,5 +33,11 @@ import { RouterView } from 'vue-router'
 
 * {
   scroll-behavior: smooth;
+}
+
+/* Additional self made tailwind rules */
+.grid-overlap{
+    grid-row : 1;
+    grid-column: 1;
 }
 </style>

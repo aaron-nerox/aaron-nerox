@@ -63,10 +63,3 @@ const sectionHover = ref(false)
         </div>
     </section>
 </template>
-
-<style>
-.grid-overlap{
-    grid-row : 1;
-    grid-column: 1;
-}
-</style>

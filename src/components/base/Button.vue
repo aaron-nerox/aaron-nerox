@@ -3,10 +3,11 @@
 </script>
 
 <template>
-    <div class="grid grid-cols-1 grid-rows-1 h-[50px] w-fit relative cursor-pointer">
+    <div class="grid grid-cols-1 grid-rows-1 h-[50px] w-fit relative cursor-pointer 
+    hover:-translate-y-1 transition-all">
         <button class="row-start-1 row-end-2 col-start-1 col-end-2 
         bg-primary hover:bg-prim text-primary-light font-medium inline-flex 
-            flex-row items-center px-5 z-10 hover:bg-primary-dark transition-all">
+            flex-row items-center px-5 z-10">
         <img 
             src="../../assets/icons/ic_diamond.svg" 
             alt=""
