@@ -33,9 +33,11 @@ import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
                     The mobile software engineer that you will not find anywhere else.
                 </p>
                 
-                <Button class="text-xl">
-                    Find out why
-                </Button>
+                <a href="#about">
+                    <Button class="text-xl">
+                        Find out why
+                    </Button>
+                </a>
             </div>
         </kinesis-container>
         <img src="../../assets/images/self_image.jpg" 
