@@ -17,11 +17,13 @@ watchEffect(()=>{
 </script>
 
 <template>
-    <div class="w-full h-screen max-h-screen">
+    <Transition name="fade">
+        
         <SplashScreen v-if="splashScreen" />
-        <div v-else class="w-full h-screen max-h-screen overflow-y-auto grid snap-y snap-mandatory">
+        <div v-else class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
             <Header class="snap-center"/>
             <About class="snap-center"/>
         </div>
-    </div>
+        
+    </Transition>
 </template>

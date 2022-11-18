@@ -27,6 +27,16 @@ import { RouterView } from 'vue-router'
   background: #E82B2B;
 }
 
+/* Animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .anim-once{
   animation-iteration-count: 1 !important;
 }

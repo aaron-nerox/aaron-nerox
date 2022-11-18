@@ -2,7 +2,7 @@
 import LottieAnimation from './LottieAnimation.vue';
 import animation from '@/assets/animations/splash_animation.json'
 import foreground from '@/assets/images/splash_foreground.png'
-
+import { IntersectingCirclesSpinner } from 'epic-spinners'
 </script>
 
 <template>
@@ -19,17 +19,19 @@ import foreground from '@/assets/images/splash_foreground.png'
             src="../../assets/images/splash_background.png" 
             alt=""
             class="w-full h-screen rotate-90 md:rotate-0 hidden md:block absolute top-0 z-10">
-
-        <img 
-            src="../../assets/images/main_logo_mark.png" 
-            alt=""
-            class="w-[350px] h-[350px] m-auto z-30">
+            
+        <IntersectingCirclesSpinner
+            :animation-duration="1200"
+            :size="120"
+            color="#F75656"
+            class=" m-auto z-30"
+        />
 
         <kinesis-element 
             tag="img"
             :src="foreground"
-            :strength="5"
-            type="depth"
+            :strength="7"
+            type="translate"
             class="w-full h-screen hidden md:block absolute top-0 z-10" />
         
     </kinesis-container>
