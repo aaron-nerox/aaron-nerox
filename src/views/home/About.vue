@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
+import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
 
 
 const sectionHover = ref(false)
@@ -14,7 +14,7 @@ const sectionHover = ref(false)
 
         <div :class="['h-screen bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
-            <img src="../../assets/images/about_banner.svg" 
+            <img src="@/assets/images/about_banner.svg" 
                 alt=""
                 class="w-full h-full object-contain">
         </div>
@@ -55,12 +55,12 @@ const sectionHover = ref(false)
 
                 <div class="w-[50%] grid">
                     <div class="w-[70%] m-auto grid">
-                        <img src="../../assets/images/logo_bg.png" 
+                        <img src="@/assets/images/logo_bg.png" 
                             alt=""
                             class="w-full grid-overlap">
                         <div class="w-full inline-flex flex-col items-center grid-overlap">
                             <AnimatedLogo class="w-[80%]"/>
-                            <img src="../../assets/images/main_logo_type.svg" 
+                            <img src="@/assets/images/main_logo_type.svg" 
                                 alt=""
                                 class="w-[60%]">
                         </div>

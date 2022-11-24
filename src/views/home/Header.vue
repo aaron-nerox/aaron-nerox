@@ -36,7 +36,7 @@ import mainLogoType from '@/assets/images/main_logo_type.svg'
                     class="w-[80%] grid-overlap m-auto z-10" />
 
                 <img src="@/assets/images/self_image.jpg" alt="self image"
-                    class="h-full w-full object-cover grid-overlap z-0">
+                    class="h-screen w-full object-cover grid-overlap z-0">
             </div>
 
         </kinesis-container>

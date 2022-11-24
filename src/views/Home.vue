@@ -5,6 +5,7 @@ import IconButton from '@/components/base/IconButton.vue';
 import Skill from '@/components/base/Skill.vue';
 import Header from './home/Header.vue'
 import About from './home/About.vue';
+import Skills from './home/Skills.vue';
 
 
 </script>
@@ -14,6 +15,7 @@ import About from './home/About.vue';
         <div class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
             <Header class="snap-center"/>
             <About class="snap-center"/>
+            <Skills class="snap-center" />
         </div>
     </Transition>
 </template>
