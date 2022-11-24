@@ -41,10 +41,6 @@ import { RouterView } from 'vue-router'
   opacity: 0;
 }
 
-.anim-once{
-  animation-iteration-count: 1 !important;
-}
-
 * {
   scroll-behavior: smooth;
 }
