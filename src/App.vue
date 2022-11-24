@@ -3,7 +3,11 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <Transition name="fade">
+      <component :is="Component" />
+    </Transition>
+  </RouterView>
 </template>
 
 <style>
