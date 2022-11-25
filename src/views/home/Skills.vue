@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Skill from '@/components/base/Skill.vue'
 
-const sectionHover = ref(false)
+const sectionHover = ref(true)
 const primarySkills = ref(['Software engineering', 
 'Agile methods', 
 'Project management', 'Android',
@@ -22,30 +22,27 @@ const otherSkills = ref([
 
 <template>
     <section id="skills" class="w-full h-screen flex flex-row items-center bg-dark"
-        @mouseenter="sectionHover = true"
-        @mouseleave="sectionHover = false">
+        >
 
         <div :class="['h-screen transition-all flex items-center',
             'justify-center', sectionHover? 'w-[85%]' : 'w-full']">
 
             <div class="h-fit w-full ml-[20%]">
-                <p class="text-primary font-bold text-4xl mb-10">MY TECH STACK</p>
-                <div class="max-w-[95%] h-fit overflow-x-auto grid grid-rows-3 px-10">
-                    <div class="p-2 inline-flex flex-row items-center gap-x-5">
-                        <Skill v-for="skill in primarySkills">
-                            {{skill}}
-                        </Skill>
-                    </div>
-                    <div class="p-2 inline-flex flex-row items-center gap-x-5">
-                        <Skill v-for="skill in secondarySkills">
-                            {{skill}}
-                        </Skill>
-                    </div>
-                    <div class="p-2 inline-flex flex-row items-center gap-x-5">
-                        <Skill v-for="skill in otherSkills">
-                            {{skill}}
-                        </Skill>
-                    </div>
+                <p class="text-primary font-bold text-4xl mb-10">My tech stack</p>
+                <div class="w-[95%] h-fit px-10">
+                    
+                    <Skill v-for="skill in primarySkills" class="inline m-2">
+                        {{skill}}
+                    </Skill>
+                
+                    <Skill v-for="skill in secondarySkills" class="inline m-2">
+                        {{skill}}
+                    </Skill>
+                
+                    <Skill v-for="skill in otherSkills" class="inline m-2">
+                        {{skill}}
+                    </Skill>
+                    
                 </div>
             </div>
         </div>

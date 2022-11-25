@@ -3,14 +3,13 @@ import { ref } from 'vue';
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
 
 
-const sectionHover = ref(false)
+const sectionHover = ref(true)
 </script>
 
 
 <template>
     <section id="about" class="w-full h-screen flex flex-row items-center bg-dark"
-        @mouseenter="sectionHover = true"
-        @mouseleave="sectionHover = false">
+        >
 
         <div :class="['h-screen bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
@@ -24,7 +23,7 @@ const sectionHover = ref(false)
 
             <div class="inline-flex flex-row items-center justify-between px-10">
                 <div class="h-full w-[50%] text-center cursor-pointer">
-                    <p class="text-primary font-bold text-4xl mb-10">WHO AM I?</p>
+                    <p class="text-primary font-bold text-4xl mb-10">Who am i?</p>
 
                     <p class="text-primary-light hover:text-primary font-semibold text-2xl 
                         transition-all my-7">

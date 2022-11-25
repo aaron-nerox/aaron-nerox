@@ -6,16 +6,18 @@ import Skill from '@/components/base/Skill.vue';
 import Header from './home/Header.vue'
 import About from './home/About.vue';
 import Skills from './home/Skills.vue';
+import Projects from './home/Projects.vue';
 
 
 </script>
 
 <template>
     <Transition name="fade">
-        <div class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
-            <Header class="snap-center"/>
-            <About class="snap-center"/>
-            <Skills class="snap-center" />
+        <div class="w-full h-screen max-h-screen grid md:overflow-y-auto">
+            <Header />
+            <About />
+            <Skills />
+            <Projects />
         </div>
     </Transition>
 </template>
