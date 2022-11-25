@@ -1,16 +1,17 @@
 <script setup>
-import { defineAsyncComponent, ref, watchEffect } from 'vue';
+import { defineAsyncComponent, ref, shallowRef, watchEffect } from 'vue';
 
 const props = defineProps(['src'])
-const icon = ref()
+const icon = shallowRef()
 
 watchEffect(async ()=>{
-    icon.value =  (await import(`../../assets/icons/${props.src}.svg`)).default
+    // (await import(`../../assets/icons/${props.src}.vue`)).default
+    icon.value =  defineAsyncComponent(()=> import(/* @vite-ignore */`../../assets/icons/${props.src}.vue`))
 })
 </script>
 
 <template>
-    <div class="w-[60px] h-[60px] grid bg-diamond bg-contain bg-no-repeat">
-        <img :src="icon" class="w-7 h-7 m-auto"/>
+    <div class="w-[60px] h-[60px] grid bg-diamond bg-contain bg-no-repeat cursor-pointer">
+        <icon class="w-6 h-6 m-auto fill-white"/>
     </div>
 </template>
