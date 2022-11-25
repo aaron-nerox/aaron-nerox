@@ -39,6 +39,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/neowalls/img6.png', 
                     '../../assets/screenshots/neowalls/img7.png'
                 ]"
+                link="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
                 class="snap-center"/>
 
             <FeaturedProject 
@@ -58,6 +59,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/airsort/img4.png',
                     '../../assets/screenshots/airsort/img5.png',
                 ]"
+                link="https://play.google.com/store/apps/details?id=com.nero.starx.airsort"
                 class="snap-center"/>
 
             <FeaturedProject 
@@ -76,6 +78,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/milky/img4.png',
                     '../../assets/screenshots/milky/img5.png',
                 ]"
+                link="https://github.com/TheX-ByAaron/milky-store"
                 class="snap-center"/>
 
             <FeaturedProject 
@@ -93,6 +96,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/artplace/img3.png',
                     '../../assets/screenshots/artplace/img4.png',
                 ]"
+                link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
                 class="snap-center"/>
 
             <Projects class="snap-center"/>
