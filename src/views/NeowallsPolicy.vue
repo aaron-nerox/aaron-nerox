@@ -1,11 +1,15 @@
 <template>
-    <div class="p-20 w-4/5 mx-auto">
+    <div class="w-full p-5 md:p-20 md:w-4/5 mx-auto">
+
         <div class="w-full h-[200px] bg-purple flex flex-col 
             items-center justify-center rounded-xl">
+
             <img src="../assets/icons/neowalls_logo.svg" 
                 alt="neowalls" 
-                class="h-[40%]">
-            <p class="font-bold text-3xl mt-4 text-white">Neowalls community guidelines</p>
+                class="h-[30%] md:h-[40%]">
+
+            <p class="font-bold text-xl md:text-3xl mt-4
+            text-center text-white">Neowalls community guidelines</p>
         </div>
 
         <div>
