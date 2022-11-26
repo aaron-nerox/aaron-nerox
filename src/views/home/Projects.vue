@@ -77,12 +77,12 @@ const projects = ref([
         </div>
 
         <div :class="['h-screen transition-all flex items-center bg-dark',
-            'bg-skills bg-no-repeat bg-cover justify-center', sectionHover? 'w-[85%]' : 'w-full']">
+            'bg-skills bg-no-repeat bg-cover justify-center select-none', sectionHover? 'w-[85%]' : 'w-full']">
 
             <div class="w-[95%] h-fit cursor-pointer ml-[5%]">
                 <p class="text-primary font-bold text-4xl mb-10">Projects i had fun building</p>
 
-                <div class="w-fit h-fit overflow-x-auto grid grid-cols-4 p-3 gap-8">
+                <div class="w-fit max-w-full overflow-x-auto grid-cols">
                    
                         <Project 
                             v-for="project in projects"
@@ -97,3 +97,32 @@ const projects = ref([
         </div>
     </section>
 </template>
+
+<style>
+.grid-cols{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 25px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0F0202;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F75656;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E82B2B;
+}
+</style>

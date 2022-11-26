@@ -11,9 +11,9 @@ const redirect = (link)=>{
 </script>
 
 <template>
-    <div class="grid grid-cols-1 grid-rows-1 h-[220px] w-[220px] relative cursor-pointer 
-    hover:-translate-y-1 transition-all">
-        <div class="row-start-1 row-end-2 col-start-1 col-end-2 
+    <div class="h-[220px] min-w-[220px] w-[220px] grid grid-cols-1 grid-rows-1 relative cursor-pointer 
+    hover:-translate-y-1 transition-all shrink-0">
+        <div class="w-full h-full row-start-1 row-end-2 col-start-1 col-end-2 
         outline outline-primary bg-black outline-2 hover:bg-prim text-primary-light 
         font-medium p-2 z-10">
         
