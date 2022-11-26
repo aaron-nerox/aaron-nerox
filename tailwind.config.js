@@ -23,6 +23,7 @@ module.exports = {
         'about': "url('./src/assets/images/about_background.png')",
         'skills': "url('./src/assets/images/skills_background.png')",
         'project': "url('./src/assets/images/project_background.png')",
+        'not-found': "url('./src/assets/images/not_found_bg.svg')"
       }
     },
   },

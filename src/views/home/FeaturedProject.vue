@@ -61,7 +61,7 @@ watchEffect(async ()=>{
                     <p class="font-semibold text-xl" v-for="feature in props.features">
                         {{feature}}
                     </p>
-                    <div class="max-w-full w-full inline-flex flex-row items-center justify-center flex-wrap">
+                    <div class="max-w-full w-full inline-flex flex-row items-center justify-center md:justify-start flex-wrap">
                         <div class="min-w-fit w-fit inline-flex flex-row items-center mx-2 md:mb-5 mb-3"
                             v-for="tech in props.stack">
                             <img src="../../assets/icons/ic_diamond_red.svg" 
