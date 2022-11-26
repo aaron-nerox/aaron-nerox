@@ -15,10 +15,10 @@ import FeaturedProject from './home/FeaturedProject.vue';
 
 <template>
     <Transition name="fade">
-        <div class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
-            <Header class="snap-center"/>
-            <About class="snap-center"/>
-            <Skills class="snap-center"/>
+        <div class="w-full h-screen max-h-screen grid md:overflow-y-auto md:snap-y md:snap-mandatory">
+            <Header class="md:snap-center"/>
+            <About class="md:snap-center"/>
+            <Skills class="md:snap-center"/>
 
             <!-- <FeaturedProject 
                 direction="start" 
@@ -97,9 +97,9 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/artplace/img4.png',
                 ]"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
-                class="snap-center"/>
+                class="snap-center"/> -->
 
-            <Projects class="snap-center"/> -->
+            <Projects class="snap-center"/>
             <Footer class="snap-center"/>
         </div>
     </Transition>

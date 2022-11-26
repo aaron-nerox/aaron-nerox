@@ -24,10 +24,11 @@ const skills = ref(['Software engineering', 'Json', 'Xml',
         <div :class="['md:h-screen transition-all flex items-center',
             'justify-center', sectionHover? 'w-full md:w-[85%]' : 'w-full']">
 
-            <div class="h-screen md:h-fit w-full ml-0 md:ml-[20%]">
+            <div class="md:h-fit w-full ml-0 md:ml-[20%]">
                 <p class="text-primary-light md:text-primary font-bold text-3xl 
                     md:text-4xl my-5 md:my-0 md:mb-10 text-center md:text-start">My tech stack</p>
-                <div class="w-full md:w-[95%] md:h-fit md:px-10 text-center md:text-start">
+                <div class="w-full md:w-[95%] md:h-fit md:px-10 
+                    text-center md:text-start my-10 md:my-0">
                     
                     <Skill v-for="skill in skills" class="inline m-2">
                         {{skill}}

@@ -66,23 +66,27 @@ const projects = ref([
 </script>
 
 <template>
-    <section id="about" class="w-full h-screen flex flex-row items-center"
+    <section id="about" class="w-full md:h-screen flex flex-row items-center"
         @mouseenter="sectionHover = true">
 
-        <div :class="['h-screen bg-primary transition-all select-none'
+        <div :class="['h-screen hidden md:block bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
             <img src="@/assets/images/projects_banner.png" 
                 alt=""
                 class="w-full h-full object-contain">
         </div>
 
-        <div :class="['h-screen transition-all flex items-center bg-dark',
-            'bg-skills bg-no-repeat bg-cover justify-center select-none', sectionHover? 'w-[85%]' : 'w-full']">
+        <div :class="['md:h-screen transition-all flex items-center bg-dark',
+            'md:bg-skills bg-no-repeat bg-cover justify-center select-none'
+            , sectionHover? 'w-full md:w-[85%]' : 'w-full']">
 
-            <div class="w-[95%] h-fit cursor-pointer ml-[5%]">
-                <p class="text-primary font-bold text-4xl mb-10">Projects i had fun building</p>
+            <div class="w-full md:w-[95%] md:h-fit cursor-pointer ml-0 md:ml-[5%]">
+                <p class="w-[90%] mx-auto md:mx-0 md:w-fit text-primary font-bold text-3xl md:text-4xl 
+                    mb-4 md:mb-10 text-center md:text-start">
+                    Projects i had fun building
+                </p>
 
-                <div class="w-fit max-w-full overflow-x-auto grid-cols">
+                <div class="w-fit max-w-full overflow-x-auto hidden md:grid grid-cols">
                    
                         <Project 
                             v-for="project in projects"
@@ -91,6 +95,16 @@ const projects = ref([
                             :git="project.github"
                             :link="project.link"
                             :stack="project.stack" />
+                </div>
+
+                <div class="w-fit mx-auto grid md:hidden grid-cols-1 gap-10 my-10">
+                    <Project 
+                        v-for="project in projects"
+                        :title="project.name"
+                        :description="project.description"
+                        :git="project.github"
+                        :link="project.link"
+                        :stack="project.stack" />
                 </div>
             </div>
 
@@ -101,7 +115,6 @@ const projects = ref([
 <style>
 .grid-cols{
     padding: 10px;
-    display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 25px;
 }

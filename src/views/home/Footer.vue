@@ -12,7 +12,7 @@ const redirect = (link)=>{
 </script>
 
 <template>
-    <footer class="w-full h-screen bg-black flex flex-col items-center 
+    <footer class="w-full md:h-screen bg-black flex flex-col items-center 
             md:justify-between text-center p-3 md:p-10">
 
         <div>
@@ -81,7 +81,8 @@ const redirect = (link)=>{
                         @click="redirect('https://www.linkedin.com/in/haroune-kechaoui-833137179')"/>
                 </div>
 
-                <div class="w-full hidden md:inline-flex flex-row items-start gap-x-20 text-white">
+                <div class="w-full inline-flex flex-col md:flex-row items-start 
+                    gap-y-5 md:gap-y-0 md:gap-x-20 text-white">
                     <div class="inline-flex flex-col items-start">
                         <p class="font-semibold text-md">Emerald design</p>
                         
@@ -127,7 +128,7 @@ const redirect = (link)=>{
 
         <div class="w-full flex flex-col items-center">
             <div class="w-[90%] h-[2px] bg-primary my-4"></div>
-            <p class="font-medium text-md text-white my-2">Forged by aaron from love 💜 and monochrome ☯ </p>
+            <p class="w-[90%] md:w-fit font-medium text-md text-white my-2">Forged by aaron from love 💜 and monochrome ☯ </p>
             <a href="https://v1.aaronx.studio" 
                 class="font-normal text-sm text-white hover:text-primary my-2">
                 Explore the older version.
