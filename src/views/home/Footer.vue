@@ -4,6 +4,10 @@ import Button from '../../components/base/Button.vue';
 import IconButton from '../../components/base/IconButton.vue';
 import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
 import RedirectLink from '../../components/base/RedirectLink.vue';
+
+const redirect = (link)=>{
+    window.open(link, "_blank")
+}
 </script>
 
 <template>
@@ -41,25 +45,31 @@ import RedirectLink from '../../components/base/RedirectLink.vue';
                 </div>
                 <div class="w-full inline-flex flex-row items-center justify-between">
                     <CopyInput class="w-full" text="kechaoui.haroune@gmail.com" />
-                    <Button class="min-w-fit ml-6">
+                    <Button class="min-w-fit ml-6"
+                        @click="redirect('mailto:kechaoui.haroune@gmail.com')">
                         Send me an email
                     </Button>
                 </div>
                 <div class="inline-flex flex-row items-center gap-x-7 my-10">
                     <IconButton 
-                        src="github"/>
+                        src="github"
+                        @click="redirect('https://github.com/TheX-ByAaron')"/>
 
                     <IconButton 
-                        src="behance"/>
+                        src="behance"
+                        @click="redirect('https://www.behance.net/aaron_nerox')"/>
 
                     <IconButton 
-                        src="twitter"/>
+                        src="twitter"
+                        @click="redirect('https://twitter.com/aaron_nerox')"/>
 
                     <IconButton 
-                        src="instagram"/>
+                        src="instagram"
+                        @click="redirect('https://www.instagram.com/aaron.nerox')"/>
 
                     <IconButton 
-                        src="Linkedin"/>
+                        src="Linkedin"
+                        @click="redirect('https://www.linkedin.com/in/haroune-kechaoui-833137179')"/>
                 </div>
 
                 <div class="w-full inline-flex flex-row items-start gap-x-20 text-white">
@@ -68,11 +78,11 @@ import RedirectLink from '../../components/base/RedirectLink.vue';
                         
                         <RedirectLink 
                             name="Npm registry" 
-                            href="https://google.com"/>
+                            href="https://www.npmjs.com/package/emerald-react"/>
 
                         <RedirectLink 
                             name="Repository" 
-                            href="https://google.com"/>
+                            href="https://github.com/TheX-ByAaron/Emerald-react-lib"/>
                     </div>
 
                     <div class="inline-flex flex-col items-start">
@@ -84,7 +94,7 @@ import RedirectLink from '../../components/base/RedirectLink.vue';
 
                         <RedirectLink 
                             name="Playstore link" 
-                            href="https://google.com"/>
+                            href="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"/>
                     </div>
 
                     <div class="inline-flex flex-col items-start">
@@ -92,7 +102,7 @@ import RedirectLink from '../../components/base/RedirectLink.vue';
                         
                         <RedirectLink 
                             name="Playstore link" 
-                            href="https://google.com"/>
+                            href="https://play.google.com/store/apps/details?id=com.nero.starx.airsort"/>
 
                     </div>
                 </div>

@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/home',
       name: 'Home',
       component: () => import('../views/Home.vue')
+    },
+    {
+      path: '/product/neowalls/guidelines',
+      name: 'neowalls guidelines',
+      component: () => import('../views/NeowallsPolicy.vue')
     }
     // {
     //   path: '/about',
