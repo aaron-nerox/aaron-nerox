@@ -1,5 +1,14 @@
 <script setup>
+import { onMounted } from 'vue';
 import { RouterView } from 'vue-router'
+
+onMounted(()=>{
+  console.log(`
+  ~(˘▾˘~) ~(˘▾˘~) \n \n
+  Heey we have a curious cat here 🐱, hi there, how are you? 
+  If you came to see the code, then welcome, i hope you enjoy your stay here in the dev tools. But don't just go like that, go give me a follow and some stars on github https://github.com/TheX-ByAaron 
+  See ya around my friend ☪ .`)
+})
 </script>
 
 <template>
