@@ -20,7 +20,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
             <About class="md:snap-center"/>
             <Skills class="md:snap-center"/>
 
-            <!-- <FeaturedProject 
+            <FeaturedProject 
                 direction="start" 
                 banner="neowalls_logo"
                 mode="download"
@@ -97,7 +97,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                     '../../assets/screenshots/artplace/img4.png',
                 ]"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
-                class="snap-center"/> -->
+                class="snap-center"/>
 
             <Projects class="snap-center"/>
             <Footer class="snap-center"/>

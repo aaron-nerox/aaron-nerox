@@ -36,35 +36,38 @@ watchEffect(async ()=>{
 </script>
 
 <template>
-    <section id="about" class="w-full h-screen flex flex-row items-center"
+    <section id="about" :class="['w-full md:h-screen flex  items-center'
+    ,props.direction === 'start'? 'flex-row' : 'flex-row-reverse']"
         @mouseenter="sectionHover = true">
 
-        <div v-if="props.direction == 'start'" 
-        :class="['h-screen bg-primary transition-all select-none'
+        <div :class="['h-screen hidden md:block bg-primary transition-all select-none'
             , sectionHover ? 'w-[15%]' : 'w-0 opacity-0']">
             <img src="@/assets/images/projects_banner.png" alt="" class="w-full h-full object-contain">
         </div>
 
-        <div :class="['h-screen transition-all flex flex-col items-center bg-dark'
-            ,'bg-project bg-no-repeat bg-cover justify-center'
-            , sectionHover ? 'w-[85%]' : 'w-full']">
+        <div :class="['md:h-screen transition-all flex flex-col items-center bg-dark'
+            ,'md:bg-project bg-no-repeat bg-cover justify-center'
+            , sectionHover ? 'w-full md:w-[85%]' : 'w-full']">
 
             <img :src="banner" 
                 alt="project logo" 
-                class="w-[25%] mb-10">
+                class="w-[70%] md:w-[25%] md:mb-10 mb-5">
 
-            <div class="w-full h-[70%] flex flex-row items-center justify-between text-white px-20">
-                <div class="w-[60%] flex flex-col items-start gap-y-7">
+            <div class="w-full h-[70%] flex flex-col-reverse md:flex-row items-center 
+                    md:justify-between text-white px-5 md:px-20 mb-20 md:my-0">
+
+                <div class="w-[95%] md:w-[60%] flex flex-col items-center md:items-start 
+                    gap-y-3 md:gap-y-7 text-center md:text-start">
                     <p class="font-semibold text-xl" v-for="feature in props.features">
                         {{feature}}
                     </p>
-                    <div class="max-w-full w-full inline-flex flex-row items-center flex-wrap">
-                        <div class="min-w-fit w-fit inline-flex flex-row items-center mx-2 mb-5"
+                    <div class="max-w-full w-full inline-flex flex-row items-center justify-center flex-wrap">
+                        <div class="min-w-fit w-fit inline-flex flex-row items-center mx-2 md:mb-5 mb-3"
                             v-for="tech in props.stack">
                             <img src="../../assets/icons/ic_diamond_red.svg" 
                                 alt="tech stack"
                                 class="h-3 w-3 mr-2">
-                            <p class="inline text-primary text-lg font-medium">{{tech}}</p>
+                            <p class="text-primary text-lg font-medium">{{tech}}</p>
                         </div>
                     </div>
                     <Button @click="redirect">
@@ -73,15 +76,10 @@ watchEffect(async ()=>{
                 </div>
                 
                 <img :src="context.images[currentImage]" 
-                    class="w-[25%]"/>
+                    class="w-[70%] md:w-[25%] mb-6 md:mb-0"/>
                     
             </div>
         </div>
 
-        <div v-if="props.direction == 'end'"
-        :class="['h-screen bg-primary transition-all select-none'
-            , sectionHover ? 'w-[15%]' : 'w-0 opacity-0']">
-            <img src="@/assets/images/projects_banner.png" alt="" class="w-full h-full object-contain">
-        </div>
     </section>
 </template>
