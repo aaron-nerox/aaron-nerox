@@ -17,7 +17,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
     <Transition name="fade">
         <div class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
             <Header class="snap-center"/>
-            <!-- <About class="snap-center"/> -->
+            <About class="snap-center"/>
             <!-- <Skills class="snap-center"/> -->
 
             <!-- <FeaturedProject 
