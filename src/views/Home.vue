@@ -2,24 +2,44 @@
 import { ref, watchEffect } from 'vue';
 import Button from '@/components/base/Button.vue';
 import IconButton from '@/components/base/IconButton.vue';
-import Skill from '@/components/base/Skill.vue';
 import Header from './home/Header.vue'
 import About from './home/About.vue';
 import Skills from './home/Skills.vue';
 import Projects from './home/Projects.vue';
 import Footer from './home/Footer.vue';
 import FeaturedProject from './home/FeaturedProject.vue';
+import Menu from '../components/extended/Menu.vue';
 
+const isMenuOpen = ref(false);
 
+const updateMenu = ()=>{
+    isMenuOpen.value = !isMenuOpen.value
+}
 </script>
 
 <template>
     <Transition name="fade">
-        <div class="w-full h-screen max-h-screen grid md:overflow-y-auto md:snap-y md:snap-mandatory">
-            <Header class="md:snap-center"/>
+        <div class="w-full h-screen max-h-screen grid 
+            md:overflow-y-auto md:snap-y md:snap-mandatory">
+            <Teleport to="body">
+                <Menu 
+                    :open="isMenuOpen"
+                    @dissmiss="updateMenu"/>
+            </Teleport>
+            <IconButton 
+                v-if="!isMenuOpen"
+                src="menu" 
+                class="!bg-diamond-light fixed top-5 right-5 z-40"
+                    @click="updateMenu"/>
+            <IconButton 
+                v-else
+                src="close" 
+                class="!bg-diamond-light fixed top-5 right-5 z-40"
+                    @click="updateMenu"/>
+
+            <Header class="md:snap-center select-none"/>
             <About class="md:snap-center"/>
             <Skills class="md:snap-center"/>
-
             <FeaturedProject 
                 direction="start" 
                 banner="neowalls_logo"
@@ -41,7 +61,6 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 ]"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
                 class="snap-center"/>
-
             <FeaturedProject 
                 direction="end" 
                 banner="airsort_logo"
@@ -61,7 +80,6 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 ]"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.airsort"
                 class="snap-center"/>
-
             <FeaturedProject 
                 direction="start" 
                 banner="milky_store_logo"
@@ -80,7 +98,6 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 ]"
                 link="https://github.com/TheX-ByAaron/milky-store"
                 class="snap-center"/>
-
             <FeaturedProject 
                 direction="end" 
                 banner="artplace_logo"
@@ -98,7 +115,6 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 ]"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
                 class="snap-center"/>
-
             <Projects class="snap-center"/>
             <Footer class="snap-center"/>
         </div>

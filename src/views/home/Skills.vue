@@ -12,7 +12,8 @@ const skills = ref(['Software engineering', 'Json', 'Xml',
 'Kotlin Coroutines', 'Kotlin Ktor',
 'Node.js', 'Vue.js', 'React.js', 'Postgres',
 'MongoDb',  'Firebase',
-'Javascript', 'Typescript','DevOps' ])
+'Javascript', 'Typescript','DevOps',
+'web design', 'UI/UX', 'branding' ])
 
 </script>
 
