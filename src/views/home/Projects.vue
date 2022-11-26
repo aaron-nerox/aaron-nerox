@@ -77,7 +77,7 @@ const projects = ref([
         </div>
 
         <div :class="['h-screen transition-all flex items-center bg-dark',
-            'justify-center', sectionHover? 'w-[85%]' : 'w-full']">
+            'bg-skills bg-no-repeat bg-cover justify-center', sectionHover? 'w-[85%]' : 'w-full']">
 
             <div class="w-[90%] h-fit cursor-pointer ml-[10%]">
                 <p class="text-primary font-bold text-4xl mb-10">Projects i had fun building</p>

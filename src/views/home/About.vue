@@ -8,7 +8,8 @@ const sectionHover = ref(false)
 
 
 <template>
-    <section id="about" class="w-full h-screen flex flex-row items-center bg-dark"
+    <section id="about" class="w-full h-screen flex flex-row items-center 
+        bg-dark bg-about bg-no-repeat bg-cover"
         @mouseenter="sectionHover = true">
 
         <div :class="['h-screen bg-primary transition-all select-none'

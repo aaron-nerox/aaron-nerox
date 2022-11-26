@@ -20,7 +20,9 @@ module.exports = {
         'splash': "url('./src/assets/images/splash_background_mobile.svg')",
         'hero': "url('./src/assets/images/header_background.png')",
         'diamond': "url('./src/assets/icons/ic_diamond_red.svg')",
-        'about-banner': "url('./src/assets/images/about_banner.svg')",
+        'about': "url('./src/assets/images/about_background.png')",
+        'skills': "url('./src/assets/images/skills_background.png')",
+        'project': "url('./src/assets/images/project_background.png')",
       }
     },
   },

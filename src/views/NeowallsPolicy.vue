@@ -5,7 +5,7 @@
             <img src="../assets/icons/neowalls_logo.svg" 
                 alt="neowalls" 
                 class="h-[40%]">
-            <p class="font-bold text-3xl mt-4 text-white">Neowalls community guidelines (January 2022)</p>
+            <p class="font-bold text-3xl mt-4 text-white">Neowalls community guidelines</p>
         </div>
 
         <div>

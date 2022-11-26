@@ -21,7 +21,8 @@ const otherSkills = ref([
 </script>
 
 <template>
-    <section id="skills" class="w-full h-screen flex flex-row items-center bg-dark"
+    <section id="skills" class="w-full h-screen flex flex-row items-center 
+        bg-skills bg-no-repeat bg-cover bg-dark "
         @mouseenter="sectionHover = true">
 
         <div :class="['h-screen transition-all flex items-center',

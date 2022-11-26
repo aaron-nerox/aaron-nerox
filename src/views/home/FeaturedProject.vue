@@ -46,7 +46,7 @@ watchEffect(async ()=>{
         </div>
 
         <div :class="['h-screen transition-all flex flex-col items-center bg-dark',
-        'justify-center', sectionHover ? 'w-[85%]' : 'w-full']">
+        'bg-project bg-no-repeat bg-cover justify-center', sectionHover ? 'w-[85%]' : 'w-full']">
 
             <img :src="banner" 
                 alt="project logo" 
