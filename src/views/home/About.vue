@@ -22,8 +22,8 @@ const sectionHover = ref(false)
         <div :class="['h-screen transition-all grid items-center',
             'justify-center', sectionHover? 'w-[85%]' : 'w-full']">
 
-            <div class="inline-flex flex-row items-center justify-between px-10">
-                <div class="h-full w-[50%] text-center cursor-pointer">
+            <div class="h-[90%] inline-flex flex-row items-center justify-between px-10">
+                <div class="h-fit w-[58%] text-center cursor-pointer">
                     <p class="text-primary font-bold text-4xl mb-10">Who am i?</p>
 
                     <p class="text-primary-light hover:text-primary font-semibold text-2xl 
@@ -53,8 +53,8 @@ const sectionHover = ref(false)
 
                 </div>
 
-                <div class="w-[50%] grid">
-                    <div class="w-[70%] m-auto grid">
+                <div class="w-[40%] h-[80%] grid">
+                    <div class="w-[90%] m-auto grid">
                         <img src="@/assets/images/logo_bg.png" 
                             alt=""
                             class="w-full grid-overlap">

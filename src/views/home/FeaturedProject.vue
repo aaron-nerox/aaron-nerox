@@ -45,8 +45,9 @@ watchEffect(async ()=>{
             <img src="@/assets/images/projects_banner.png" alt="" class="w-full h-full object-contain">
         </div>
 
-        <div :class="['h-screen transition-all flex flex-col items-center bg-dark',
-        'bg-project bg-no-repeat bg-cover justify-center', sectionHover ? 'w-[85%]' : 'w-full']">
+        <div :class="['h-screen transition-all flex flex-col items-center bg-dark'
+            ,'bg-project bg-no-repeat bg-cover justify-center'
+            , sectionHover ? 'w-[85%]' : 'w-full']">
 
             <img :src="banner" 
                 alt="project logo" 
@@ -58,7 +59,7 @@ watchEffect(async ()=>{
                         {{feature}}
                     </p>
                     <div class="inline-flex flex-row items-center">
-                        <div class="inline-flex flex-row items-center mx-2 mb-5"
+                        <div class="min-w-fit inline-flex flex-row items-center mx-2 mb-5"
                             v-for="tech in props.stack">
                             <img src="../../assets/icons/ic_diamond_red.svg" 
                                 alt="tech stack"

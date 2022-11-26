@@ -14,11 +14,11 @@ import mainLogoType from '@/assets/images/main_logo_type.svg'
             <div class="w-[65%] h-screen grid items-center justify-center  px-[10%]">
                 <div>
                     <div class="w-4/5 mb-7">
-                        <p class="font-bold text-5xl text-primary-light mb-5 leading-relaxed">
+                        <p class="font-bold text-4xl text-primary-light mb-5 leading-relaxed">
                             The mobile software engineer that you will not find anywhere else.
                         </p>
 
-                        <p class="font-normal text-2xl text-primary-light">
+                        <p class="font-normal text-xl text-primary-light">
                             I help individuals and companies build amazing apps for both web and android.
                         </p>
                     </div>

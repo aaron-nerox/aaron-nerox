@@ -79,10 +79,10 @@ const projects = ref([
         <div :class="['h-screen transition-all flex items-center bg-dark',
             'bg-skills bg-no-repeat bg-cover justify-center', sectionHover? 'w-[85%]' : 'w-full']">
 
-            <div class="w-[90%] h-fit cursor-pointer ml-[10%]">
+            <div class="w-[95%] h-fit cursor-pointer ml-[5%]">
                 <p class="text-primary font-bold text-4xl mb-10">Projects i had fun building</p>
 
-                <div class="w-fit h-fit overflow-x-auto grid grid-cols-5 p-3 gap-8">
+                <div class="w-fit h-fit overflow-x-auto grid grid-cols-4 p-3 gap-8">
                    
                         <Project 
                             v-for="project in projects"
