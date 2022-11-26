@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
-import Project from '../../components/base/Project.vue';
+import Project from '@/components/base/Project.vue';
 
 const sectionHover = ref(false)
 
@@ -72,7 +71,7 @@ const projects = ref([
         <div :class="['h-screen hidden md:block bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
             <img src="@/assets/images/projects_banner.png" 
-                alt=""
+                alt="portfolio projects banner"
                 class="w-full h-full object-contain">
         </div>
 

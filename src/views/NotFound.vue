@@ -1,5 +1,5 @@
 <script setup>
-import Button from '../components/base/Button.vue';
+import Button from '@/components/base/Button.vue';
 </script>
 
 <template>
@@ -8,8 +8,8 @@ import Button from '../components/base/Button.vue';
         bg-center text-center ">
 
         <img 
-            src="../assets/images/chromanion.svg" 
-            alt="chromanion"
+            src="@/assets/images/chromanion.svg" 
+            alt="portfolio not found illustration"
             class="w-[70%] md:w-[25%] mb-5">
 
         <p class="text-3xl font-bold mb-4">404 Page not found</p>

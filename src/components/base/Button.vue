@@ -10,7 +10,7 @@
             flex-row items-center px-5 z-10">
         <img 
             src="../../assets/icons/ic_diamond.svg" 
-            alt=""
+            alt="button background"
             class="h-5 w-5 mr-3">
         <slot></slot>
         </button>

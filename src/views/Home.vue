@@ -1,6 +1,5 @@
 <script setup>
-import { ref, watchEffect } from 'vue';
-import Button from '@/components/base/Button.vue';
+import { ref } from 'vue';
 import IconButton from '@/components/base/IconButton.vue';
 import Header from './home/Header.vue'
 import About from './home/About.vue';
@@ -8,7 +7,7 @@ import Skills from './home/Skills.vue';
 import Projects from './home/Projects.vue';
 import Footer from './home/Footer.vue';
 import FeaturedProject from './home/FeaturedProject.vue';
-import Menu from '../components/extended/Menu.vue';
+import Menu from '@/components/extended/Menu.vue';
 
 const isMenuOpen = ref(false);
 

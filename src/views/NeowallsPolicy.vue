@@ -4,8 +4,8 @@
         <div class="w-full h-[200px] bg-purple flex flex-col 
             items-center justify-center rounded-xl">
 
-            <img src="../assets/icons/neowalls_logo.svg" 
-                alt="neowalls" 
+            <img src="@/assets/icons/neowalls_logo.svg" 
+                alt="neowalls mobile app logo" 
                 class="h-[30%] md:h-[40%]">
 
             <p class="font-bold text-xl md:text-3xl mt-4

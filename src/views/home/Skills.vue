@@ -42,7 +42,7 @@ const skills = ref(['Software engineering', 'Json', 'Xml',
         <div :class="['h-screen hidden md:grid bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
             <img src="@/assets/images/skill_banner.png" 
-                alt=""
+                alt="tech skills banner"
                 class="w-full h-screen object-contain">
         </div>
 

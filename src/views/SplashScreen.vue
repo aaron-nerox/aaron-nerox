@@ -1,10 +1,10 @@
 <script setup>
-import LottieAnimation from '@/components/extended/LottieAnimation.vue';
-import animation from '@/assets/animations/splash_animation.json'
-import foreground from '@/assets/images/splash_foreground.png'
 import { IntersectingCirclesSpinner } from 'epic-spinners'
 import { useRouter } from 'vue-router';
 import { watchEffect } from 'vue';
+import LottieAnimation from '@/components/extended/LottieAnimation.vue';
+import animation from '@/assets/animations/splash_animation.json'
+import foreground from '@/assets/images/splash_foreground.png'
 
 
 const router = useRouter()
@@ -28,7 +28,7 @@ watchEffect(()=>{
 
         <img 
             src="@/assets/images/splash_background.png" 
-            alt=""
+            alt="portfolio splash screen bakground"
             class="w-full h-screen hidden md:block absolute top-0 z-10">
             
         <IntersectingCirclesSpinner

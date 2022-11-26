@@ -14,8 +14,8 @@ const sectionHover = ref(false)
 
         <div :class="['h-screen hidden md:block bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">
-            <img src="@/assets/images/about_banner.svg" 
-                alt=""
+            <img src="@/assets/images/about_banner.png" 
+                alt="portfolio about banner"
                 class="w-full h-full object-contain">
         </div>
 

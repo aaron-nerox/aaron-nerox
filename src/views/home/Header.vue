@@ -1,6 +1,6 @@
 <script setup>
 import Button from '@/components/base/Button.vue';
-import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
+import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
 import mainLogoType from '@/assets/images/main_logo_type.svg'
 
 </script>
@@ -19,12 +19,12 @@ import mainLogoType from '@/assets/images/main_logo_type.svg'
                 <div class="flex md:block flex-col items-center text-center md:text-start">
                     <div class="w-[80%] mx-auto mb-7 grid md:hidden">
                         <img src="@/assets/images/logo_bg.png" 
-                            alt=""
+                            alt="portfolio logo type"
                             class="w-full grid-overlap">
                         <div class="w-full inline-flex flex-col items-center grid-overlap">
                             <AnimatedLogo class="w-[80%]"/>
                             <img src="@/assets/images/main_logo_type.svg" 
-                                alt=""
+                                alt="logo type"
                                 class="w-[60%]">
                         </div>
                     </div>
@@ -50,7 +50,8 @@ import mainLogoType from '@/assets/images/main_logo_type.svg'
                 <kinesis-element tag="img" :src="mainLogoType" :strength="7" type="translate"
                     class="w-[80%] grid-overlap m-auto z-10" />
 
-                <img src="@/assets/images/self_image.jpg" alt="self image"
+                <img src="@/assets/images/self_image.jpg" 
+                    alt="haroune kechaoui image"
                     class="h-screen w-full object-cover grid-overlap z-0">
             </div>
 

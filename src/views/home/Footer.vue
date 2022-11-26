@@ -1,10 +1,10 @@
 <script setup>
-import CopyInput from '../../components/base/CopyInput.vue';
-import Button from '../../components/base/Button.vue';
-import IconButton from '../../components/base/IconButton.vue';
-import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
-import RedirectLink from '../../components/base/RedirectLink.vue';
-import Link from '../../assets/icons/link.vue';
+import CopyInput from '@/components/base/CopyInput.vue';
+import Button from '@/components/base/Button.vue';
+import IconButton from '@/components/base/IconButton.vue';
+import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
+import RedirectLink from '@/components/base/RedirectLink.vue';
+import Link from '@/assets/icons/link.vue';
 
 const redirect = (link)=>{
     window.open(link, "_blank")
@@ -35,7 +35,7 @@ const redirect = (link)=>{
                     <div class="w-full inline-flex flex-col items-center grid-overlap">
                         <AnimatedLogo class="w-[80%]"/>
                         <img src="@/assets/images/main_logo_type.svg" 
-                            alt=""
+                            alt="main portfolio logo"
                             class="w-[60%]">
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const redirect = (link)=>{
 
                 <div class="inline-flex flex-row items-center mx-1 mb-5">
                     <img src="../../assets/icons/ic_diamond_red.svg" 
-                        alt=""
+                        alt="portfolio footer logo back"
                         class="h-5 w-5 mr-3">
                     <p class="inline text-primary text-xl md:text-2xl font-semibold">Contact me</p>
                 </div>
@@ -128,7 +128,7 @@ const redirect = (link)=>{
 
         <div class="w-full flex flex-col items-center">
             <div class="w-[90%] h-[2px] bg-primary my-4"></div>
-            <p class="w-[90%] md:w-fit font-medium text-md text-white my-2">Forged by aaron from love 💜 and monochrome ☯ </p>
+            <p class="w-[90%] md:w-fit font-medium text-md text-white my-2">Forged by aaron from love &#10084;&#65039; and monochrome ☯ </p>
             <a href="https://v1.aaronx.studio" 
                 class="font-normal text-sm text-white hover:text-primary my-2">
                 Explore the older version.

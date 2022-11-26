@@ -1,6 +1,6 @@
 <script setup>
 import { reactive, ref, watchEffect } from 'vue';
-import Button from '../../components/base/Button.vue';
+import Button from '@/components/base/Button.vue';
 
 const props = defineProps(['direction', 'features', 
         'banner', 'stack', 'link', 'mode', 'srcset']);
@@ -42,7 +42,9 @@ watchEffect(async ()=>{
 
         <div :class="['h-screen hidden md:block bg-primary transition-all select-none'
             , sectionHover ? 'w-[15%]' : 'w-0 opacity-0']">
-            <img src="@/assets/images/projects_banner.png" alt="" class="w-full h-full object-contain">
+            <img src="@/assets/images/projects_banner.png" 
+                alt="Featured mobile project banner" 
+                class="w-full h-full object-contain">
         </div>
 
         <div :class="['md:h-screen transition-all flex flex-col items-center bg-dark'
@@ -64,7 +66,7 @@ watchEffect(async ()=>{
                     <div class="max-w-full w-full inline-flex flex-row items-center justify-center md:justify-start flex-wrap">
                         <div class="min-w-fit w-fit inline-flex flex-row items-center mx-2 md:mb-5 mb-3"
                             v-for="tech in props.stack">
-                            <img src="../../assets/icons/ic_diamond_red.svg" 
+                            <img src="@/assets/icons/ic_diamond_red.svg" 
                                 alt="tech stack"
                                 class="h-3 w-3 mr-2">
                             <p class="text-primary text-lg font-medium">{{tech}}</p>
@@ -76,7 +78,8 @@ watchEffect(async ()=>{
                 </div>
                 
                 <img :src="context.images[currentImage]" 
-                    class="w-[70%] md:w-[25%] mb-6 md:mb-0"/>
+                    class="w-[70%] md:w-[25%] mb-6 md:mb-0"
+                    alt="mobile application screenshot"/>
                     
             </div>
         </div>

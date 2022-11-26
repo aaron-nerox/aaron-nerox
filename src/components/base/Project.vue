@@ -41,7 +41,7 @@ const redirect = (link)=>{
                     v-for="tech in props.stack"
                     class="inline-flex flex-row items-center mx-1">
                     <img src="../../assets/icons/ic_sun.svg" 
-                        alt=""
+                        alt="technology icon"
                         class="h-3 w-3 mr-1">
                     <p class="inline text-primary text-md md:text-xs font-medium">{{tech}}</p>
                 </div>

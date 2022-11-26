@@ -10,5 +10,19 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'group-home': [
+            './src/views/Home',
+            './src/views/NotFound',
+            './src/views/NeowallsPolicy',
+            './src/views/SplashScreen',
+          ],
+        },
+      },
+    }
   }
 })
