@@ -33,7 +33,7 @@ watchEffect(()=>{
             
         <IntersectingCirclesSpinner
             :animation-duration="1200"
-            :size="120"
+            :size="140"
             color="#F75656"
             class=" m-auto z-30"
         />

@@ -4,6 +4,7 @@ import Button from '../../components/base/Button.vue';
 import IconButton from '../../components/base/IconButton.vue';
 import AnimatedLogo from '../../components/extended/AnimatedLogo.vue';
 import RedirectLink from '../../components/base/RedirectLink.vue';
+import Link from '../../assets/icons/link.vue';
 
 const redirect = (link)=>{
     window.open(link, "_blank")
@@ -88,9 +89,15 @@ const redirect = (link)=>{
                     <div class="inline-flex flex-col items-start">
                         <p class="font-semibold text-md">Neowalls</p>
                         
-                        <RedirectLink 
-                            name="Community guidelines" 
-                            href="https://google.com"/>
+                        <div class="inline-flex flex-row items-center min-w-fit 
+                            fill-white text-white hover:fill-primary 
+                            hover:text-primary cursor-pointer transition-all my-1"
+                            @click="$router.push('/product/neowalls/guidelines')">
+                            <Link class="w-4 h-4 mr-2"/>
+                            <p class="min-w-fit">
+                                Community guidelines
+                            </p>
+                        </div>
 
                         <RedirectLink 
                             name="Playstore link" 

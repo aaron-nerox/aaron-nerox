@@ -10,7 +10,7 @@ import { RouterView } from 'vue-router'
   </RouterView>
 </template>
 
-<style>
+<style scoped>
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -29,25 +29,5 @@ import { RouterView } from 'vue-router'
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #E82B2B;
-}
-
-/* Animations */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.1s ease-in-out;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-/* Additional self made tailwind rules */
-.grid-overlap{
-    grid-row : 1;
-    grid-column: 1;
 }
 </style>
