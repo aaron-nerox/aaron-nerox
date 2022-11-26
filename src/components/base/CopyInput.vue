@@ -4,7 +4,7 @@ const props = defineProps(['text'])
 
 <template>
     <div class="bg-dark border-primary 
-        border-2 text-primary-light px-7 py-3 font-medium text-xl">
+        border-2 text-primary-light px-7 py-3 font-medium text-md md:text-xl">
         {{props.text}}
     </div>
 </template>

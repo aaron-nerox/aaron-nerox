@@ -11,7 +11,7 @@ watchEffect(async ()=>{
 </script>
 
 <template>
-    <div class="w-[60px] h-[60px] grid bg-diamond bg-contain bg-no-repeat cursor-pointer">
-        <icon class="w-6 h-6 m-auto fill-white"/>
+    <div class="w-[50px] md:w-[60px] h-[50px] md:h-[60px] grid bg-diamond bg-contain bg-no-repeat cursor-pointer">
+        <icon class="w-5 md:w-6 h-5 md:h-6 m-auto fill-white"/>
     </div>
 </template>

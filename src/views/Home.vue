@@ -99,8 +99,8 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
                 class="snap-center"/>
 
-            <Projects class="snap-center"/>
-            <Footer class="snap-center"/> -->
+            <Projects class="snap-center"/> -->
+            <Footer class="snap-center"/>
         </div>
     </Transition>
 </template>

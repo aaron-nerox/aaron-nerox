@@ -13,7 +13,7 @@ const redirect = (link)=>{
 
 <template>
     <footer class="w-full h-screen bg-black flex flex-col items-center 
-            justify-between text-center p-10">
+            md:justify-between text-center p-3 md:p-10">
 
         <div>
             <p class="font-medium text-xl text-white">
@@ -23,8 +23,11 @@ const redirect = (link)=>{
                 - Albert Einstein -
             </p>
         </div>
-        <div class="w-[90%] flex flex-row items-start gap-x-20">
-            <div class="w-[30%]">
+
+        <div class="w-[98%] md:w-[90%] flex flex-col md:flex-row items-center 
+            md:items-start gap-y-5 md:gap-x-20">
+            
+            <div class="w-[70%] md:w-[30%]">
                 <div class="w-[90%] m-auto grid">
                     <img src="@/assets/images/logo_bg.png" 
                         alt=""
@@ -37,21 +40,26 @@ const redirect = (link)=>{
                     </div>
                 </div>
             </div>
-            <div class="w-[70%] flex flex-col items-start">
+
+            <div class="w-[90%] md:w-[70%] flex flex-col items-center md:items-start">
+
                 <div class="inline-flex flex-row items-center mx-1 mb-5">
                     <img src="../../assets/icons/ic_diamond_red.svg" 
                         alt=""
                         class="h-5 w-5 mr-3">
-                    <p class="inline text-primary text-2xl font-semibold">Contact me</p>
+                    <p class="inline text-primary text-xl md:text-2xl font-semibold">Contact me</p>
                 </div>
-                <div class="w-full inline-flex flex-row items-center justify-between">
+
+                <div class="w-full inline-flex flex-col md:flex-row 
+                    items-center justify-between">
                     <CopyInput class="w-full" text="kechaoui.haroune@gmail.com" />
-                    <Button class="min-w-fit ml-6"
+                    <Button class="min-w-fit mt-4 md:mt-0 md:ml-6 text-md"
                         @click="redirect('mailto:kechaoui.haroune@gmail.com')">
                         Send me an email
                     </Button>
                 </div>
-                <div class="inline-flex flex-row items-center gap-x-7 my-10">
+
+                <div class="inline-flex flex-row items-center gap-x-3 md:gap-x-7 my-7 md:my-10">
                     <IconButton 
                         src="github"
                         @click="redirect('https://github.com/TheX-ByAaron')"/>
@@ -73,7 +81,7 @@ const redirect = (link)=>{
                         @click="redirect('https://www.linkedin.com/in/haroune-kechaoui-833137179')"/>
                 </div>
 
-                <div class="w-full inline-flex flex-row items-start gap-x-20 text-white">
+                <div class="w-full hidden md:inline-flex flex-row items-start gap-x-20 text-white">
                     <div class="inline-flex flex-col items-start">
                         <p class="font-semibold text-md">Emerald design</p>
                         
@@ -114,7 +122,9 @@ const redirect = (link)=>{
                     </div>
                 </div>
             </div>
+
         </div>
+
         <div class="w-full flex flex-col items-center">
             <div class="w-[90%] h-[2px] bg-primary my-4"></div>
             <p class="font-medium text-md text-white my-2">Forged by aaron from love 💜 and monochrome ☯ </p>
