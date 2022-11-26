@@ -17,10 +17,10 @@ import FeaturedProject from './home/FeaturedProject.vue';
     <Transition name="fade">
         <div class="w-full h-screen max-h-screen grid md:overflow-y-auto snap-y snap-mandatory">
             <Header class="snap-center"/>
-            <About class="snap-center"/>
-            <Skills class="snap-center"/>
+            <!-- <About class="snap-center"/> -->
+            <!-- <Skills class="snap-center"/> -->
 
-            <FeaturedProject 
+            <!-- <FeaturedProject 
                 direction="start" 
                 banner="neowalls_logo"
                 mode="download"
@@ -100,7 +100,7 @@ import FeaturedProject from './home/FeaturedProject.vue';
                 class="snap-center"/>
 
             <Projects class="snap-center"/>
-            <Footer class="snap-center"/>
+            <Footer class="snap-center"/> -->
         </div>
     </Transition>
 </template>
