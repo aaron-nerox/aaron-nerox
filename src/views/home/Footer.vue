@@ -12,7 +12,7 @@ const redirect = (link)=>{
 </script>
 
 <template>
-    <footer class="w-full md:h-screen bg-black flex flex-col items-center 
+    <footer id="contact" class="w-full md:h-screen bg-black flex flex-col items-center 
             md:justify-between text-center p-3 md:p-10">
 
         <div>

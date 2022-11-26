@@ -26,6 +26,20 @@
     font-weight: 700;
 }
 
+/* Animations */
+.fade-enter-active,
+.fade-leave-active {
+transition: opacity 0.1s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+opacity: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     html {
         font-family: poppins;
@@ -35,19 +49,5 @@
     .grid-overlap{
         grid-row : 1;
         grid-column: 1;
-    }
-
-    /* Animations */
-    .fade-enter-active,
-    .fade-leave-active {
-    transition: opacity 0.1s ease-in-out;
-    }
-    .fade-enter-from,
-    .fade-leave-to {
-    opacity: 0;
-    }
-
-    * {
-    scroll-behavior: smooth;
     }
 }

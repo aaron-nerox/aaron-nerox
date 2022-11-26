@@ -66,7 +66,7 @@ const projects = ref([
 </script>
 
 <template>
-    <section id="about" class="w-full md:h-screen flex flex-row items-center"
+    <section id="extra" class="w-full md:h-screen flex flex-row items-center"
         @mouseenter="sectionHover = true">
 
         <div :class="['h-screen hidden md:block bg-primary transition-all select-none'

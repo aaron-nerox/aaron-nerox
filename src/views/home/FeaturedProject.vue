@@ -36,7 +36,7 @@ watchEffect(async ()=>{
 </script>
 
 <template>
-    <section id="about" :class="['w-full md:h-screen flex  items-center'
+    <section id="featured" :class="['w-full md:h-screen flex  items-center'
     ,props.direction === 'start'? 'flex-row' : 'flex-row-reverse']"
         @mouseenter="sectionHover = true">
 
