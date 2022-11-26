@@ -3,13 +3,13 @@ import { ref } from 'vue';
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
 
 
-const sectionHover = ref(true)
+const sectionHover = ref(false)
 </script>
 
 
 <template>
     <section id="about" class="w-full h-screen flex flex-row items-center bg-dark"
-        >
+        @mouseenter="sectionHover = true">
 
         <div :class="['h-screen bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">

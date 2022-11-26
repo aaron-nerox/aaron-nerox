@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue';
 import Project from '../../components/base/Project.vue';
 
-const sectionHover = ref(true)
+const sectionHover = ref(false)
 
 const projects = ref([
     {
@@ -66,7 +66,8 @@ const projects = ref([
 </script>
 
 <template>
-    <section id="about" class="w-full h-screen flex flex-row items-center">
+    <section id="about" class="w-full h-screen flex flex-row items-center"
+        @mouseenter="sectionHover = true">
 
         <div :class="['h-screen bg-primary transition-all select-none'
             , sectionHover? 'w-[15%]' : 'w-0 opacity-0']">

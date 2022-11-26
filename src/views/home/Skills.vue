@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Skill from '@/components/base/Skill.vue'
 
-const sectionHover = ref(true)
+const sectionHover = ref(false)
 const primarySkills = ref(['Software engineering', 
 'Agile methods', 
 'Project management', 'Android',
@@ -22,7 +22,7 @@ const otherSkills = ref([
 
 <template>
     <section id="skills" class="w-full h-screen flex flex-row items-center bg-dark"
-        >
+        @mouseenter="sectionHover = true">
 
         <div :class="['h-screen transition-all flex items-center',
             'justify-center', sectionHover? 'w-[85%]' : 'w-full']">

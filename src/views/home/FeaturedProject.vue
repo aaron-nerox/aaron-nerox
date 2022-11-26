@@ -5,7 +5,7 @@ import Button from '../../components/base/Button.vue';
 const props = defineProps(['direction', 'features', 
         'banner', 'stack', 'link', 'mode', 'srcset']);
 
-const sectionHover = ref(true)
+const sectionHover = ref(false)
 const currentImage = ref(0)
 const banner = ref()
 const context = reactive({
@@ -36,7 +36,8 @@ watchEffect(async ()=>{
 </script>
 
 <template>
-    <section id="about" class="w-full h-screen flex flex-row items-center">
+    <section id="about" class="w-full h-screen flex flex-row items-center"
+        @mouseenter="sectionHover = true">
 
         <div v-if="props.direction == 'start'" 
         :class="['h-screen bg-primary transition-all select-none'
