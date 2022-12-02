@@ -3,7 +3,7 @@ import { reactive, ref, watchEffect } from 'vue';
 import Button from '@/components/base/Button.vue';
 
 const props = defineProps(['direction', 'features', 
-        'banner', 'stack', 'link', 'mode', 'srcset']);
+        'banner', 'stack', 'link', 'mode', 'srcset', 'parentSrc']);
 
 const sectionHover = ref(false)
 const currentImage = ref(0)
@@ -20,7 +20,7 @@ watchEffect(async ()=>{
     banner.value = (await import(/* @vite-ignore */ `../../assets/icons/${props.banner}.svg`)).default
 
     props.srcset.map(async (src) => {
-        const res = (await import(/* @vite-ignore */ `../../assets/screenshots/neowalls/${src}.png`)).default
+        const res = (await import(/* @vite-ignore */ `../../assets/screenshots/${props.parentSrc}/${src}.png`)).default
         context.images.push(res)
     })
     

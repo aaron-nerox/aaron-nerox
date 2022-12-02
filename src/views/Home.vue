@@ -58,6 +58,7 @@ const updateMenu = ()=>{
                     'img6', 
                     'img7'
                 ]"
+                parentSrc="neowalls"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
                 class="snap-center"/>
             <FeaturedProject 
@@ -71,12 +72,13 @@ const updateMenu = ()=>{
                 ]"
                 :stack="['Kotlin', 'Java', 'Xml', 'Storage API', 'Android studio']"
                 :srcset="[
-                    '../../assets/screenshots/airsort/img1.png',
-                    '../../assets/screenshots/airsort/img2.png',
-                    '../../assets/screenshots/airsort/img3.png',
-                    '../../assets/screenshots/airsort/img4.png',
-                    '../../assets/screenshots/airsort/img5.png',
+                    'img1',
+                    'img2',
+                    'img3',
+                    'img4',
+                    'img5',
                 ]"
+                parentSrc="airsort"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.airsort"
                 class="snap-center"/>
             <FeaturedProject 
@@ -89,12 +91,13 @@ const updateMenu = ()=>{
                 ]"
                 :stack="['Kotlin', 'Xml', 'MDC library', 'Android studio']"
                 :srcset="[
-                    '../../assets/screenshots/milky/img1.png',
-                    '../../assets/screenshots/milky/img2.png',
-                    '../../assets/screenshots/milky/img3.png',
-                    '../../assets/screenshots/milky/img4.png',
-                    '../../assets/screenshots/milky/img5.png',
+                    'img1',
+                    'img2',
+                    'img3',
+                    'img4',
+                    'img5',
                 ]"
+                parentSrc="milky"
                 link="https://github.com/TheX-ByAaron/milky-store"
                 class="snap-center"/>
             <FeaturedProject 
@@ -107,11 +110,12 @@ const updateMenu = ()=>{
                 ]"
                 :stack="['Kotlin', 'Jetpack compose', 'Android studio']"
                 :srcset="[
-                    '../../assets/screenshots/artplace/img1.png',
-                    '../../assets/screenshots/artplace/img2.png',
-                    '../../assets/screenshots/artplace/img3.png',
-                    '../../assets/screenshots/artplace/img4.png',
+                    'img1',
+                    'img2',
+                    'img3',
+                    'img4',
                 ]"
+                parentSrc="artplace"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
                 class="snap-center"/>
             <Projects class="snap-center"/>
