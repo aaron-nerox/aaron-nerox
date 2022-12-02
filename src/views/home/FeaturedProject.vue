@@ -20,7 +20,7 @@ watchEffect(async ()=>{
     banner.value = (await import(/* @vite-ignore */ `../../assets/icons/${props.banner}.svg`)).default
 
     props.srcset.map(async (src) => {
-        const res = (await import(/* @vite-ignore */ `../../assets/screenshots/neowalls/${src}`)).default
+        const res = (await import(/* @vite-ignore */ `../../assets/screenshots/neowalls/${src}.png`)).default
         context.images.push(res)
     })
     

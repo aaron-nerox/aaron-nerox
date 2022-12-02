@@ -50,13 +50,13 @@ const updateMenu = ()=>{
                 ]"
                 :stack="['Kotlin', 'Jetpack compose', 'Firebase', 'Xml', 'Android studio']"
                 :srcset="[
-                    'img1.png',
-                    'img2.png',
-                    'img3.png',
-                    'img4.png',
-                    'img5.png',
-                    'img6.png', 
-                    'img7.png'
+                    'img1',
+                    'img2',
+                    'img3',
+                    'img4',
+                    'img5',
+                    'img6', 
+                    'img7'
                 ]"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
                 class="snap-center"/>
