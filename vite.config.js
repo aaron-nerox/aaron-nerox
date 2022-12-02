@@ -16,10 +16,10 @@ export default defineConfig({
       output: {
         manualChunks: {
           'group-home': [
-            './src/views/Home',
-            './src/views/NotFound',
-            './src/views/NeowallsPolicy',
-            './src/views/SplashScreen',
+            './src/views/Home.vue',
+            './src/views/NotFound.vue',
+            './src/views/NeowallsPolicy.vue',
+            './src/views/SplashScreen.vue',
           ],
         },
       },
