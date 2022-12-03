@@ -19,8 +19,6 @@ module.exports = {
       backgroundImage: {
         'splash': "url('./src/assets/images/splash_background_mobile.svg')",
         'hero': "url('./src/assets/images/header_background.png')",
-        'diamond': "url('./src/assets/icons/ic_diamond_red.svg')",
-        'diamond-light' : "url('./src/assets/icons/diamond.png')",
         'about': "url('./src/assets/images/about_background.png')",
         'skills': "url('./src/assets/images/skills_background.png')",
         'project': "url('./src/assets/images/project_background.png')",

@@ -116,15 +116,3 @@ const updateMenu = ()=>{
         </div>
     </Transition>
 </template>
-
-
-<style>
-.bg-diamond-red{
-    background-image: url('@/assets/icons/ic_diamond_red.svg');
-}
-
-
-.bg-diamond-light{
-    background-image: url('@/assets/icons/ic_diamond.svg');
-}
-</style>
