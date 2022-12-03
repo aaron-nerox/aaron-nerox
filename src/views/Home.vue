@@ -28,12 +28,12 @@ const updateMenu = ()=>{
             <IconButton 
                 v-if="!isMenuOpen"
                 src="menu" 
-                class="!bg-diamond-light fixed top-5 right-5 z-40"
+                class="bg-diamond-light fixed top-5 right-5 z-40"
                     @click="updateMenu"/>
             <IconButton 
                 v-else
                 src="close" 
-                class="!bg-diamond-light fixed top-5 right-5 z-40"
+                class="bg-diamond-light fixed top-5 right-5 z-40"
                     @click="updateMenu"/>
 
             <Header class="md:snap-center select-none"/>
@@ -49,14 +49,7 @@ const updateMenu = ()=>{
                     'You can browse, favorite, save and download wallpapers.'
                 ]"
                 :stack="['Kotlin', 'Jetpack compose', 'Firebase', 'Xml', 'Android studio']"
-                :srcset="[
-                    'img1',
-                    'img2',
-                    'img3',
-                    'img4',
-                    'img5',
-                    'img6', 
-                    'img7'
+                :srcset="['img1','img2','img3','img4','img5','img6','img7'
                 ]"
                 parentSrc="neowalls"
                 link="https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
@@ -123,3 +116,15 @@ const updateMenu = ()=>{
         </div>
     </Transition>
 </template>
+
+
+<style>
+.bg-diamond-red{
+    background-image: url('@/assets/icons/ic_diamond_red.svg');
+}
+
+
+.bg-diamond-light{
+    background-image: url('@/assets/icons/ic_diamond.svg');
+}
+</style>

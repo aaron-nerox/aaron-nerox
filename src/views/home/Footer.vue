@@ -61,22 +61,27 @@ const redirect = (link)=>{
 
                 <div class="inline-flex flex-row items-center gap-x-3 md:gap-x-7 my-7 md:my-10">
                     <IconButton 
+                        class="bg-diamond-red"
                         src="github"
                         @click="redirect('https://github.com/TheX-ByAaron')"/>
 
                     <IconButton 
+                        class="bg-diamond-red"
                         src="behance"
                         @click="redirect('https://www.behance.net/aaron_nerox')"/>
 
-                    <IconButton 
+                    <IconButton
+                        class="bg-diamond-red" 
                         src="twitter"
                         @click="redirect('https://twitter.com/aaron_nerox')"/>
 
                     <IconButton 
+                        class="bg-diamond-red"
                         src="instagram"
                         @click="redirect('https://www.instagram.com/aaron.nerox')"/>
 
                     <IconButton 
+                        class="bg-diamond-red"
                         src="Linkedin"
                         @click="redirect('https://www.linkedin.com/in/haroune-kechaoui-833137179')"/>
                 </div>
