@@ -23,15 +23,17 @@ watchEffect(async ()=>{
         const res = (await import(/* @vite-ignore */ `../../assets/screenshots/${props.parentSrc}/${src}.png`)).default
         context.images.push(res)
     })
-    
+})
 
-    setInterval(()=>{
-        if(currentImage.value == context.images.length-1){
+
+watchEffect(()=>{
+    setInterval(async ()=>{
+        if(currentImage.value === context.images.length-1){
             currentImage.value = 1
         }else{
             currentImage.value += 1
         }
-    }, 1500)
+    }, 2000)
 })
 </script>
 
