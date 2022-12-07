@@ -6,7 +6,7 @@
 
             <img src="@/assets/icons/neowalls_logo.svg" 
                 alt="neowalls mobile app logo" 
-                class="h-[30%] md:h-[40%]">
+                class="h-[27%] md:h-[40%]">
 
             <p class="font-bold text-xl md:text-3xl mt-4
             text-center text-white">Neowalls community guidelines</p>
