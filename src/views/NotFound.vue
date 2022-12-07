@@ -21,11 +21,3 @@ import Button from '@/components/base/Button.vue';
 
     </div>
 </template>
-
-
-<style>
-
-.bg-error{
-    background-image: url('../assets/images/not_found_bg.png');
-}
-</style>
