@@ -17,12 +17,12 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'splash': "url('./src/assets/images/splash_background_mobile.svg')",
-        'hero': "url('./src/assets/images/header_background.png')",
-        'about': "url('./src/assets/images/about_background.png')",
-        'skills': "url('./src/assets/images/skills_background.png')",
-        'project': "url('./src/assets/images/project_background.png')",
-        'not-found': "url('./public/images/not_found_bg.png')"
+        'splash': "url('@/assets/images/splash_background_mobile.svg')",
+        'hero': "url('@/assets/images/header_background.png')",
+        'about': "url('@/assets/images/about_background.png')",
+        'skills': "url('@/assets/images/skills_background.png')",
+        'project': "url('@/assets/images/project_background.png')",
+        'not-found': "url('@/assets/images/not_found_bg.png')"
       }
     },
   },
