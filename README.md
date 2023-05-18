@@ -1,29 +1,11 @@
-# aaron.nerox
+## <div align="center" > :zap: Welcome to Aaron's code vault :zap: </div>
+### <div align="center"> A place where you find a whole lot of Kotlin code and abandoned gold 🤑 (web projects) </div>
+##
 
-This template should help get you started developing with Vue 3 in Vite.
+### Who is Aaron?
+You might ask who am I? Simple, My real name is Haroune, I'm an Anroid Software Engineer mainly, Based in Dubai, UAE 🇦🇪 , That also happens to work on web projects (both Front-End and Back-End) when needed. I work a lot with individual clients or startups whenever i feel adventerous :alien: .  Currently Working for Rapptr Labs 🦖🦖 as an android engineer.
 
-## Recommended IDE Setup
+### Aaron's stats
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=aaron-nerox&theme=dracula)](https://github.com/aaron-nerox/aaron-nerox/main)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aaron-nerox&hide_progress=true&theme=dracula)](https://github.com/aaron-nerox/aaron-nerox/main)
