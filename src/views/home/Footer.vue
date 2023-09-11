@@ -134,7 +134,7 @@ const redirect = (link)=>{
         <div class="w-full flex flex-col items-center">
             <div class="w-[90%] h-[2px] bg-primary my-4"></div>
             <p class="w-[90%] md:w-fit font-medium text-md text-white my-2">Forged by aaron from love &#10084;&#65039; and monochrome ☯ </p>
-            <a href="https://v1.aaronx.studio" 
+            <a href="https://v1.aaronx.dev" 
                 class="font-normal text-sm text-white hover:text-primary my-2">
                 Explore the older version.
             </a>
