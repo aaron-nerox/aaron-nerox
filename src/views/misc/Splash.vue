@@ -3,16 +3,15 @@ import { watchEffect } from "vue";
 import LottieAnimation from "../../components/extended/LottieAnimation.vue"
 import infinityAnimation from "@/assets/animations/infinity_animation.json"
 import { useRouter } from "vue-router"
-import Button from '../../components/base/Button.vue'
 
 
 let router = useRouter()
 
-// watchEffect(() => {
-//     setTimeout(() => {
-//         router.replace('/home')
-//     }, 3000)
-// })
+watchEffect(() => {
+    setTimeout(() => {
+        router.replace('/home')
+    }, 3000)
+})
 </script>
 
 

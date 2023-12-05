@@ -7,7 +7,7 @@ import Skills from './home/Skills.vue';
 import Projects from './home/Projects.vue';
 import Footer from './home/Footer.vue';
 import FeaturedProject from './home/FeaturedProject.vue';
-import Menu from '@/components/extended/Menu.vue';
+import Menu from '@/components/navigation/Menu.vue';
 
 const isMenuOpen = ref(false);
 

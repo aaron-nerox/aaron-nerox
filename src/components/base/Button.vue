@@ -3,8 +3,8 @@ import { ref, shallowRef, defineAsyncComponent, watchEffect } from 'vue'
 
 const baseBackgroundLight = "row-start-1 row-end-2 col-start-1 col-end-2 bg-light hover:bg-prim text-dark font-medium px-5 "
 const baseBackgroundDark = "row-start-1 row-end-2 col-start-1 col-end-2 bg-dark hover:bg-prim text-light font-medium px-5 "
-const alingmentRegular = "inline-flex items-center flex-row z-10"
-const alignmentReverse = "inline-flex items-center flex-row-reverse z-10"
+const alingmentRegular = "inline-flex items-center justify-center flex-row z-10"
+const alignmentReverse = "inline-flex items-center justify-center flex-row-reverse z-10"
 
 
 const buttonBackgroundClass = ref("")
