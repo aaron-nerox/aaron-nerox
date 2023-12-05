@@ -40,7 +40,9 @@ watchEffect(async () => {
         }
     }
 
-    iconSrc.value = defineAsyncComponent(() => import(/* @vite-ignore */`../../assets/icons/${props.icon}.vue`))
+    if(props.icon) {
+        iconSrc.value = defineAsyncComponent(() => import(/* @vite-ignore */`../../assets/icons/${props.icon}.vue`))
+    }
 })
 
 
@@ -55,7 +57,8 @@ watchEffect(async () => {
         </div>
 
         <button :class="[buttonBackgroundClass, alignmentClass]">
-            <iconSrc :class="['h-5 w-5', iconTintClass]" />
+            <iconSrc v-if="props.icon" :class="['h-5 w-5', iconTintClass]" />
+            <div v-else></div>
 
             <div class="w-3 bg-transparent"></div>
             <slot></slot>

@@ -225,7 +225,7 @@
 <style>
 
 ::-webkit-scrollbar {
-  width: 15px ;
+  width: 10px ;
 }
 /* Track */
 ::-webkit-scrollbar-track {
