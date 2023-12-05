@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import SplashScreen from '../views/SplashScreen.vue'
+import SplashScreen from '../views/misc/Splash.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
