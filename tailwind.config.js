@@ -10,10 +10,15 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       'dark': '#0F0202',
-      'primary': '#F75656',
+      // 'primary': '#F75656',
       'primary-dark': '#E82B2B',
       'primary-light': '#FFF4F4',
-      'purple': '#6A00F4'
+      'purple': '#6A00F4',
+
+      'light' : '#FCFCFA',  
+      'dark' : '#000000',
+      'primary' : '#3CCCFF',
+      'grey-primary' : '#D9D9D9'
     },
     extend: {
       backgroundImage: {
