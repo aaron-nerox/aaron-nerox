@@ -19,7 +19,7 @@ export default defineConfig({
             './src/views/Home.vue',
             './src/views/NotFound.vue',
             './src/views/NeowallsPolicy.vue',
-            './src/views/SplashScreen.vue',
+            './src/views/misc/Splash.vue',
           ],
         },
       },
