@@ -17,12 +17,12 @@ const router = createRouter({
     {
       path: '/product/neowalls/guidelines',
       name: 'neowalls guidelines',
-      component: () => import('../views/NeowallsPolicy.vue')
+      component: () => import('../views/misc/NeowallsPolicy.vue')
     },
     { 
       path: '/:pathMatch(.*)*', 
       name: 'NotFound', 
-      component: () => import('../views/NotFound.vue')
+      component: () => import('../views/misc/NotFound.vue')
     }, 
     // {
     //   path: '/about',
