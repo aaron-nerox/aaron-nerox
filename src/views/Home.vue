@@ -1,13 +1,14 @@
 <script setup>
-import { ref } from 'vue';
-import IconButton from '@/components/base/IconButton.vue';
+import { ref } from 'vue'
+import IconButton from '@/components/base/IconButton.vue'
 import Header from './home/Header.vue'
-import About from './home/About.vue';
-import Skills from './home/Skills.vue';
-import Projects from './home/Projects.vue';
-import Footer from './home/Footer.vue';
-import FeaturedProject from './home/FeaturedProject.vue';
-import Menu from '@/components/navigation/Menu.vue';
+import About from './home/About.vue'
+import Skills from './home/Skills.vue'
+import Projects from './home/Projects.vue'
+import Footer from './home/Footer.vue'
+import FeaturedProject from './home/FeaturedProject.vue'
+import Menu from '@/components/navigation/Menu.vue'
+
 
 const isMenuOpen = ref(false);
 
@@ -39,7 +40,7 @@ const updateMenu = ()=>{
             <Header class="md:snap-center select-none"/>
             <About class="md:snap-center"/>
             <Skills class="md:snap-center"/>
-            <FeaturedProject 
+            <!-- <FeaturedProject 
                 direction="start" 
                 banner="neowalls_logo"
                 mode="download"
@@ -110,7 +111,7 @@ const updateMenu = ()=>{
                 ]"
                 parentSrc="artplace"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
-                class="snap-center"/>
+                class="snap-center"/> -->
             <Projects class="snap-center"/>
             <Footer class="snap-center"/>
         </div>

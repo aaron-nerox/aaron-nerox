@@ -3,6 +3,8 @@ import { watchEffect } from "vue";
 import LottieAnimation from "../../components/extended/LottieAnimation.vue"
 import infinityAnimation from "@/assets/animations/infinity_animation.json"
 import { useRouter } from "vue-router"
+import BottomStartOverlay from '@/assets/images/background_overlay_bottom_start.vue'
+import TopEnd from '@/assets/images/background_overlay_top_end.vue'
 
 
 let router = useRouter()
@@ -16,12 +18,14 @@ watchEffect(() => {
 
 
 <template>
-    <div class="w-full h-screen inline-flex items-center justify-center bg-light">
-        <img src="@/assets/images/background_overlay_bottom_start.svg" alt="background element"
-            class="md:w-1/4 w-1/2 absolute bottom-0 left-0" />
-        <img src="@/assets/images/background_overlay_top_end.svg" alt="background element"
-            class="md:w-1/4 w-1/2 absolute top-0 right-0" />
+    <div class="w-full h-screen inline-flex items-center justify-center bg-light relative">
+
+        <BottomStartOverlay class="md:w-1/4 w-1/2 h-fit absolute bottom-0 left-0" />
+
+        <TopEnd class="md:w-1/4 w-1/2 h-fit absolute top-0 right-0" />
+
         <LottieAnimation :animationData="infinityAnimation" :isLooping="true" :autoPlay="true"
             class="md:w-[420px] w-[256px] h-[420px]" />
+
     </div>
 </template>

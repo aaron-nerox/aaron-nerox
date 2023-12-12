@@ -1,16 +1,16 @@
 <script setup>
-import Button from '@/components/base/Button.vue';
+import Button from '@/components/base/Button.vue'
+import BottomStartOverlay from '@/assets/images/background_overlay_bottom_start.vue'
+import TopEnd from '@/assets/images/background_overlay_top_end.vue'
 </script>
 
 <template>
     <div class="w-full h-screen flex flex-col items-center justify-center 
-        bg-light text-dark text-center ">
+        bg-light text-dark text-center relative">
 
-        <img src="@/assets/images/background_overlay_bottom_start.svg" alt="background element"
-            class="md:w-1/4 w-1/2 absolute bottom-0 left-0" />
+        <BottomStartOverlay class="md:w-1/4 w-1/2 h-fit absolute bottom-0 left-0" />
 
-        <img src="@/assets/images/background_overlay_top_end.svg" alt="background element"
-            class="md:w-1/4 w-1/2 absolute top-0 right-0" />
+        <TopEnd class="md:w-1/4 w-1/2 h-fit absolute top-0 right-0" />
 
         <img 
             src="@/assets/icons/chromanion.svg" 
