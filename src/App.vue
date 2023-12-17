@@ -30,7 +30,7 @@ onMounted(()=>{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #D9D9D9;
+  background: #ffffff;
 }
 
 /* Handle */

@@ -118,7 +118,7 @@ const redirect = (link)=>{
 
             <div class="w-3/5 h-3/5 inline-flex flex-col items-start justify-center gap-y-7">
 
-                <div class="w-full inline-flex flex-col md:flex-row items-start gap-y-5 md:gap-y-0 md:gap-x-20 text-white">
+                <div class="w-full inline-flex flex-row items-start gap-x-20 text-white">
                     <div 
                         v-for="footerSection in footerLinks.sections"
                         class="inline-flex flex-col items-start">
@@ -133,7 +133,7 @@ const redirect = (link)=>{
                     </div>
                 </div>
 
-                <div class="inline-flex flex-row items-center gap-x-3 md:gap-x-7">
+                <div class="inline-flex flex-row items-center gap-x-7">
                     <IconButton 
                         v-for="social in socialLinks.links"
                         class="bg-diamond-red transition duration-200 hover:-translate-y-2 ease-in-out "
@@ -144,13 +144,13 @@ const redirect = (link)=>{
             </div>
         </div>
 
-        <p class="w-fit font-medium text-md text-white mx-[5%] md:mx-auto">
+        <p class="w-fit font-medium text-md text-white mx-auto">
             Forged by aaron from love &#10084;&#65039; and monochrome ☯ 
         </p>
 
         <div class="bg-primary h-[3px] w-[90%] mx-auto my-5"></div>
 
-        <p class="w-fit font-medium text-md text-white mx-[5%] md:mx-auto">
+        <p class="w-fit font-medium text-md text-white mx-auto">
             Explore Older versions 
         </p>
 

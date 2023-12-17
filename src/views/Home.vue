@@ -20,7 +20,7 @@ const updateMenu = ()=>{
 <template>
     <Transition name="fade">
         <div class="w-full h-screen max-h-screen grid 
-            md:overflow-y-auto md:snap-y md:snap-mandatory">
+            md:overflow-y-auto">
             <Teleport to="body">
                 <Menu 
                     :open="isMenuOpen"

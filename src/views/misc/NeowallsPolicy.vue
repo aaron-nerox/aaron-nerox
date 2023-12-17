@@ -228,9 +228,9 @@
   width: 10px ;
 }
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: #d8bdff;
-}
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
