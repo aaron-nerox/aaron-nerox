@@ -16,6 +16,6 @@ const props = defineProps(["borderColor", "backgroundColor", "Logo"])
 <style scoped>
 .theme-main {
     border-color : v-bind('`#${props.borderColor}`');
-    background-color: v-bind('props.backgroundColor');
+    background-color: v-bind('`#${props.backgroundColor}`');
 }
 </style>
