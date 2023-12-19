@@ -72,13 +72,13 @@ const scrollDown = () => {
 
         <div class="absolute bottom-[20%] left-[10%]">
             <img src="@/assets/images/top_left_str.svg" alt="">
-            <TextBox class="w-[230px] text-sm">
+            <TextBox class="w-[196px] text-sm font-light">
                 Click on any icon to find some cool stuff
             </TextBox>
         </div>
 
         <div class="absolute top-[15%] right-[10%] inline-flex flex-col items-end">
-            <TextBox class="w-[300px] text-sm">
+            <TextBox class="max-w-[300px] text-sm font-light">
                 The mobile engineer that you won't find anywhere else.
             </TextBox>
             <img src="@/assets/images/bottom_right_str.svg" alt="">
@@ -144,11 +144,6 @@ const scrollDown = () => {
     to {
         transform: rotate(-360deg);
     }
-}
-
-.pos-1 {
-    grid-row: 1;
-    grid-column: 1;
 }
 
 .clock-wise {

@@ -59,4 +59,9 @@ opacity: 0;
     .bg-diamond-light{
         background-image: url('@/assets/icons/ic_diamond.svg');
     }
+
+    .pos-1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
 }
