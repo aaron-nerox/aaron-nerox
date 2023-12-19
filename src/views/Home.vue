@@ -1,9 +1,17 @@
 <script setup>
+/** vue imports */
 import { ref } from 'vue'
-import IconButton from '@/components/base/IconButton.vue'
+
+/** Section imports */
 import Header from './sections/Header.vue'
 import About from './sections/About.vue'
+import Services from './sections/Services.vue'
+import Products from './sections/Products.vue'
+import Contact from './sections/Contact.vue'
 import Footer from './sections/Footer.vue'
+
+/** Component imports */
+import IconButton from '@/components/base/IconButton.vue'
 import Menu from '@/components/navigation/Menu.vue'
 
 
@@ -21,7 +29,7 @@ const updateMenu = ()=>{
             <Teleport to="body">
                 <Menu 
                     :open="isMenuOpen"
-                    @dissmiss="updateMenu"/>
+                    @dissmiss="updateMenu" />
             </Teleport>
 
             <IconButton 
@@ -34,10 +42,14 @@ const updateMenu = ()=>{
                 v-else
                 src="close" 
                 class="bg-black-diamond fixed top-5 right-5 z-40"
-                    @click="updateMenu"/>
+                    @click="updateMenu"
+                    />
 
             <Header />
             <About />
+            <Services />
+            <Products />
+            <Contact />
 
             <Footer />
         </div>
