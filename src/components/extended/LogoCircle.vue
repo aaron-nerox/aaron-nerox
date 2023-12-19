@@ -6,11 +6,17 @@ const props = defineProps(["borderColor", "backgroundColor", "Logo"])
 </script>
 
 <template>
-    <div class="w-[72px] h-[72px] rounded-full border-[3px] theme-main">
-        <div class="w-full h-full rounded-full bg-none border-light border-[3px]">
-            <img :src="props.Logo" alt="" class="w-full h-full p-3">
-        </div>
-    </div>
+    <kinesis-container>
+        <kinesis-element 
+        type="translate"
+        :strength="20"
+        class="w-[72px] h-[72px] rounded-full border-[3px] theme-main">
+            <div class="w-full h-full rounded-full bg-none border-light border-[3px]">
+                <img :src="props.Logo" alt="" class="w-full h-full p-3">
+            </div>
+        </kinesis-element>
+    </kinesis-container>
+    
 </template>
 
 <style scoped>

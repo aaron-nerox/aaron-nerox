@@ -13,7 +13,7 @@ import TopEnd from '@/assets/images/background_overlay_top_end.vue'
         <TopEnd class="md:w-1/4 w-1/2 h-fit absolute top-0 right-0" />
 
         <img 
-            src="@/assets/icons/chromanion.svg" 
+            src="@/assets/icons/svg/chromanion.svg" 
             alt="portfolio not found illustration"
             class="w-[70%] md:w-[20%]">
 
