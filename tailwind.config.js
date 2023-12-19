@@ -27,7 +27,9 @@ module.exports = {
         'about': "url('@/assets/images/about_background.png')",
         'skills': "url('@/assets/images/skills_background.png')",
         'project': "url('@/assets/images/project_background.png')",
-        'not-found': "url('@/assets/images/not_found_bg.png')"
+        'not-found': "url('@/assets/images/not_found_bg.png')",
+        'diamond' : "url('@/assets/icons/svg/ic_diamond_primary.svg')",
+        'black-diamond' : "url('@/assets/icons/svg/black_diamond.svg')"
       }
     },
   },

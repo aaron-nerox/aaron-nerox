@@ -1,5 +1,5 @@
 <script setup>
-import Link from '../../assets/icons/link.vue';
+import Link from '@/assets/icons/vue/link.vue';
 const props = defineProps(['name', 'href'])
 
 const redirect = ()=>{

@@ -6,7 +6,7 @@ const icon = shallowRef()
 
 watchEffect(async ()=>{
     // (await import(`../../assets/icons/${props.src}.vue`)).default
-    icon.value =  defineAsyncComponent(()=> import(/* @vite-ignore */`../../assets/icons/${props.src}.vue`))
+    icon.value =  defineAsyncComponent(()=> import(/* @vite-ignore */`../../assets/icons/vue/${props.src}.vue`))
 })
 </script>
 

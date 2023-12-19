@@ -29,18 +29,18 @@ const updateMenu = ()=>{
             <IconButton 
                 v-if="!isMenuOpen"
                 src="menu" 
-                class="bg-diamond-light fixed top-5 right-5 z-40"
+                class="bg-black-diamond fixed top-5 right-5 z-40"
                     @click="updateMenu"/>
             <IconButton 
                 v-else
                 src="close" 
-                class="bg-diamond-light fixed top-5 right-5 z-40"
+                class="bg-black-diamond fixed top-5 right-5 z-40"
                     @click="updateMenu"/>
 
             <Header class="md:snap-center select-none"/>
             <About class="md:snap-center"/>
             <Skills class="md:snap-center"/>
-            <!-- <FeaturedProject 
+            <FeaturedProject 
                 direction="start" 
                 banner="neowalls_logo"
                 mode="download"
@@ -111,9 +111,9 @@ const updateMenu = ()=>{
                 ]"
                 parentSrc="artplace"
                 link="https://github.com/TheX-ByAaron/ArtPlace-mobile"
-                class="snap-center"/> -->
+                class="snap-center"/>
             <Projects class="snap-center"/>
-            <Footer class="snap-center"/>
+            <Footer class="snap-center" />
         </div>
     </Transition>
 </template>

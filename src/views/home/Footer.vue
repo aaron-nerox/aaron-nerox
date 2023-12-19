@@ -1,11 +1,9 @@
 <script setup>
 import { reactive } from 'vue'
-import CopyInput from '@/components/base/CopyInput.vue'
-import Button from '@/components/base/Button.vue'
+
 import IconButton from '@/components/base/IconButton.vue'
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue'
 import RedirectLink from '@/components/base/RedirectLink.vue'
-import Link from '@/assets/icons/link.vue'
 import bgOverlay from '@/assets/images/background_overlay_top_end.vue'
 import elementBg from '@/assets/images/element_bg.vue'
 
@@ -136,7 +134,7 @@ const redirect = (link)=>{
                 <div class="inline-flex flex-row items-center gap-x-7">
                     <IconButton 
                         v-for="social in socialLinks.links"
-                        class="bg-diamond-red transition duration-200 hover:-translate-y-2 ease-in-out "
+                        class="bg-diamond transition duration-200 hover:-translate-y-2 ease-in-out "
                         :src="social.icon"
                         @click="redirect(social.link)"
                     />

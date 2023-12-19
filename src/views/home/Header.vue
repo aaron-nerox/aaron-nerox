@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import lineSun from '@/assets/images/line_sun.vue'
 import TopLeft from '@/assets/images/background_overlay_top_start.vue'
 import Button from '@/components/base/Button.vue'
@@ -57,14 +57,16 @@ const mainProjects = reactive({
     ]
 })
 
-const scrollDown = () => {
+const about = ref(null)
 
+const scrollDown = () => {
+    about.scrollIntoView()
 }
 
 </script>
 
 <template>
-    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-center gap-y-16">
+    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between p-10">
 
         <lineSun class="h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/5 h-fit absolute top-0 left-0" />
@@ -120,7 +122,9 @@ const scrollDown = () => {
             :Logo="mainProjects.apps[7].logoImage" />
         </div>
 
-        <Button :isLightMode="false" @click="scrollDown">
+        <Button 
+            :isLightMode="false" 
+            @click="scrollDown">
             Get to Know Me!
         </Button>
     </div>
