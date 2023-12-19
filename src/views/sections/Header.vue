@@ -72,13 +72,19 @@ const scrollDown = () => {
         <lineSun class="h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/5 h-fit absolute top-0 left-0" />
 
-        <TextBox class="w-[230px] text-sm absolute bottom-[20%] left-[10%]">
-            Click on any icon to find some cool stuff
-        </TextBox>
+        <div class="absolute bottom-[20%] left-[10%]">
+            <img src="@/assets/images/top_left_str.svg" alt="">
+            <TextBox class="w-[230px] text-sm">
+                Click on any icon to find some cool stuff
+            </TextBox>
+        </div>
 
-        <TextBox class="w-[300px] text-sm absolute top-[15%] right-[10%]">
-            The mobile engineer that you won't find anywhere else.
-        </TextBox>
+        <div class="absolute top-[15%] right-[10%] inline-flex flex-col items-end">
+            <TextBox class="w-[300px] text-sm">
+                The mobile engineer that you won't find anywhere else.
+            </TextBox>
+            <img src="@/assets/images/bottom_right_str.svg" alt="">
+        </div>
 
         <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-1/6 h-fit" />
 

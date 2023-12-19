@@ -6,7 +6,7 @@ import { ref } from 'vue'
 import Header from './sections/Header.vue'
 import About from './sections/About.vue'
 import Services from './sections/Services.vue'
-import Products from './sections/Products.vue'
+import Contributions from './sections/Contributions.vue'
 import Contact from './sections/Contact.vue'
 import Footer from './sections/Footer.vue'
 
@@ -48,7 +48,7 @@ const updateMenu = ()=>{
             <Header />
             <About />
             <Services />
-            <Products />
+            <Contributions />
             <Contact />
 
             <Footer />
