@@ -58,10 +58,8 @@ const mainProjects = reactive({
     ]
 })
 
-const about = ref(null)
-
 const scrollDown = () => {
-    about.scrollIntoView()
+    
 }
 
 </script>
@@ -118,9 +116,12 @@ const scrollDown = () => {
                 :Logo="mainProjects.apps[7].logoImage" />
         </div>
 
-        <Button class="w-fit" :isLightMode="false" @click="scrollDown">
-            Get to Know Me!
-        </Button>
+        <a href="#about">
+            <Button class="w-fit" :isLightMode="false" @click="scrollDown">
+                Get to Know Me!
+            </Button>
+        </a>
+    
     </div>
 </template>
 

@@ -4,7 +4,7 @@
 <template>
     <div>
         <div
-            class="grid grid-cols-1 grid-rows-1 min-h-[50px] h-fit w-fit relative cursor-pointer hover:-translate-y-1 transition-all">
+            class="grid grid-cols-1 grid-rows-1 min-h-[50px] h-fit w-fit relative cursor-pointer transition-all">
             <div class="h-full w-full outline outline-primary 
             outline-2 row-start-1 row-end-2 col-start-1 col-end-2 absolute top-[5px] 
             right-[5px] z-0">

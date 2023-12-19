@@ -10,7 +10,7 @@ const props = defineProps(["borderColor", "backgroundColor", "Logo"])
         <kinesis-element 
         type="translate"
         :strength="20"
-        class="w-[72px] h-[72px] rounded-full border-[3px] theme-main">
+        class="w-[72px] h-[72px] cursor-pointer rounded-full border-[3px] theme-main">
             <div class="w-full h-full rounded-full bg-none border-light border-[3px]">
                 <img :src="props.Logo" alt="" class="w-full h-full p-3">
             </div>
