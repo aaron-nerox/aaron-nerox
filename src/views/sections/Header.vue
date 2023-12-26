@@ -58,6 +58,10 @@ const mainProjects = reactive({
     ]
 })
 
+const positionClasses = ref([
+    "deg-0", "deg-45", "deg-90", "deg-135", "deg-180", "deg-225", "deg-270", "deg-315"
+])
+
 const scrollDown = () => {
     
 }
@@ -65,7 +69,7 @@ const scrollDown = () => {
 </script>
 
 <template>
-    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between p-10">
+    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center">
 
         <lineSun class="h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/5 h-fit absolute top-0 left-0" />
@@ -84,40 +88,53 @@ const scrollDown = () => {
             <img src="@/assets/images/bottom_right_str.svg" alt="">
         </div>
 
-        <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-1/6 h-fit" />
+        <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-[300px] h-fit mt-10" />
 
-        <div class="h-fit w-fit inline-flex flex-row items-center gap-4">
-            <LogoCircle :borderColor="mainProjects.apps[0].borderColor" :backgroundColor="mainProjects.apps[0].bgColor"
-                :Logo="mainProjects.apps[0].logoImage" />
+        <div class="h-[500px] aspect-square relative grid my-10">
+            <!-- <LogoCircle 
+                :borderColor="mainProjects.apps[0].borderColor" 
+                :backgroundColor="mainProjects.apps[0].bgColor"
+                :Logo="mainProjects.apps[0].logoImage"
+                sizeClass="small" />
             <div class="inline-flex flex-col items-center gap-y-5">
                 <div class="inline-flex flex-row items-end gap-x-[72px]">
                     <LogoCircle :borderColor="mainProjects.apps[1].borderColor"
-                        :backgroundColor="mainProjects.apps[1].bgColor" :Logo="mainProjects.apps[1].logoImage" />
+                        :backgroundColor="mainProjects.apps[1].bgColor" :Logo="mainProjects.apps[1].logoImage" sizeClass="small"/>
                     <LogoCircle class="mb-14" :borderColor="mainProjects.apps[2].borderColor"
-                        :backgroundColor="mainProjects.apps[2].bgColor" :Logo="mainProjects.apps[2].logoImage" />
+                        :backgroundColor="mainProjects.apps[2].bgColor" :Logo="mainProjects.apps[2].logoImage" sizeClass="small"/>
                     <LogoCircle :borderColor="mainProjects.apps[3].borderColor"
-                        :backgroundColor="mainProjects.apps[3].bgColor" :Logo="mainProjects.apps[3].logoImage" />
+                        :backgroundColor="mainProjects.apps[3].bgColor" :Logo="mainProjects.apps[3].logoImage" sizeClass="small"/>
                 </div>
-                <div class="grid grid-cols-1 grid-rows-1 items-center justify-center">
-                    <div class="pos-1 clock-wise w-[210px] h-[210px] border-primary border-4 "></div>
-                    <div class="pos-1 counter-clock-wise w-[210px] h-[210px] border-primary border-4"></div>
-                    <AnimatedLogo class="pos-1 m-auto h-44 w-44" />
-                </div>
+                
                 <div class="inline-flex flex-row items-start gap-x-[72px]">
                     <LogoCircle :borderColor="mainProjects.apps[4].borderColor"
-                        :backgroundColor="mainProjects.apps[4].bgColor" :Logo="mainProjects.apps[4].logoImage" />
+                        :backgroundColor="mainProjects.apps[4].bgColor" :Logo="mainProjects.apps[4].logoImage" sizeClass="small"/>
                     <LogoCircle class="mt-14" :borderColor="mainProjects.apps[5].borderColor"
-                        :backgroundColor="mainProjects.apps[5].bgColor" :Logo="mainProjects.apps[5].logoImage" />
+                        :backgroundColor="mainProjects.apps[5].bgColor" :Logo="mainProjects.apps[5].logoImage" sizeClass="small"/>
                     <LogoCircle :borderColor="mainProjects.apps[6].borderColor"
-                        :backgroundColor="mainProjects.apps[6].bgColor" :Logo="mainProjects.apps[6].logoImage" />
+                        :backgroundColor="mainProjects.apps[6].bgColor" :Logo="mainProjects.apps[6].logoImage" sizeClass="small"/>
                 </div>
             </div>
             <LogoCircle :borderColor="mainProjects.apps[7].borderColor" :backgroundColor="mainProjects.apps[7].bgColor"
-                :Logo="mainProjects.apps[7].logoImage" />
+                :Logo="mainProjects.apps[7].logoImage" sizeClass="small"/> -->
+            <div class="min-h-[70%] min-w-[70%] grid items-center justify-center m-auto">
+                <div class="grid-overlap clock-wise min-w-[55%] min-h-[55%] border-primary border-2 shrink-0"></div>
+                <div class="grid-overlap counter-clock-wise min-w-[55%] min-h-[55%] aspect-square border-primary border-2 shrink-0"></div>
+                <AnimatedLogo class="grid-overlap w-[90%] m-auto" />
+            </div>
+            <LogoCircle 
+                v-for="project in mainProjects.apps"
+                :borderColor="project.borderColor"
+                :backgroundColor="project.bgColor"
+                :Logo="project.logoImage" 
+                sizeClass="small"
+                :class="['absolute top-[42.6%] left-[42.6%] block', positionClasses[mainProjects.apps.indexOf(project)]]"
+            />      
+            
         </div>
 
         <a href="#about">
-            <Button class="w-fit" :isLightMode="false" @click="scrollDown">
+            <Button class="w-fit h-[55px] mb-10" :isLightMode="false" @click="scrollDown">
                 Get to Know Me!
             </Button>
         </a>
@@ -159,4 +176,39 @@ const scrollDown = () => {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+
+.deg-0 {
+   transform:translate(210px)
+}
+
+.deg-45 {
+   transform:rotate(46deg) translate(210px) rotate(-46deg);
+}
+
+.deg-90 {
+   transform:rotate(91deg) translate(210px) rotate(-91deg);
+}
+
+.deg-135 {
+   transform:rotate(136deg) translate(210px) rotate(-136deg);
+}
+
+.deg-180 {
+   transform:rotate(181deg) translate(210px) rotate(-181deg);
+}
+
+.deg-225 {
+   transform:rotate(226deg) translate(210px) rotate(-226deg);
+}
+
+.deg-270 {
+   transform:rotate(271deg) translate(210px) rotate(-271deg);
+}
+
+.deg-315 {
+   transform:rotate(316deg) translate(210px) rotate(-316deg);
+}
+
+
 </style>
