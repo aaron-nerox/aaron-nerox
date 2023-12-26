@@ -1,8 +1,10 @@
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref, shallowRef, watchEffect, defineAsyncComponent  } from 'vue'
 
 const sizeClass = ref("")
-const props = defineProps(["borderColor", "backgroundColor", "Logo", "sizeClass"])
+const icon = shallowRef()
+
+const props = defineProps(["borderColor", "backgroundColor", "Logo", "sizeClass", "src"])
 
 watchEffect(() => {
     switch(props.sizeClass) {
@@ -15,7 +17,7 @@ watchEffect(() => {
             break;
         }
         case 'large' : {
-            sizeClass.value = "w-[96px] h-[96px]"
+            sizeClass.value = "w-[106px] h-[106px]"
             break;
         }
         default : {
@@ -23,6 +25,9 @@ watchEffect(() => {
             break;
         }
     }
+
+    icon.value =  defineAsyncComponent(()=> import(/* @vite-ignore */`../../assets/icons/vue/${props.src}.vue`))
+
 })
 
 </script>
@@ -33,10 +38,15 @@ watchEffect(() => {
             type="translate"
             :strength="20">
             <div class="w-fit h-fit rounded-full outline-cs">
-                <img 
-                    :src="props.Logo" 
-                    alt="product logo"
-                    :class="['bg-cs m-[3px] rounded-full', sizeClass]" />
+                <div :class="[sizeClass, 'grid rounded-full bg-cs m-[3px] p-[3px]']">
+                    <!-- <img 
+                        :src="props.Logo" 
+                        alt="product logo"
+                        :class="['bg-cs m-[3px] rounded-full', sizeClass]" /> -->
+                    <icon 
+                        class="w-[70%] h-[70%] m-auto" />
+                </div>
+                
             </div>
             
         </kinesis-element>

@@ -2,8 +2,9 @@
 import { ref, watchEffect } from 'vue'
 
 
-const props = defineProps(["alignment"])
+const props = defineProps(["alignment", "mode"])
 const alignmentClass = ref("")
+const modeClass = ref("")
 
 watchEffect(() => {
     switch(props.alignment) {
@@ -24,6 +25,13 @@ watchEffect(() => {
             break;
         }
     }
+
+    if(props.mode == "dark") {
+        modeClass.value = "bg-dark text-light"
+    } else {
+        modeClass.value = "bg-light text-dark"
+    }
+
 })
 
 </script>
@@ -38,8 +46,8 @@ watchEffect(() => {
             right-[5px] z-0">
             </div>
 
-            <div :class="['w-full h-full p-2 bg-light border-primary border-b-2 border-l-2 z-10 inline-flex flex-col justify-center', alignmentClass]">
-                <p class="w-fit h-fit text-dark">
+            <div :class="['w-full h-full p-2 border-primary border-b-2 border-l-2 z-10 inline-flex flex-col justify-center', alignmentClass, modeClass]">
+                <p class="w-fit h-fit">
                     <slot class="w-fit h-fit"></slot>
                 </p>
             </div>
