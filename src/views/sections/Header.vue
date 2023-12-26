@@ -5,7 +5,7 @@ import TopLeft from '@/assets/images/background_overlay_top_start.vue'
 import Button from '@/components/base/Button.vue'
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue'
 import LogoCircle from '@/components/extended/LogoCircle.vue'
-import TextBox from '../../components/base/TextBox.vue'
+import TextBox from '@/components/base/TextBox.vue'
 
 const mainProjects = reactive({
     apps: [
@@ -91,32 +91,6 @@ const scrollDown = () => {
         <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-[300px] h-fit mt-10" />
 
         <div class="h-[500px] aspect-square relative grid my-10">
-            <!-- <LogoCircle 
-                :borderColor="mainProjects.apps[0].borderColor" 
-                :backgroundColor="mainProjects.apps[0].bgColor"
-                :Logo="mainProjects.apps[0].logoImage"
-                sizeClass="small" />
-            <div class="inline-flex flex-col items-center gap-y-5">
-                <div class="inline-flex flex-row items-end gap-x-[72px]">
-                    <LogoCircle :borderColor="mainProjects.apps[1].borderColor"
-                        :backgroundColor="mainProjects.apps[1].bgColor" :Logo="mainProjects.apps[1].logoImage" sizeClass="small"/>
-                    <LogoCircle class="mb-14" :borderColor="mainProjects.apps[2].borderColor"
-                        :backgroundColor="mainProjects.apps[2].bgColor" :Logo="mainProjects.apps[2].logoImage" sizeClass="small"/>
-                    <LogoCircle :borderColor="mainProjects.apps[3].borderColor"
-                        :backgroundColor="mainProjects.apps[3].bgColor" :Logo="mainProjects.apps[3].logoImage" sizeClass="small"/>
-                </div>
-                
-                <div class="inline-flex flex-row items-start gap-x-[72px]">
-                    <LogoCircle :borderColor="mainProjects.apps[4].borderColor"
-                        :backgroundColor="mainProjects.apps[4].bgColor" :Logo="mainProjects.apps[4].logoImage" sizeClass="small"/>
-                    <LogoCircle class="mt-14" :borderColor="mainProjects.apps[5].borderColor"
-                        :backgroundColor="mainProjects.apps[5].bgColor" :Logo="mainProjects.apps[5].logoImage" sizeClass="small"/>
-                    <LogoCircle :borderColor="mainProjects.apps[6].borderColor"
-                        :backgroundColor="mainProjects.apps[6].bgColor" :Logo="mainProjects.apps[6].logoImage" sizeClass="small"/>
-                </div>
-            </div>
-            <LogoCircle :borderColor="mainProjects.apps[7].borderColor" :backgroundColor="mainProjects.apps[7].bgColor"
-                :Logo="mainProjects.apps[7].logoImage" sizeClass="small"/> -->
             <div class="min-h-[70%] min-w-[70%] grid items-center justify-center m-auto">
                 <div class="grid-overlap clock-wise min-w-[55%] min-h-[55%] border-primary border-2 shrink-0"></div>
                 <div class="grid-overlap counter-clock-wise min-w-[55%] min-h-[55%] aspect-square border-primary border-2 shrink-0"></div>

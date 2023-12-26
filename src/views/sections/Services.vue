@@ -1,15 +1,15 @@
 <script setup>
 import { reactive, ref } from 'vue'
 
-import TextBox from '../../components/base/TextBox.vue'
-import BaseContainer from '../../components/base/BaseContainer.vue'
-import LogoCircle from '../../components/extended/LogoCircle.vue'
-import Button from '../../components/base/Button.vue'
+import TextBox from '@/components/base/TextBox.vue'
+import BaseContainer from '@/components/base/BaseContainer.vue'
+import LogoCircle from '@/components/extended/LogoCircle.vue'
+import Button from '@/components/base/Button.vue'
 
-import ServiceDetailsModal from '../../components/modals/ServiceDetailsModal.vue'
+import ServiceDetailsModal from '@/components/modals/ServiceDetailsModal.vue'
 
-import lineSun from '../../assets/images/line_sun.vue'
-import bgElement from '../../assets/images/element_bg_end.vue'
+import lineSun from '@/assets/images/line_sun.vue'
+import bgElement from '@/assets/images/element_bg_end.vue'
 
 
 const services = reactive({

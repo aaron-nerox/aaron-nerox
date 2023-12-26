@@ -3,7 +3,7 @@ import { reactive } from 'vue'
 
 import AnimatedLogo from "@/components/extended/AnimatedLogo.vue"
 import Button from "@/components/base/Button.vue"
-import TextBox from "../../components/base/TextBox.vue"
+import TextBox from "@/components/base/TextBox.vue"
 import TopRight from '@/assets/images/background_overlay_top_end.vue'
 
 

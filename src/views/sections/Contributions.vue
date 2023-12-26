@@ -1,5 +1,5 @@
 <script setup>
-import TextBox from '../../components/base/TextBox.vue'
+import TextBox from '@/components/base/TextBox.vue'
 import Product from '@/components/extended/Product.vue'
 import ElementBgLeft from '@/assets/images/element_bg_start.vue'
 import BgOverlay from '@/assets/images/background_overlay_top_start.vue'

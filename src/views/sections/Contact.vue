@@ -1,14 +1,14 @@
 <script setup>
 import { reactive, watchEffect } from 'vue'
 
-import TextBox from '../../components/base/TextBox.vue'
-import IconInput from '../../components/base/IconInput.vue'
-import BaseContainer from '../../components/base/BaseContainer.vue'
-import Button from '../../components/base/Button.vue'
+import TextBox from '@/components/base/TextBox.vue'
+import IconInput from '@/components/base/IconInput.vue'
+import BaseContainer from '@/components/base/BaseContainer.vue'
+import Button from '@/components/base/Button.vue'
 
-import ChevronRight from '../../assets/icons/vue/chevron_right.vue'
-import bgOverlay from '../../assets/images/background_overlay_bottom_end.vue'
-import lineSun from '../../assets/images/line_sun.vue'
+import ChevronRight from '@/assets/icons/vue/chevron_right.vue'
+import bgOverlay from '@/assets/images/background_overlay_bottom_end.vue'
+import lineSun from '@/assets/images/line_sun.vue'
 
 const contactInfo = reactive({
     name : "",
