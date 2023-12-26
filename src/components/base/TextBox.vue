@@ -1,12 +1,11 @@
 <script setup>
-import { ref, defineProps, watchEffect } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 
 const props = defineProps(["alignment"])
 const alignmentClass = ref("")
 
 watchEffect(() => {
-    console.log(props.alignment)
     switch(props.alignment) {
         case 'start' : {
             alignmentClass.value = "items-start"
