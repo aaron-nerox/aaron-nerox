@@ -57,19 +57,19 @@ const redirectToContact = (contactPoint, contactType) => {
 <template>
     <section 
         id="contact" 
-        class="w-full h-screen bg-light inline-flex flex-col items-center jutify-evenly py-[5%] relative">
+        class="w-full h-screen bg-light inline-flex flex-col items-center jutify-evenly relative">
 
         <bgOverlay class="w-1/5 h-fit absolute bottom-0 right-0" />
         <lineSun class="h-[200px] w-fit absolute right-0 top-[10%]"/>
         <lineSun class="h-[200px] w-fit absolute left-0 bottom-[10%] rotate-180"/>
 
         <TextBox
-            class="w-[420px] !h-[64px] text-3xl font-bold">
+            class="w-[420px] !h-[64px] text-3xl font-bold my-[5%]">
             Contact Me
         </TextBox>
         
-        <div class="w-full h-[70%] px-[5%] inline-flex flex-row items-center my-auto justify-evenly">
-            <BaseContainer class="!w-[40%] h-full">
+        <div class="w-full h-[70%] px-[5%] inline-flex flex-row items-center mb-[3%] justify-evenly">
+            <BaseContainer class="!w-[40%] h-fit">
                 <div class="w-full h-full bg-dark inline-flex flex-col items-start justify-center p-7 gap-y-5">
                     <IconInput 
                         class="w-full"

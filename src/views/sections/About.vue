@@ -46,19 +46,18 @@ const profileInfo = reactive({
                 </div>
             </div>
 
-            <div class="h-full w-2/3 px-[5%] py-10 inline-flex flex-col items-start justify-evenly">
-                <div class="w-full mb-5">
-                    <TextBox
-                        class="w-[250px] !h-[64px] text-3xl font-bold">
-                        About Me
-                    </TextBox>
-                </div>
+            <div class="h-full w-2/3 px-[5%] inline-flex flex-col items-start justify-evenly">
+                <TextBox
+                    class="w-[250px] !h-[64px] text-3xl font-bold my-[3%]">
+                    About Me
+                </TextBox>
+                
 
-                <div class="w-full h-fit inline-flex flex-col items-start justify-center">
+                <div class="w-full h-fit inline-flex flex-col items-start justify-center gap-y-8">
                     <TextBox
                         v-for="fact in profileInfo.profileFacts"
                         alignment="start"
-                        class="w-[85%] min-h-[72px] text-lg font-regular my-5">
+                        class="w-[85%] min-h-[72px] text-lg font-regular">
                         {{ fact }}
                     </TextBox>
                 </div>
