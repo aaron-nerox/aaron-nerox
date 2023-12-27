@@ -25,25 +25,19 @@ defineEmits(['dissmiss'])
                         <Button 
                             :class="buttonStyleClass"
                             :isLightMode="true">
-                            About
+                            Who is Aaron
                         </Button>
                     </a>
-                    <a href="#skills" class="!w-full" @click="$emit('dissmiss')">
+                    <a href="#services" class="!w-full" @click="$emit('dissmiss')">
                         <Button :class="buttonStyleClass"
                         :isLightMode="true">
-                            Skills
+                            Services
                         </Button>
                     </a>
-                    <a href="#featured" class="!w-full" @click="$emit('dissmiss')">
+                    <a href="#products" class="!w-full" @click="$emit('dissmiss')">
                         <Button :class="buttonStyleClass"
                         :isLightMode="true">
-                            Projects
-                        </Button>
-                    </a>
-                    <a href="#extra" class="!w-full" @click="$emit('dissmiss')">
-                        <Button :class="buttonStyleClass"
-                        :isLightMode="true">
-                            Extras
+                            Products
                         </Button>
                     </a>
                     <a href="#contact" class="!w-full" @click="$emit('dissmiss')">
