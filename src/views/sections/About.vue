@@ -24,13 +24,13 @@ const profileInfo = reactive({
         <TopRight class="w-1/5 h-fit absolute top-0 right-0" />
 
         <div class="w-full h-full inline-flex flex-row items-center">
-            <div class="h-full w-1/3 grid grid-cols-1 grid-rows-1 items-center justify-items-center">
+            <div class="h-full w-1/3 grid items-center justify-items-center">
                 <img 
                 src="@/assets/images/self_image.svg" 
                 alt="" 
-                class="w-full h-full object-cover pos-1" />
+                class="w-full h-full object-cover grid-overlap" />
 
-                <div class="w-4/5 pos-1">
+                <div class="w-4/5 grid-overlap">
                     <div class="w-[90%] m-auto grid">
                         <img src="@/assets/images/logo_bg.png" 
                             alt=""

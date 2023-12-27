@@ -81,13 +81,13 @@ const redirect = (link)=>{
 <template>
     <footer 
         id="footer" 
-        class="w-full md:h-[80vh] bg-dark text-center relative inline-flex flex-col items-center justify-center" >
+        class="w-full h-screen md:h-[80vh] bg-dark text-center relative inline-flex flex-col items-center justify-center" >
         
         <bgOverlay class="stroke-light md:w-1/5 w-1/2 h-fit absolute top-0 end-0"/>
 
-        <elementBg class="absolute bottom-0 start-7" />
+        <elementBg class="absolute bottom-0 start-7 hidden md:block" />
         
-        <div class="my-6">
+        <div class="w-[70%] md:w-full my-1 md:my-6">
             <p class="font-medium text-xl text-light">
                 "Creativity is intelligence having fun."
             </p>
@@ -96,9 +96,9 @@ const redirect = (link)=>{
             </p>
         </div>
 
-        <div class="w-full h-3/5 inline-flex items-center justify-center">
+        <div class="w-full h-fit md:h-3/5 inline-flex flex-col md:flex-row items-center justify-center">
 
-            <div class="w-1/4">
+            <div class="w-3/5 md:w-1/4 my-4 md:my-0">
                 <div class="w-[90%] m-auto grid">
                     <img src="@/assets/images/logo_bg.png" 
                         alt=""
@@ -112,16 +112,16 @@ const redirect = (link)=>{
                 </div>
             </div>
 
-            <div class="w-20"></div>
+            <div class="w-20 hidden md:block"></div>
 
-            <div class="w-3/5 h-3/5 inline-flex flex-col items-start justify-center gap-y-7">
+            <div class="w-full md:w-3/5 h-fit md:h-3/5 inline-flex flex-col items-center md:items-start justify-center gap-y-5 md:gap-y-7">
 
-                <div class="w-full inline-flex flex-row items-start gap-x-20 text-white">
+                <div class="w-[90%] md:w-full grid grid-cols-2 md:inline-flex md:flex-row md:items-start gap-x-5 md:gap-x-20 gap-y-5 md:gap-y-0 text-white">
                     <div 
                         v-for="footerSection in footerLinks.sections"
                         class="inline-flex flex-col items-start">
 
-                        <p class="font-semibold text-2xl mb-3">{{ footerSection.title }}</p>
+                        <p class="font-medium md:font-semibold text-lg md:text-2xl mb-1 md:mb-3">{{ footerSection.title }}</p>
                         
                         <RedirectLink 
                             v-for="link in footerSection.links"
@@ -131,7 +131,7 @@ const redirect = (link)=>{
                     </div>
                 </div>
 
-                <div class="inline-flex flex-row items-center gap-x-7">
+                <div class="inline-flex flex-row items-center gap-x-4 md:gap-x-7">
                     <IconButton 
                         v-for="social in socialLinks.links"
                         class="bg-diamond transition duration-200 hover:-translate-y-2 ease-in-out "
@@ -142,7 +142,7 @@ const redirect = (link)=>{
             </div>
         </div>
 
-        <p class="w-fit font-medium text-md text-white mx-auto">
+        <p class="w-[90%] md:w-full font-medium text-md text-white mx-auto mt-5 md:mt-0">
             Forged by aaron from love &#10084;&#65039; and monochrome ☯ 
         </p>
 

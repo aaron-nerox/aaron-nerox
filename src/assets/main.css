@@ -60,8 +60,12 @@ opacity: 0;
         background-image: url('@/assets/icons/ic_diamond.svg');
     }
 
-    .pos-1 {
-        grid-row: 1;
-        grid-column: 1;
+    .grid-cols-4{
+        grid-template-columns: repeat(3, auto);
+        gap: 25px;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, auto);
     }
 }

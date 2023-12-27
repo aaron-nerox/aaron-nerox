@@ -10,9 +10,9 @@ const redirect = ()=>{
 <template>
     <div class="inline-flex flex-row items-center min-w-fit fill-white
     text-white hover:fill-primary hover:text-primary 
-    cursor-pointer transition-all gap-x-3 my-1"
+    cursor-pointer transition-all gap-x-1 md:gap-x-3 my-1"
         @click="redirect">
-        <p class="text-md font-medium">
+        <p class="text-xs md:text-md font-normal md:font-medium">
             {{props.name}}
         </p>
         <Link class="w-3 h-3"/>
