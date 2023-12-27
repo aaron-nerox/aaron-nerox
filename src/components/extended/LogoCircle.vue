@@ -9,7 +9,7 @@ const props = defineProps(["borderColor", "backgroundColor", "Logo", "sizeClass"
 watchEffect(() => {
     switch(props.sizeClass) {
         case 'small' : {
-            sizeClass.value = "w-[64px] h-[64px]"
+            sizeClass.value = "w-[48px] md:w-[64px] h-[48px] md:h-[64px]"
             break;
         }
         case 'medium' : {

@@ -45,10 +45,10 @@ const updateMenu = ()=>{
                     />
 
             <Header />
-            <About />
+            <!-- <About />
             <Services />
             <Contributions />
-            <Contact />
+            <Contact /> -->
 
             <Footer />
         </div>
