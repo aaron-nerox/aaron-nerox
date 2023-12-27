@@ -24,8 +24,7 @@ const updateMenu = ()=>{
 
 <template>
     <Transition name="fade">
-        <div class="w-full h-screen max-h-screen grid 
-            md:overflow-y-auto">
+        <div class="w-full">
             <Teleport to="body">
                 <Menu 
                     :open="isMenuOpen"
