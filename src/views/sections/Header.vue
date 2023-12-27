@@ -69,7 +69,7 @@ const scrollDown = () => {
 </script>
 
 <template>
-    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center">
+    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between">
 
         <lineSun class="h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/5 h-fit absolute top-0 left-0" />
