@@ -81,7 +81,7 @@ const redirect = (link)=>{
 <template>
     <footer 
         id="footer" 
-        class="w-full md:h-[80vh] bg-dark text-center relative" >
+        class="w-full md:h-[80vh] bg-dark text-center relative inline-flex flex-col items-center justify-center" >
         
         <bgOverlay class="stroke-light md:w-1/5 w-1/2 h-fit absolute top-0 end-0"/>
 
