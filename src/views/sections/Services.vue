@@ -92,34 +92,35 @@ const updateDialog = () => {
             :serviceDetails="selectedService"
             @onDissmissRequest="updateDialog"/>
     </Teleport>
-    <section id="services" class="w-full h-screen bg-light inline-flex flex-col items-center justify-evenly relative">
-        <lineSun class="h-[200px] w-fit absolute left-0 top-[10%] rotate-180"/>
-        <bgElement  class="w-[64px] absolute bottom-10 right-0"/>
+
+    <section id="services" class="w-full h-fit md:h-screen bg-light inline-flex flex-col items-center justify-evenly relative">
+        <lineSun class="h-[96px] md:h-[200px] w-fit absolute left-0 top-[10%] rotate-180"/>
+        <bgElement  class="w-[48px] md:w-[64px] absolute bottom-10 right-0"/>
 
         <TextBox
-            class="w-[420px] !h-[64px] text-3xl font-bold my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-[5%]">
             Services i Provide
         </TextBox>
 
-        <div class="w-full h-[90%] px-[5%] mb-[3%] inline-flex flex-row items-center justify-evenly">
+        <div class="w-full h-fit md:h-[90%] px-10 md:px-[5%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
             <BaseContainer 
                 v-for="service in services.services"
-                class="!w-[35%]">
+                class="w-full md:!w-[35%] my-5 md:my-0">
                 <div class="bg-dark h-fit w-full shrink-0 inline-flex flex-col items-center relative">
                     <img 
                         src="@/assets/images/green_swirl.jpeg" 
                         alt="" 
-                        class="w-full h-[120px] object-cover absolute top-0 right-0 left-0">
+                        class="w-full h-[96px] md:h-[120px] object-cover absolute top-0 right-0 left-0">
                     <LogoCircle 
                         :src="service.image"
                         borderColor="ffffff"
                         backgroundColor="ffffff"
                         sizeClass="large"
-                        class="mt-[55px]"/>
+                        class="mt-[48px] md:mt-[55px]"/>
                     <p class="text-light font-semibold text-xl my-5">
                         {{  service.name }}
                     </p>
-                    <p class="text-light text-lg text-center mx-10">
+                    <p class="text-light text-md md:text-lg text-center mx-5 md:mx-10">
                         {{ service.description }}
                     </p>
                     <Button 

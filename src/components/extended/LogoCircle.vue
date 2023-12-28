@@ -17,7 +17,7 @@ watchEffect(() => {
             break;
         }
         case 'large' : {
-            sizeClass.value = "w-[106px] h-[106px]"
+            sizeClass.value = "w-[96px] md:w-[106px] h-[96px] md:h-[106px]"
             break;
         }
         default : {
