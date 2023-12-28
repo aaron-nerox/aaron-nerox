@@ -98,7 +98,7 @@ const updateDialog = () => {
         <bgElement  class="w-[48px] md:w-[64px] absolute bottom-10 right-0"/>
 
         <TextBox
-            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10 md:my-[5%]">
             Services i Provide
         </TextBox>
 

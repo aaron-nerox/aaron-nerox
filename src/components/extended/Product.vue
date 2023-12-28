@@ -22,7 +22,7 @@ const redirectInto = () => {
 <template>
     <BaseContainer>
         <div class="w-full h-fit bg-dark text-light">
-            <div class="w-full h-fit grid grid-cols-1 grid-rows-1">
+            <div class="w-full h-fit grid">
                 <img 
                     :src="props.productCoverUrl" 
                     alt="product cover"
@@ -37,21 +37,21 @@ const redirectInto = () => {
                         :Logo="props.productImageUrl"
                         sizeClass="small"
                         />
-                    <p class="font-bold text-2xl">
+                    <p class="font-bold text-xl md:text-2xl">
                         {{ props.productName }}
                     </p>
                 </div>
             </div>  
 
             <div class="w-full h-[156px] p-3 inline-flex flex-col justify-between">
-                <p class="text-light font-medium text-sm">
+                <p class="text-light font-medium text-md md:text-sm">
                     {{ props.productDescription }}
                 </p>
                 
                 <img 
                     src="@/assets/images/google_play_button.png" 
                     alt="play_button"
-                    class="w-[40%] self-end"
+                    class="w-1/2 md:w-[40%] self-end"
                     @click="redirectInto">
             </div>          
         </div>

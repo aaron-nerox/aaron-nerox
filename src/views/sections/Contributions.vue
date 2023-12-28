@@ -8,17 +8,17 @@ const products = [1,1,1,1,1]
 </script>
 
 <template>
-    <section id="products" class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between">
+    <section id="products" class="w-full h-fit md:h-screen bg-light relative inline-flex flex-col items-center">
 
-        <BgOverlay class="absolute top-0 left-0 w-1/5 h-fit" />
-        <ElementBgLeft class="absolute left-0 bottom-10 w-[64px]"/>
+        <BgOverlay class="absolute top-0 left-0 w-1/2 md:w-1/5 h-fit" />
+        <ElementBgLeft class="absolute left-0 bottom-10 w-[48px] md:w-[64px]"/>
 
         <TextBox
-            class="w-[420px] !h-[64px] text-3xl font-bold my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-bold my-10 md:my-[5%]">
             Products I worked on
         </TextBox>
 
-        <div class="w-full h-fit grid grid-cols-4 px-[8%] mb-[3%]">
+        <div class="w-full h-fit grid md:grid-cols-4 my-auto px-5 md:px-[8%] mb-10 md:mb-[3%] gap-y-5">
             <Product 
                 v-for="product in products"
                 productName="Tapping solution"
