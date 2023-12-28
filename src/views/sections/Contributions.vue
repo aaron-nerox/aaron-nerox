@@ -34,8 +34,5 @@ const products = [1,1,1,1,1]
 </template>
 
 <style scoped>
-.grid-cols-4{
-    grid-template-columns: repeat(3, auto);
-    gap: 25px;
-}
+
 </style>
