@@ -98,7 +98,7 @@ const redirect = (link)=>{
 
         <div class="w-full h-fit md:h-3/5 inline-flex flex-col md:flex-row items-center justify-center">
 
-            <div class="w-3/5 md:w-1/4 my-4 md:my-0">
+            <div class="w-3/5 md:w-1/4 my-10 md:my-0">
                 <div class="w-[90%] m-auto grid">
                     <img src="@/assets/images/logo_bg.png" 
                         alt=""

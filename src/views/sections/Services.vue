@@ -102,7 +102,7 @@ const updateDialog = () => {
             Services i Provide
         </TextBox>
 
-        <div class="w-full h-fit md:h-[90%] px-10 md:px-[5%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
+        <div class="w-full h-fit md:h-[90%] px-5 md:px-[5%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
             <BaseContainer 
                 v-for="service in services.services"
                 class="w-full md:!w-[35%] my-5 md:my-0">

@@ -18,7 +18,7 @@ const products = [1,1,1,1,1]
             Products I worked on
         </TextBox>
 
-        <div class="w-full h-fit grid md:grid-cols-4 my-auto px-5 md:px-[8%] mb-10 md:mb-[3%] gap-y-5">
+        <div class="w-full h-fit grid md:grid-cols-3 my-auto px-5 md:px-[8%] mb-10 md:mb-[3%] gap-5 md:gap-10">
             <Product 
                 v-for="product in products"
                 productName="Tapping solution"

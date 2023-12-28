@@ -48,7 +48,7 @@ const updateMenu = ()=>{
             <About />
             <Services />
             <Contributions />
-            <!-- <Contact /> -->
+            <Contact />
 
             <Footer />
         </div>

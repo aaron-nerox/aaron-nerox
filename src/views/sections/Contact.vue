@@ -57,19 +57,19 @@ const redirectToContact = (contactPoint, contactType) => {
 <template>
     <section 
         id="contact" 
-        class="w-full h-screen bg-light inline-flex flex-col items-center jutify-evenly relative">
+        class="w-full h-fit md:h-screen bg-light inline-flex flex-col items-center jutify-evenly relative">
 
         <bgOverlay class="w-1/5 h-fit absolute bottom-0 right-0" />
-        <lineSun class="h-[200px] w-fit absolute right-0 top-[10%]"/>
-        <lineSun class="h-[200px] w-fit absolute left-0 bottom-[10%] rotate-180"/>
+        <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[10%]"/>
+        <lineSun class="h-[96px] md:h-[200px] w-fit absolute left-0 bottom-[10%] rotate-180"/>
 
         <TextBox
-            class="w-[420px] !h-[64px] text-3xl font-bold my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10 md:my-[5%]">
             Contact Me
         </TextBox>
         
-        <div class="w-full h-[70%] px-[5%] inline-flex flex-row items-center mb-[3%] justify-evenly">
-            <BaseContainer class="!w-[40%] h-fit">
+        <div class="w-full h-fit md:h-[70%] px-5 md:px-[5%] inline-flex flex-col md:flex-row items-center mb-10 md:mb-[3%] justify-evenly gap-y-8 md:gap-y-0">
+            <BaseContainer class="!w-full md:!w-[40%] h-fit">
                 <div class="w-full h-full bg-dark inline-flex flex-col items-start justify-center p-7 gap-y-5">
                     <IconInput 
                         class="w-full"
@@ -97,7 +97,7 @@ const redirectToContact = (contactPoint, contactType) => {
                 </div>
             </BaseContainer>
 
-            <div class="w-[50%] h-full inline-flex flex-col items-start justify-center gap-y-8">
+            <div class="w-full md:w-[50%] h-full inline-flex flex-col items-center md:items-start justify-center gap-y-8">
                 
                 <div class="inline-flex flex-col items-center">
                     <TextBox 
@@ -113,7 +113,7 @@ const redirectToContact = (contactPoint, contactType) => {
                     @click="redirectToContact(point.contact, point.name)">
                     <div class="w-full h-[126px] bg-dark">
                         <div class="w-full inline-flex flex-row items-center justify-between">
-                            <div class="w-[196px] h-[126px] grid">
+                            <div class="w-[106px] md:w-[196px] h-[126px] grid">
                                 <img 
                                     src="@/assets/images/green_swirl.jpeg" 
                                     alt="background"
@@ -125,10 +125,10 @@ const redirectToContact = (contactPoint, contactType) => {
                                     class="grid-overlap h-[96px] w-[96px] m-auto"
                                 />
                             </div>
-                            <p class="text-light text-xl">
+                            <p class="text-light text-xs md:text-xl">
                                 {{ point.contact }}
                             </p>
-                            <ChevronRight class="h-7 w-7 fill-light mr-5"/>
+                            <ChevronRight class="h-5 md:h-7 w-5 md:w-7 fill-light mr-5"/>
                         </div>
                     </div>
                 </BaseContainer>
