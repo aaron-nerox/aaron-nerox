@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "epic-spinners": "^2.0.0",
     "lottie-web": "^5.12.2",
     "pinia": "^2.1.7",
     "vue": "^3.2.41",
