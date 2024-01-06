@@ -3,8 +3,12 @@ import TextBox from '@/components/base/TextBox.vue'
 import Product from '@/components/extended/Product.vue'
 import ElementBgLeft from '@/assets/images/element_bg_start.vue'
 import BgOverlay from '@/assets/images/background_overlay_top_start.vue'
+import { useNetwork } from '@/stores/network';
+import { computed } from 'vue';
 
-const products = [1,1,1,1,1]
+const network = useNetwork()
+
+const products = computed(() => network.products)
 </script>
 
 <template>
@@ -20,14 +24,14 @@ const products = [1,1,1,1,1]
 
         <div class="w-full h-fit grid md:grid-cols-3 my-auto px-5 md:px-[8%] mb-10 md:mb-[3%] gap-5 md:gap-10">
             <Product 
-                v-for="product in products"
-                productName="Tapping solution"
-                productCoverUrl="CoverUrl"
-                productPrimaryColor="223322"
-                productSecondaryColor="443323"
-                productImageUrl="link"
-                productDownloadUrl="link"
-                productDescription="This will be a product description for any needed description and clarification"
+                v-for="app in products.products"
+                :productName="app.title"
+                :productCoverUrl="app.coverImage"
+                :productPrimaryColor="app.borderColor"
+                :productSecondaryColor="app.bgColor"
+                :productImageUrl="app.logoImage"
+                :productDownloadUrl="app.link"
+                :productDescription="app.description"
             />
         </div>
     </section>
