@@ -29,9 +29,11 @@ export const useNetwork = defineStore('network', () => {
     async function fetchHomeData() {
         const {isHeaderLoading, headerError , data: headerData } = await useFetch(`${STAGING_URL}/main/header`).get().json()
         const {isAboutFetching, aboutError, data : aboutData } = await useFetch(`${STAGING_URL}/main/about`).get().json()
+        const {isServicesFetching, servicesError, data: servicesData} = await useFetch(`${STAGING_URL}/contribution/services`).get().json()
 
         headerProjects.value = headerData.value.response
         displayDescription.value = aboutData.value.response
+        services.value = servicesData.value.response
     }
 
     async function fetchLinkHubProfile() {

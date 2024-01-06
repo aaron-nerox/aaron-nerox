@@ -16,7 +16,7 @@ defineEmits(['onDissmissRequest'])
             <div class="w-[90%] md:w-[33%] min-h-[75%] md:min-h-[70%] bg-light m-auto p-4 md:p-10 inline-flex flex-col items-center justify-center">
                 <div class="w-full h-fit inline-flex flex-col md:flex-row items-center md:justify-between gap-y-4 md:gap-y-0">
                     <LogoCircle 
-                        :src="props.serviceDetails.image"
+                        :Logo="props.serviceDetails.image"
                         borderColor="000000"
                         backgroundColor="000000"
                         sizeClass="large"
@@ -40,7 +40,7 @@ defineEmits(['onDissmissRequest'])
                 <div class="w-full inline-flex flex-row items-center justify-center gap-x-5">
                     <LogoCircle 
                         v-for="project in props.serviceDetails.projects"
-                        :src="project.logoImage"
+                        :Logo="project.logoImage"
                         :borderColor="project.borderColor"
                         :backgroundColor="project.bgColor"
                         sizeClass="small"

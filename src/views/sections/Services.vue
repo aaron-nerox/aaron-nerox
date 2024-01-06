@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
 import TextBox from '@/components/base/TextBox.vue'
 import BaseContainer from '@/components/base/BaseContainer.vue'
@@ -10,73 +10,17 @@ import ServiceDetailsModal from '@/components/modals/ServiceDetailsModal.vue'
 
 import lineSun from '@/assets/images/line_sun.vue'
 import bgElement from '@/assets/images/element_bg_end.vue'
+import { useNetwork } from '@/stores/network'
 
+const network = useNetwork()
 
-const services = reactive({
-    services : [
-        {
-            name: "Android",
-            detailedName: "Native Android",
-            image: "twitter",
-            description: "My main focus as a software engineer is the native android platform, i worked on numerous high profile android apps, which many of them being published and supported by me afterwards.",
-            detailedDescription: "I use native technologies such as Kotlin, Jetpack compose, Java and Xml as well. This combination is still rare yet increasingly demanded in the market. So if you are in the looks for someone who knows the new ways of developing an Android app, yet still knows how to deal with Legacy java code, I am the one for you.",
-            projects: [
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-            ]
-        },
-        {
-            name: "Web",
-            detailedName: "Front End Web",
-            image: "twitter",
-            description: "Web is my secondary focus. I master both major pillar of web Vue and React. You can always expect the best quality from any of the products i work on. I also provide web design services if needed.",
-            detailedDescription: "I use the two major Js players in Front End which are Vue.Js and React.Js Powering them both via Vite as the main CLI i use.  I also can do web design, if you ever needed someone who can do all of it, I will be the one who can help you with that.",
-            projects: [
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-                {
-                    borderColor: '007FF4',
-                    bgColor: 'E7F1FF',
-                    logoImage: '',
-                    link: ''
-                },
-            ]
-        },
-
-    ]
-})
+const services = computed(() => network.services)
 
 const selectedService = ref({})
 const isModalOpen = ref(false)
 
 const openDialog = (index) => {
-    selectedService.value = services.services[index]
+    selectedService.value = services.value.services[index]
     isModalOpen.value = true
 }
 
@@ -112,7 +56,7 @@ const updateDialog = () => {
                         alt="" 
                         class="w-full h-[96px] md:h-[120px] object-cover absolute top-0 right-0 left-0">
                     <LogoCircle 
-                        :src="service.image"
+                        :Logo="service.image"
                         borderColor="ffffff"
                         backgroundColor="ffffff"
                         sizeClass="large"
