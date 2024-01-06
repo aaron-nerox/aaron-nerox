@@ -31,12 +31,14 @@ export const useNetwork = defineStore('network', () => {
         const {isAboutFetching, aboutError, data : aboutData } = await useFetch(`${STAGING_URL}/main/about`).get().json()
         const {isServicesFetching, servicesError, data: servicesData} = await useFetch(`${STAGING_URL}/contribution/services`).get().json()
         const {isProductsFetching, productsError, data: productsData} = await useFetch(`${STAGING_URL}/contribution/products`).get().json()
+        const {isContactsFetching, contactsError, data: contactsData} = await useFetch(`${STAGING_URL}/contacts/contactpoints`).get().json()
 
 
         headerProjects.value = headerData.value.response
         displayDescription.value = aboutData.value.response
         services.value = servicesData.value.response
         products.value = productsData.value.response
+        contactPoints.value = contactsData.value.response
     }
 
     async function fetchLinkHubProfile() {

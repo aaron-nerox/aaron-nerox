@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, watchEffect } from 'vue'
+import { computed, reactive, watchEffect } from 'vue'
 
 import TextBox from '@/components/base/TextBox.vue'
 import IconInput from '@/components/base/IconInput.vue'
@@ -9,6 +9,9 @@ import Button from '@/components/base/Button.vue'
 import ChevronRight from '@/assets/icons/vue/chevron_right.vue'
 import bgOverlay from '@/assets/images/background_overlay_bottom_end.vue'
 import lineSun from '@/assets/images/line_sun.vue'
+import { useNetwork } from '@/stores/network'
+
+const network = useNetwork()
 
 const contactInfo = reactive({
     name : "",
@@ -16,20 +19,7 @@ const contactInfo = reactive({
     message: ""
 })
 
-const contactPoints = reactive({
-    contact : [
-        {
-            name : "phone",
-            icon : "phone",
-            contact: "+971585588529"
-        },
-        {
-            name : "email",
-            icon : "email",
-            contact: "kechaoui.haroune@gmail.com"
-        }
-    ]
-})
+const contactPoints = computed(() => network.contactPoints)
 
 //TODO: this will be a post request to the backend later
 const submitForm = () => {
@@ -81,7 +71,7 @@ const redirectToContact = (contactPoint, contactType) => {
                         class="w-full"
                         v-model="contactInfo.email"
                         type="email"
-                        placeholder="Your name here"
+                        placeholder="Your email here"
                         src="behance" />
                     <textarea
                         class="w-full h-[172px] bg-dark-70 border-dark-50 border-2 outline-none text-light"
@@ -122,7 +112,7 @@ const redirectToContact = (contactPoint, contactType) => {
                                 <img 
                                     :src="point.icon" 
                                     alt="icon"
-                                    class="grid-overlap h-[96px] w-[96px] m-auto"
+                                    class="grid-overlap h-[68px] w-[68px] m-auto"
                                 />
                             </div>
                             <p class="text-light text-xs md:text-xl">
