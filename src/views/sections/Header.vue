@@ -1,71 +1,22 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { computed, onBeforeMount, onMounted, reactive, ref, watchEffect } from 'vue'
 import lineSun from '@/assets/images/line_sun.vue'
 import TopLeft from '@/assets/images/background_overlay_top_start.vue'
 import Button from '@/components/base/Button.vue'
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue'
 import LogoCircle from '@/components/extended/LogoCircle.vue'
 import TextBox from '@/components/base/TextBox.vue'
-
-const mainProjects = reactive({
-    apps: [
-        {
-            borderColor: '007FF4',
-            bgColor: 'E7F1FF',
-            logoImage: ''
-        },
-        {
-            borderColor: '0077C0',
-            bgColor: '0077C0',
-            logoImage: ''
-        },
-        {
-            borderColor: '00C4DF',
-            bgColor: '00C4DF',
-            logoImage: ''
-        },
-        {
-            borderColor: '8488BF',
-            bgColor: '8488BF',
-            logoImage: ''
-        },
-        {
-            borderColor: '12fa21',
-            bgColor: '000000',
-            logoImage: ''
-        },
-
-        {
-            borderColor: '7500FE',
-            bgColor: 'F1E6FD',
-            logoImage: ''
-        },
-        {
-            borderColor: 'FF0000',
-            bgColor: 'FFD3D3',
-            logoImage: ''
-        },
-
-        {
-            borderColor: '092947',
-            bgColor: '092947',
-            logoImage: ''
-        },
+import { useNetwork } from '@/stores/network'
 
 
+const networkStore = useNetwork()
 
+const mainProjects = computed(() => networkStore.headerProjects) 
 
-    ]
-})
 
 const positionClasses = ref([
     "deg-0", "deg-45", "deg-90", "deg-135", "deg-180", "deg-225", "deg-270", "deg-315"
 ])
-
-const scrollDown = () => {
-
-}
-
 </script>
 
 <template>
@@ -111,7 +62,7 @@ const scrollDown = () => {
         </div>
 
         <a href="#about">
-            <Button class="w-fit h-[55px] mb-10" :isLightMode="false" @click="scrollDown">
+            <Button class="w-fit h-[55px] mb-10" :isLightMode="false">
                 Get to Know Me!
             </Button>
         </a>

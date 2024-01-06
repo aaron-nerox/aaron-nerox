@@ -38,13 +38,14 @@ watchEffect(() => {
             type="translate"
             :strength="20">
             <div class="w-fit h-fit rounded-full outline-cs">
-                <div :class="[sizeClass, 'grid rounded-full bg-cs m-[3px] p-[3px]']">
-                    <!-- <img 
+                <div :class="[sizeClass, 'grid rounded-full bg-cs m-[3px]']">
+                    <img 
+                        v-if="props.Logo"
                         :src="props.Logo" 
                         alt="product logo"
-                        :class="['bg-cs m-[3px] rounded-full', sizeClass]" /> -->
+                        class="h-full w-full rounded-full" />
                     <icon 
-                        class="w-[70%] h-[70%] m-auto" />
+                        v-else class="w-[70%] h-[70%] m-auto" />
                 </div>
                 
             </div>

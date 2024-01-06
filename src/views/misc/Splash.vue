@@ -1,11 +1,10 @@
 <script setup>
-import { watchEffect } from "vue";
+import { watchEffect } from "vue"
 import LottieAnimation from "../../components/extended/LottieAnimation.vue"
 import infinityAnimation from "@/assets/animations/infinity_animation.json"
 import { useRouter } from "vue-router"
 import BottomStartOverlay from '@/assets/images/background_overlay_bottom_start.vue'
 import TopEnd from '@/assets/images/background_overlay_top_end.vue'
-
 
 let router = useRouter()
 

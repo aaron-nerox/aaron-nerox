@@ -1,6 +1,6 @@
 <script setup>
 /** vue imports */
-import { ref } from 'vue'
+import { onBeforeMount, ref } from 'vue'
 
 /** Section imports */
 import Header from './sections/Header.vue'
@@ -14,8 +14,15 @@ import Footer from './sections/Footer.vue'
 import IconButton from '@/components/base/IconButton.vue'
 import Menu from '@/components/navigation/Menu.vue'
 
+/** Store imports */
+import { useNetwork } from "@/stores/network";
 
-const isMenuOpen = ref(false);
+const network = useNetwork()
+const isMenuOpen = ref(false)
+
+onBeforeMount(async () => {
+    await network.fetchData()
+})
 
 const updateMenu = ()=>{
     isMenuOpen.value = !isMenuOpen.value
