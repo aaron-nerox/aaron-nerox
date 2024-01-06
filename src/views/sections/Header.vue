@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onBeforeMount, onMounted, reactive, ref, watchEffect } from 'vue'
+import { computed, ref } from 'vue'
 import lineSun from '@/assets/images/line_sun.vue'
 import TopLeft from '@/assets/images/background_overlay_top_start.vue'
 import Button from '@/components/base/Button.vue'

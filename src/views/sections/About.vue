@@ -1,20 +1,16 @@
 <script setup>
-import { reactive } from 'vue'
+import { computed } from 'vue'
 
 import AnimatedLogo from "@/components/extended/AnimatedLogo.vue"
 import Button from "@/components/base/Button.vue"
 import TextBox from "@/components/base/TextBox.vue"
 import TopRight from '@/assets/images/background_overlay_top_end.vue'
+import { useNetwork } from '@/stores/network'
+
+const network = useNetwork()
 
 
-const profileInfo = reactive({
-    profileFacts : [
-        "Software engineer, with experience in software design, architecture and development.",
-        "Native android apps developer & freelancer for 5 years now and counting.",
-        "Worked as an IT consultant specialized in building Fullstack web apps.",
-        "IoT and hardware communication enthusiast."
-    ]
-})
+const profileInfo = computed(() => network.displayDescription)
 
 </script>
 

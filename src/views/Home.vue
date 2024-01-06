@@ -21,7 +21,7 @@ const network = useNetwork()
 const isMenuOpen = ref(false)
 
 onBeforeMount(async () => {
-    await network.fetchData()
+    await network.fetchHomeData()
 })
 
 const updateMenu = ()=>{
