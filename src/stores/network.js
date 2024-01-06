@@ -1,7 +1,7 @@
 
 import { defineStore } from "pinia"
 import { useFetch } from '@vueuse/core'
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 
 import { STAGING_URL, PRODUCTION_URL } from "@/services"
 
@@ -19,7 +19,7 @@ export const useNetwork = defineStore('network', () => {
     const linkhubData = ref({})
 
     //read/write state
-    const userContact = ref({
+    const userContact = reactive({
         name : "",
         email: "",
         message : ""
@@ -51,6 +51,11 @@ export const useNetwork = defineStore('network', () => {
 
     }
 
+    async function sendClientMessage() {
+        //TODO: create a way to show a success toast or an error toast when the message gets sent or not
+        const {isContactsFetching, contactsError, data: contactsData} = await useFetch(`${STAGING_URL}/contacts/sendForm`).json().post(userContact)
+    }
+
     return { 
         headerProjects, 
         displayDescription,
@@ -63,6 +68,7 @@ export const useNetwork = defineStore('network', () => {
         userContact,
         fetchHomeData,
         fetchSkills,
-        fetchLinkHubProfile
+        fetchLinkHubProfile,
+        sendClientMessage
     }
 })

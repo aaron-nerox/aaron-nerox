@@ -13,17 +13,13 @@ import { useNetwork } from '@/stores/network'
 
 const network = useNetwork()
 
-const contactInfo = reactive({
-    name : "",
-    email : "",
-    message: ""
-})
+const contactInfo = network.userContact
 
 const contactPoints = computed(() => network.contactPoints)
 
 //TODO: this will be a post request to the backend later
-const submitForm = () => {
-    console.log(contactInfo)
+const submitForm = async () => {
+    await network.sendClientMessage()
 }
 
 const redirectToContact = (contactPoint, contactType) => {
