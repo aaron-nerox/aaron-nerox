@@ -1,77 +1,17 @@
 <script setup>
-import { reactive } from 'vue'
+import { computed } from 'vue'
 
 import IconButton from '@/components/base/IconButton.vue'
 import AnimatedLogo from '@/components/extended/AnimatedLogo.vue'
 import RedirectLink from '@/components/base/RedirectLink.vue'
 import bgOverlay from '@/assets/images/background_overlay_top_end.vue'
 import elementBg from '@/assets/images/element_bg.vue'
+import { useNetwork } from '../../stores/network'
 
+const network = useNetwork()
 
-const socialLinks = reactive({
-    links : [
-        {
-            icon : "github",
-            link: "https://github.com/aaron-nerox"
-        },
-        {
-            icon : "behance",
-            link: "https://www.behance.net/aaron_nerox"
-        },
-        {
-            icon : "Linkedin",
-            link: "https://www.linkedin.com/in/haroune-kechaoui-833137179"
-        },
-        {
-            icon : "instagram",
-            link: "https://www.instagram.com/aaron.nerox"
-        },
-        {
-            icon : "twitter",
-            link: "https://twitter.com/aaron_nerox"
-        }
-    ]
-})
-
-const footerLinks = reactive({
-    sections : [
-        {
-            title : "Emerald design",
-            links : [
-                {
-                    name : "Npm Registry",
-                    link : "https://www.npmjs.com/package/emerald-react"
-                },
-                {
-                    name : "Repository",
-                    link : "https://github.com/aaron-nerox/Emerald-react-lib"
-                }
-            ] 
-        },
-        {
-            title : "NeoWalls",
-            links : [
-                {
-                    name : "Community Guidelines",
-                    link : "https://aaronx.dev/product/neowalls/guidelines"
-                },
-                {
-                    name : "Playstore link",
-                    link : "https://play.google.com/store/apps/details?id=com.nero.starx.neowalls"
-                },
-            ] 
-        },
-        {
-            title : "AirSort",
-            links : [
-                {
-                    name : "Playstore link",
-                    link : "https://play.google.com/store/apps/details?id=com.nero.starx.airsort"
-                }
-            ] 
-        }
-    ]
-})
+const socialLinks = computed(() => network.socialLinks.links)
+const footerLinks = computed(() => network.socialLinks.sections)
 
 const redirect = (link)=>{
     window.open(link, "_blank")
@@ -118,7 +58,7 @@ const redirect = (link)=>{
 
                 <div class="w-[90%] md:w-full grid grid-cols-2 md:inline-flex md:flex-row md:items-start gap-x-5 md:gap-x-20 gap-y-5 md:gap-y-0 text-white">
                     <div 
-                        v-for="footerSection in footerLinks.sections"
+                        v-for="footerSection in footerLinks"
                         class="inline-flex flex-col items-start">
 
                         <p class="font-medium md:font-semibold text-lg md:text-2xl mb-1 md:mb-3">{{ footerSection.title }}</p>
@@ -133,7 +73,7 @@ const redirect = (link)=>{
 
                 <div class="inline-flex flex-row items-center gap-x-4 md:gap-x-7">
                     <IconButton 
-                        v-for="social in socialLinks.links"
+                        v-for="social in socialLinks"
                         class="bg-diamond transition duration-200 hover:-translate-y-2 ease-in-out "
                         :src="social.icon"
                         @click="redirect(social.link)"
