@@ -1,11 +1,17 @@
 <script setup>
-import { reactive, onMounted } from 'vue';
+import { reactive, onBeforeMount, onMounted } from 'vue'
 import { RouterView } from 'vue-router'
+
+/** Store imports */
+import { useNetwork } from "@/stores/network";
 
 
 const githubLink = reactive({console_link: "https://github.com/aaron-nerox"})
+const network = useNetwork()
 
-onMounted(()=>{
+onMounted(async ()=>{
+  await network.fetchHomeData()
+
   console.log(`
   \n
   ~(˘▾˘~) ~(˘▾˘~) 

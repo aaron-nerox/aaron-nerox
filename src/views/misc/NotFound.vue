@@ -18,11 +18,10 @@ import TopEnd from '@/assets/images/background_overlay_top_end.vue'
             class="w-[65%] md:w-[20%]">
 
         <p class="text-3xl md:text-4xl font-bold my-6">404 Page not found</p>
-        <p class="w-full md:w-1/3 px-10 md:px-0 md:text-xl text-lg font-medium">The page you're looking for was not found, please verify if the link is correct adn try again later.</p>
+        <p class="w-full md:w-1/3 px-10 md:px-0 md:text-xl text-lg font-medium">The page you're looking for was not found, please verify if the link is correct and try again later.</p>
         <Button 
         class="my-6"
             :isLightMode="false"
-            icon="arrow_right"
             iconTint="fill-none stroke-light"
             @click="$router.replace('/')">
             Explore portfolio

@@ -17,6 +17,7 @@ export const useNetwork = defineStore('network', () => {
     const contactPoints = ref({})
     const socialLinks = ref({})
     const linkhubData = ref({})
+    const isLoading = ref(true)
 
     //read/write state
     const userContact = reactive({
@@ -27,12 +28,12 @@ export const useNetwork = defineStore('network', () => {
 
     //an async function that is called before the Home component is mounted fetches all the needed data for homescreen
     async function fetchHomeData() {
-        const {isHeaderLoading, headerError , data: headerData } = await useFetch(`${STAGING_URL}/main/header`).get().json()
-        const {isAboutFetching, aboutError, data : aboutData } = await useFetch(`${STAGING_URL}/main/about`).get().json()
-        const {isLinksFetching, linksError, data : linksData } = await useFetch(`${STAGING_URL}/main/links`).get().json()
-        const {isServicesFetching, servicesError, data: servicesData} = await useFetch(`${STAGING_URL}/contribution/services`).get().json()
-        const {isProductsFetching, productsError, data: productsData} = await useFetch(`${STAGING_URL}/contribution/products`).get().json()
-        const {isContactsFetching, contactsError, data: contactsData} = await useFetch(`${STAGING_URL}/contacts/contactpoints`).get().json()
+        const {isFetching : isHeaderLoading, headerError , data: headerData } = await useFetch(`${STAGING_URL}/main/header`).get().json()
+        const {isFetching : isAboutFetching, aboutError, data : aboutData } = await useFetch(`${STAGING_URL}/main/about`).get().json()
+        const {isFetching : isLinksFetching, linksError, data : linksData } = await useFetch(`${STAGING_URL}/main/links`).get().json()
+        const {isFetching : isServicesFetching, servicesError, data: servicesData} = await useFetch(`${STAGING_URL}/contribution/services`).get().json()
+        const {isFetching : isProductsFetching, productsError, data: productsData} = await useFetch(`${STAGING_URL}/contribution/products`).get().json()
+        const {isFetching : isContactsFetching, contactsError, data: contactsData} = await useFetch(`${STAGING_URL}/contacts/contactpoints`).get().json()
 
 
         headerProjects.value = headerData.value.response
@@ -41,6 +42,9 @@ export const useNetwork = defineStore('network', () => {
         products.value = productsData.value.response
         contactPoints.value = contactsData.value.response
         socialLinks.value = linksData.value.response
+
+        console.log(isHeaderLoading.value || isAboutFetching.value || isLinksFetching.value || isServicesFetching.value || isProductsFetching.value || isContactsFetching.value)
+        isLoading.value = isHeaderLoading.value || isAboutFetching.value || isLinksFetching.value || isServicesFetching.value || isProductsFetching.value || isContactsFetching.value
     }
 
     async function fetchLinkHubProfile() {
@@ -66,6 +70,7 @@ export const useNetwork = defineStore('network', () => {
         socialLinks,
         linkhubData,
         userContact,
+        isLoading,
         fetchHomeData,
         fetchSkills,
         fetchLinkHubProfile,
