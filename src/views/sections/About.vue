@@ -20,14 +20,14 @@ const profileInfo = computed(() => network.displayDescription)
         <TopRight class="w-1/2 md:w-1/5 h-fit absolute top-0 right-0" />
 
         <div class="w-full h-full inline-flex flex-col md:flex-row items-center">
-            <div class="h-full w-1/3 hidden md:grid items-center justify-items-center">
+            <div class="h-full w-1/3 hidden md:grid items-center">
                 <img 
                 src="@/assets/images/self_image.svg" 
                 alt="" 
-                class="w-full h-full object-cover grid-overlap" />
+                class="w-full h-full object-cover grid-overlap flex-shrink-0" />
 
-                <div class="w-4/5 grid-overlap">
-                    <div class="w-[90%] m-auto grid">
+                <div class="w-4/5 grid-overlap m-auto">
+                    <div class="w-[90%] grid">
                         <img src="@/assets/images/logo_bg.png" 
                             alt=""
                             class="w-full grid-overlap">
@@ -53,7 +53,7 @@ const profileInfo = computed(() => network.displayDescription)
                     <TextBox
                         v-for="fact in profileInfo.profileFacts"
                         alignment="start"
-                        class="w-full md:w-[85%] min-h-[72px] text-sm md:text-lg font-regular">
+                        class="w-full md:w-[85%] 2xl:w-[45%] min-h-[72px] text-sm md:text-lg font-regular">
                         {{ fact }}
                     </TextBox>
                 </div>

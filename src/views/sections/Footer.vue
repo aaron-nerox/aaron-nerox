@@ -21,7 +21,7 @@ const redirect = (link)=>{
 <template>
     <footer 
         id="footer" 
-        class="w-full h-screen md:h-[80vh] bg-dark text-center relative inline-flex flex-col items-center justify-center" >
+        class="w-full h-screen md:h-[80vh] 2xl:h-fit bg-dark text-center relative inline-flex flex-col items-center justify-center" >
         
         <bgOverlay class="stroke-light md:w-1/5 w-1/2 h-fit absolute top-0 end-0"/>
 
@@ -38,7 +38,7 @@ const redirect = (link)=>{
 
         <div class="w-full h-fit md:h-3/5 inline-flex flex-col md:flex-row items-center justify-center">
 
-            <div class="w-3/5 md:w-1/4 my-10 md:my-0">
+            <div class="w-3/5 md:w-1/4 2xl:w-1/5 my-10 md:my-0">
                 <div class="w-[90%] m-auto grid">
                     <img src="@/assets/images/logo_bg.png" 
                         alt=""
@@ -52,7 +52,7 @@ const redirect = (link)=>{
                 </div>
             </div>
 
-            <div class="w-20 hidden md:block"></div>
+            <div class="w-20 2xl:w-40 hidden md:block"></div>
 
             <div class="w-full md:w-3/5 h-fit md:h-3/5 inline-flex flex-col items-center md:items-start justify-center gap-y-5 md:gap-y-7">
 

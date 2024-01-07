@@ -43,7 +43,7 @@ const redirectToContact = (contactPoint, contactType) => {
 <template>
     <section 
         id="contact" 
-        class="w-full h-fit md:h-screen bg-light inline-flex flex-col items-center jutify-evenly relative">
+        class="w-full h-fit md:h-screenc 2xl:h-fit bg-light inline-flex flex-col items-center jutify-evenly relative">
 
         <bgOverlay class="w-1/5 h-fit absolute bottom-0 right-0" />
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[10%]"/>
@@ -54,7 +54,7 @@ const redirectToContact = (contactPoint, contactType) => {
             Contact Me
         </TextBox>
         
-        <div class="w-full h-fit md:h-[70%] px-5 md:px-[5%] inline-flex flex-col md:flex-row items-center mb-10 md:mb-[3%] justify-evenly gap-y-8 md:gap-y-0">
+        <div class="w-full h-fit md:h-[70%] px-5 md:px-[5%] 2xl:px-[24%] inline-flex flex-col md:flex-row items-center mb-10 md:mb-[3%] justify-evenly gap-y-8 md:gap-y-0">
             <BaseContainer class="!w-full md:!w-[40%] h-fit">
                 <div class="w-full h-full bg-dark inline-flex flex-col items-start justify-center p-7 gap-y-5">
                     <IconInput 
@@ -62,13 +62,13 @@ const redirectToContact = (contactPoint, contactType) => {
                         v-model="contactInfo.name"
                         type="text"
                         placeholder="Your name here"
-                        src="behance" />
+                        src="user" />
                     <IconInput 
                         class="w-full"
                         v-model="contactInfo.email"
                         type="email"
                         placeholder="Your email here"
-                        src="behance" />
+                        src="sms" />
                     <textarea
                         class="w-full h-[172px] bg-dark-70 border-dark-50 border-2 outline-none text-light"
                         v-model="contactInfo.message">

@@ -12,7 +12,7 @@ const products = computed(() => network.products)
 </script>
 
 <template>
-    <section id="products" class="w-full h-fit md:h-screen bg-light relative inline-flex flex-col items-center">
+    <section id="products" class="w-full h-fit md:h-screen 2xl:h-fit bg-light relative inline-flex flex-col items-center justify-evenly">
 
         <BgOverlay class="absolute top-0 left-0 w-1/2 md:w-1/5 h-fit" />
         <ElementBgLeft class="absolute left-0 bottom-10 w-[48px] md:w-[64px]"/>
@@ -22,7 +22,7 @@ const products = computed(() => network.products)
             Products I worked on
         </TextBox>
 
-        <div class="w-full h-fit grid md:grid-cols-3 my-auto px-5 md:px-[8%] mb-10 md:mb-[3%] gap-5 md:gap-10">
+        <div class="w-full h-fit grid md:grid-cols-3 my-auto px-5 md:px-[8%] 2xl:px-[25%] mb-10 md:mb-[3%] gap-5 md:gap-10">
             <Product 
                 v-for="app in products.products"
                 :productName="app.title"

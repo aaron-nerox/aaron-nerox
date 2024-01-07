@@ -20,7 +20,7 @@ const positionClasses = ref([
 </script>
 
 <template>
-    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between">
+    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between 2xl:justify-evenly">
 
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/2 md:w-1/5 h-fit absolute top-0 left-0" />

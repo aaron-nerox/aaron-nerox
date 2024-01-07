@@ -37,7 +37,7 @@ const updateDialog = () => {
             @onDissmissRequest="updateDialog"/>
     </Teleport>
 
-    <section id="services" class="w-full h-fit md:h-screen bg-light inline-flex flex-col items-center justify-evenly relative">
+    <section id="services" class="w-full h-fit md:h-screen 2xl:h-fit bg-light inline-flex flex-col items-center justify-evenly relative px-0 md:px-0">
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute left-0 top-[10%] rotate-180"/>
         <bgElement  class="w-[48px] md:w-[64px] absolute bottom-10 right-0"/>
 
@@ -46,7 +46,7 @@ const updateDialog = () => {
             Services i Provide
         </TextBox>
 
-        <div class="w-full h-fit md:h-[90%] px-5 md:px-[5%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
+        <div class="w-full h-fit md:h-[90%] px-5 md:px-[5%] 2xl:px-[18%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
             <BaseContainer 
                 v-for="service in services.services"
                 class="w-full md:!w-[35%] my-5 md:my-0">
