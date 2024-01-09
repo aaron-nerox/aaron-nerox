@@ -15,7 +15,11 @@ module.exports = {
       'dark-70' : '#262626',
       'dark-50': '#535353',
       'primary' : '#3CCCFF',
-      'grey-primary' : '#D9D9D9'
+      'grey-primary' : '#D9D9D9',
+
+      'error' : '#FF5555',
+      'danger' : '#FFB545',
+      'success' : '#84FF70'
     },
     extend: {
       backgroundImage: {

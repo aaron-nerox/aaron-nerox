@@ -18,6 +18,8 @@ export const useNetwork = defineStore('network', () => {
     const socialLinks = ref({})
     const linkhubData = ref({})
     const isLoading = ref(true)
+    const isFormSubmitSuccess = ref("hidden")
+    const formSubmissionMessage = ref("")
 
     //read/write state
     const userContact = reactive({
@@ -64,8 +66,26 @@ export const useNetwork = defineStore('network', () => {
     }
 
     async function sendClientMessage() {
+        isFormSubmitSuccess.value = "loading"
+        formSubmissionMessage.value = "👍 Sending your message now! Please wait"
         //TODO: create a way to show a success toast or an error toast when the message gets sent or not
-        const {isContactsFetching, contactsError, data: contactsData} = await useFetch(`${PRODUCTION_URL}/contacts/sendForm`).json().post(userContact)
+        const {isContactsFetching, error: contactsError, data: contactsData} = await useFetch(`${PRODUCTION_URL}/contacts/sendForm`).json().post(userContact)
+
+
+        if(contactsError.value) {
+            formSubmissionMessage.value = "😞 Ouch an error happened, please check your info and try again."
+            isFormSubmitSuccess.value = "error"
+            return
+        }
+
+        if(contactsData.value.is_success) {
+            formSubmissionMessage.value = "🐦 I got your message, i will be in touch with you soon."
+            isFormSubmitSuccess.value = "success"
+        } else {
+            formSubmissionMessage.value = "😑 Ouch an error happened, please try again in a moment."
+            isFormSubmitSuccess.value = "error"
+        }
+        
     }
 
     return { 
@@ -79,6 +99,8 @@ export const useNetwork = defineStore('network', () => {
         linkhubData,
         userContact,
         isLoading,
+        isFormSubmitSuccess,
+        formSubmissionMessage,
         fetchHomeData,
         fetchSkills,
         fetchLinkHubProfile,

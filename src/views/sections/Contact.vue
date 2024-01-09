@@ -43,7 +43,7 @@ const redirectToContact = (contactPoint, contactType) => {
 <template>
     <section 
         id="contact" 
-        class="w-full h-fit md:h-screenc 2xl:h-fit bg-light inline-flex flex-col items-center jutify-evenly relative">
+        class="w-full h-fit md:h-screen 2xl:h-fit bg-light inline-flex flex-col items-center jutify-evenly relative">
 
         <bgOverlay class="w-1/5 h-fit absolute bottom-0 right-0" />
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[10%]"/>

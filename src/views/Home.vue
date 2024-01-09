@@ -1,6 +1,7 @@
 <script setup>
 /** vue imports */
-import { ref } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
+import { useNetwork } from '@/stores/network'
 
 /** Section imports */
 import Header from './sections/Header.vue'
@@ -13,12 +14,32 @@ import Footer from './sections/Footer.vue'
 /** Component imports */
 import IconButton from '@/components/base/IconButton.vue'
 import Menu from '@/components/navigation/Menu.vue'
+import StatusModal from '@/components/modals/StatusModal.vue'
 
+
+const network = useNetwork()
 const isMenuOpen = ref(false)
+const isModalShown = ref(false)
+
+const isFormSubmitSuccess = computed(() => network.isFormSubmitSuccess)
+const formSubmissionMessage = computed(() => network.formSubmissionMessage)
 
 const updateMenu = ()=>{
     isMenuOpen.value = !isMenuOpen.value
 }
+
+const hideModal = () => {
+    isModalShown.value = false
+}
+
+watchEffect(() => {
+    if(isFormSubmitSuccess.value != "hidden") {
+        isModalShown.value = true
+        setTimeout(() => {
+            isModalShown.value = false
+        }, 2000)
+    }
+})
 </script>
 
 <template>
@@ -29,6 +50,15 @@ const updateMenu = ()=>{
                     :open="isMenuOpen"
                     @dissmiss="updateMenu" />
             </Teleport>
+
+            <Teleport to="body">
+                <StatusModal 
+                    :open="isModalShown"
+                    :messageStatus="isFormSubmitSuccess"
+                    :message="formSubmissionMessage"
+                    @dissmiss="hideModal"/>             
+            </Teleport>
+
 
             <IconButton 
                 v-if="!isMenuOpen"
