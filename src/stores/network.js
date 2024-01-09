@@ -31,6 +31,7 @@ export const useNetwork = defineStore('network', () => {
         const {isFetching : isHeaderLoading, headerError , data: headerData } = await useFetch(`${PRODUCTION_URL}/main/header`).get().json()
         const {isFetching : isAboutFetching, aboutError, data : aboutData } = await useFetch(`${PRODUCTION_URL}/main/about`).get().json()
         const {isFetching : isLinksFetching, linksError, data : linksData } = await useFetch(`${PRODUCTION_URL}/main/links`).get().json()
+        const {isFetching : isskillsFetching, skillsError, data: skillData} = await useFetch(`${PRODUCTION_URL}/contribution/skills`).get().json()
         const {isFetching : isServicesFetching, servicesError, data: servicesData} = await useFetch(`${PRODUCTION_URL}/contribution/services`).get().json()
         const {isFetching : isProductsFetching, productsError, data: productsData} = await useFetch(`${PRODUCTION_URL}/contribution/products`).get().json()
         const {isFetching : isContactsFetching, contactsError, data: contactsData} = await useFetch(`${PRODUCTION_URL}/contacts/contactpoints`).get().json()
@@ -42,9 +43,15 @@ export const useNetwork = defineStore('network', () => {
         products.value = productsData.value.response
         contactPoints.value = contactsData.value.response
         socialLinks.value = linksData.value.response
+        skills.value = skillData.value.response
 
-        console.log(isHeaderLoading.value || isAboutFetching.value || isLinksFetching.value || isServicesFetching.value || isProductsFetching.value || isContactsFetching.value)
-        isLoading.value = isHeaderLoading.value || isAboutFetching.value || isLinksFetching.value || isServicesFetching.value || isProductsFetching.value || isContactsFetching.value
+        isLoading.value = (isHeaderLoading.value || 
+        isAboutFetching.value || 
+        isLinksFetching.value || 
+        isServicesFetching.value || 
+        isProductsFetching.value || 
+        isContactsFetching.value ||
+        isskillsFetching.value)
     }
 
     async function fetchLinkHubProfile() {
@@ -52,6 +59,7 @@ export const useNetwork = defineStore('network', () => {
     }
 
     async function fetchSkills() {
+        
 
     }
 

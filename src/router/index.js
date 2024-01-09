@@ -19,6 +19,16 @@ const router = createRouter({
       name: 'neowalls guidelines',
       component: () => import('../views/misc/NeowallsPolicy.vue')
     },
+    {
+      path: '/skills',
+      name: 'Skills',
+      component: () => import('../views/misc/Skills.vue')
+    },
+    {
+      path: '/linkhub',
+      name: 'LinkHub',
+      component: () => import('../views/misc/LinkHub.vue')
+    },
     { 
       path: '/:pathMatch(.*)*', 
       name: 'NotFound', 

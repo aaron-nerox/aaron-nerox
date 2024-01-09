@@ -6,11 +6,17 @@ import Button from "@/components/base/Button.vue"
 import TextBox from "@/components/base/TextBox.vue"
 import TopRight from '@/assets/images/background_overlay_top_end.vue'
 import { useNetwork } from '@/stores/network'
+import { useRouter } from 'vue-router'
 
 const network = useNetwork()
+const router = useRouter()
 
 
 const profileInfo = computed(() => network.displayDescription)
+
+const goToSkills = () => {
+    router.push({ path : '/skills'})
+}
 
 </script>
 
@@ -59,7 +65,7 @@ const profileInfo = computed(() => network.displayDescription)
                 </div>
                 
 
-                <Button class="w-fit" :isLightMode="false" @click="">
+                <Button class="w-fit" :isLightMode="false" @click="goToSkills">
                     My Technical Skills
                 </Button>
             </div>
