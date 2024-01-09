@@ -17,7 +17,8 @@ const contactInfo = network.userContact
 
 const contactPoints = computed(() => network.contactPoints)
 
-//TODO: this will be a post request to the backend later
+
+//TODO: add proper form validation before sending to the backend
 const submitForm = async () => {
     await network.sendClientMessage()
 }

@@ -60,14 +60,9 @@ export const useNetwork = defineStore('network', () => {
 
     }
 
-    async function fetchSkills() {
-        
-
-    }
-
     async function sendClientMessage() {
         isFormSubmitSuccess.value = "loading"
-        formSubmissionMessage.value = "👍 Sending your message now! Please wait"
+        formSubmissionMessage.value = "📧 Sending your message now! Please wait"
         //TODO: create a way to show a success toast or an error toast when the message gets sent or not
         const {isContactsFetching, error: contactsError, data: contactsData} = await useFetch(`${PRODUCTION_URL}/contacts/sendForm`).json().post(userContact)
 
@@ -102,7 +97,6 @@ export const useNetwork = defineStore('network', () => {
         isFormSubmitSuccess,
         formSubmissionMessage,
         fetchHomeData,
-        fetchSkills,
         fetchLinkHubProfile,
         sendClientMessage
     }
