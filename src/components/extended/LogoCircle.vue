@@ -35,6 +35,7 @@ watchEffect(() => {
 <template>
     <kinesis-container>
         <kinesis-element
+            class="hidden md:block"
             type="translate"
             :strength="20">
             <div class="w-fit h-fit rounded-full outline-cs">
@@ -47,10 +48,22 @@ watchEffect(() => {
                     <icon 
                         v-else class="w-[70%] h-[70%] m-auto" />
                 </div>
+            </div>
+        </kinesis-element>
+        <div class="block md:hidden">
+            <div class="w-fit h-fit rounded-full outline-cs">
+                <div :class="[sizeClass, 'grid rounded-full bg-cs m-[3px]']">
+                    <img 
+                        v-if="props.Logo"
+                        :src="props.Logo" 
+                        alt="product logo"
+                        class="h-full w-full rounded-full" />
+                    <icon 
+                        v-else class="w-[70%] h-[70%] m-auto" />
+                </div>
                 
             </div>
-            
-        </kinesis-element>
+        </div>
     </kinesis-container>
 </template>
 
