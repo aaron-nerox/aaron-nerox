@@ -16,7 +16,12 @@ export const useNetwork = defineStore('network', () => {
     const products = ref({})
     const contactPoints = ref({})
     const socialLinks = ref({})
-    const linkhubData = ref({})
+    const linkhubData = ref({
+        profile : {
+            profileImage : "",
+            links : []
+        }
+    })
     const isLoading = ref(true)
     const isFormSubmitSuccess = ref("hidden")
     const formSubmissionMessage = ref("")
@@ -57,7 +62,9 @@ export const useNetwork = defineStore('network', () => {
     }
 
     async function fetchLinkHubProfile() {
+        const {isFetching, error, data} = await useFetch(`${PRODUCTION_URL}/linkhub/profile`).get().json()
 
+        linkhubData.value = data.value.response
     }
 
     async function sendClientMessage() {
