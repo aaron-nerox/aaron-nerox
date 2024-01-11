@@ -30,7 +30,7 @@ const redirect = (link) => {
 
         <img
             class="w-[250px] md:w-[350px] object-contain"
-            src="@/assets/images/linkhub.png"
+            src="@/assets/images/linkHub.png"
             alt="linkhub logo"
             />   
         
