@@ -24,12 +24,12 @@ const redirect = (link) => {
 </script>
 
 <template>
-    <div class="w-full h-fit md:h-screen bg-light relative py-10 inline-flex flex-col items-center justify-between">
+    <div class="w-full h-fit md:h-screen bg-light relative py-10 md:py-5 inline-flex flex-col items-center justify-between 2xl:justify-evenly">
         <topLeft class="w-1/2 md:w-1/5 h-fit absolute top-0 left-0" />
         <bottomRight class="w-1/2 md:w-1/5 h-fit absolute bottom-0 right-0" />
 
         <img
-            class="w-[250px] md:w-[350px] object-contain"
+            class="w-[250px] md:w-[272px] xl:w-[350px] object-contain"
             src="@/assets/images/linkHub.png"
             alt="linkhub logo"
             />   
@@ -40,7 +40,7 @@ const redirect = (link) => {
             <img 
                 :src="linkhubProfile.profile.profileImage" 
                 alt="profile image"
-                class="h-[200px] md:h-3/5 aspect-square rounded-full object-cover outline-primary outline-4 outline-none outline transition-all"
+                class="h-[200px] md:h-3/5 xl:h-2/5 2xl:h-[24%] aspect-square rounded-full object-cover outline-primary outline-4 outline-none outline transition-all"
             >
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
@@ -56,7 +56,7 @@ const redirect = (link) => {
         </div>
 
         <Button 
-        class="my-10 md:my-6"
+        class="my-10 md:my-5"
             :isLightMode="false"
             iconTint="fill-none stroke-light"
             @click="$router.push('/')">
