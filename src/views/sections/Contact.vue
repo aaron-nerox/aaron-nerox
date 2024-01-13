@@ -71,6 +71,7 @@ const redirectToContact = (contactPoint, contactType) => {
                         placeholder="Your email here"
                         src="sms" />
                     <textarea
+                        label="user message"
                         class="w-full h-[172px] bg-dark-70 border-dark-50 border-2 outline-none text-light"
                         v-model="contactInfo.message">
                         {{ contactInfo.message }}
@@ -104,7 +105,7 @@ const redirectToContact = (contactPoint, contactType) => {
                                 <img 
                                     src="@/assets/images/green_swirl.jpeg" 
                                     alt="background"
-                                    class="w-full h-[126px] grid-overlap"
+                                    class="w-full h-[126px] grid-overlap object-cover"
                                 />
                                 <img 
                                     :src="point.icon" 

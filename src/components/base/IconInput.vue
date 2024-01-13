@@ -23,6 +23,7 @@ watchEffect(async ()=>{
             />
         </div>
         <input 
+            :label="placeholder"
             :type="type"
             :placeholder="placeholder"
             :value="modelValue"

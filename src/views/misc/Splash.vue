@@ -10,18 +10,13 @@ import infinityAnimation from "@/assets/animations/infinity_animation.json"
 /** assets imports */
 import BottomStartOverlay from '@/assets/images/background_overlay_bottom_start.vue'
 import TopEnd from '@/assets/images/background_overlay_top_end.vue'
-import { useNetwork } from "../../stores/network"
 
-const network = useNetwork()
 let router = useRouter()
 
-const isLoading = computed(() => network.isLoading)
-
-
 watchEffect(() => {
-    if(!isLoading.value) {
+    setTimeout(() => {
         router.replace('/home')
-    }
+    }, 1500)
 })
 </script>
 

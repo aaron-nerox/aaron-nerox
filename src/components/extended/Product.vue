@@ -26,6 +26,7 @@ const redirectInto = () => {
                 <img 
                     :src="props.productCoverUrl" 
                     alt="product cover"
+                    loading="lazy"
                     class="w-full h-[96px] object-cover grid-overlap z-0">
 
                 <div class="w-full h-[96px] backdrop-blur-sm backdrop-brightness-75 grid-overlap z-1"></div>
