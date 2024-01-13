@@ -25,8 +25,8 @@ const goToSkills = () => {
     <section id="about" class="w-full h-screen bg-light relative">
         <TopRight class="w-1/2 md:w-1/5 h-fit absolute top-0 right-0" />
 
-        <div class="w-full h-full inline-flex flex-col md:flex-row items-center">
-            <div class="h-full w-1/3 hidden md:grid items-center">
+        <div class="w-full h-full inline-flex flex-col md:flex-row items-center md:items-start">
+            <div class="h-full w-[30%] 2xl:w-[33%] hidden md:grid items-center">
                 <img 
                 src="@/assets/images/self_image.svg" 
                 alt="" 
@@ -48,18 +48,18 @@ const goToSkills = () => {
                 </div>
             </div>
 
-            <div class="h-full w-full md:w-2/3 px-10 md:px-[5%] inline-flex flex-col items-center md:items-start justify-evenly">
+            <div class="h-full w-full md:w-2/3 px-10 md:px-[5%] inline-flex flex-col items-center md:items-start justify-center">
                 <TextBox
-                    class="w-[200px] md:w-[250px] !h-[55px] md:!h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-[3%]">
+                    class="w-[200px] md:w-[250px] !h-[55px] md:!h-[64px] text-xl md:text-3xl font-semibold md:font-bold">
                     About Me
                 </TextBox>
                 
 
-                <div class="w-full h-fit inline-flex flex-col items-start justify-center gap-y-6 md:gap-y-8">
+                <div class="w-full h-fit inline-flex flex-col items-start justify-center my-6">
                     <TextBox
                         v-for="fact in profileInfo.profileFacts"
                         alignment="start"
-                        class="w-full md:w-[85%] 2xl:w-[45%] min-h-[72px] text-sm md:text-lg font-regular">
+                        class="w-full md:w-[90%] 2xl:w-[45%] min-h-[72px] text-sm md:text-lg font-regular my-3">
                         {{ fact }}
                     </TextBox>
                 </div>

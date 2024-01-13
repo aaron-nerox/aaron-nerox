@@ -44,8 +44,8 @@ const redirectInto = () => {
                 </div>
             </div>  
 
-            <div class="w-full h-fit md:h-[156px] p-3 inline-flex flex-col justify-between">
-                <p class="text-light font-medium text-sm md:text-sm">
+            <div class="w-full h-fit md:h-[138px] xl:h-[156px] p-3 inline-flex flex-col justify-between">
+                <p class="text-light font-medium text-xs xl:text-sm">
                     {{ props.productDescription }}
                 </p>
                 

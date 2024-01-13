@@ -37,31 +37,31 @@ const updateDialog = () => {
             @onDissmissRequest="updateDialog"/>
     </Teleport>
 
-    <section id="services" class="w-full h-fit md:h-screen 2xl:h-fit bg-light inline-flex flex-col items-center justify-evenly relative px-0 md:px-0">
+    <section id="services" class="w-full h-fit md:h-screen 2xl:h-[90vh] bg-light inline-flex flex-col items-center justify-evenly relative">
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute left-0 top-[10%] rotate-180"/>
         <bgElement  class="w-[48px] md:w-[64px] absolute bottom-10 right-0"/>
 
         <TextBox
-            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10 md:my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10 md:my-0">
             Services i Provide
         </TextBox>
 
-        <div class="w-full h-fit md:h-[90%] px-5 md:px-[5%] 2xl:px-[18%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
+        <div class="w-full h-fit inline-flex flex-col md:flex-row items-center justify-center gap-x-0 md:gap-x-14 px-5 md:px-0">
             <BaseContainer 
                 v-for="service in services.services"
-                class="w-full md:!w-[35%] my-5 md:my-0">
-                <div class="bg-dark h-fit w-full shrink-0 inline-flex flex-col items-center relative">
+                class="w-full md:!w-[40%] 2xl:!w-[25%] !h-full my-5 md:my-0">
+                <div class="bg-dark h-full w-full shrink-0 inline-flex flex-col items-center relative">
                     <img 
                         src="@/assets/images/green_swirl.jpeg" 
                         alt="" 
-                        class="w-full h-[96px] md:h-[120px] object-cover absolute top-0 right-0 left-0">
+                        class="w-full h-[96px] md:h-[100px] object-cover absolute top-0 right-0 left-0">
                     <LogoCircle 
                         :Logo="service.image"
                         borderColor="ffffff"
                         backgroundColor="ffffff"
                         sizeClass="large"
-                        class="mt-[48px] md:mt-[55px]"/>
-                    <p class="text-light font-semibold text-xl my-5">
+                        class="mt-[48px] md:mt-[40px]"/>
+                    <p class="text-light font-semibold text-xl my-4">
                         {{  service.name }}
                     </p>
                     <p class="text-light text-md md:text-lg text-center mx-5 md:mx-10">
@@ -69,7 +69,7 @@ const updateDialog = () => {
                     </p>
                     <Button 
                         :isLightMode="true"
-                        class="my-10"
+                        class="mt-4 mb-8"
                         @click="openDialog(services.services.indexOf(service))">
                         Read More
                     </Button>

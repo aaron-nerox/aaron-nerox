@@ -20,7 +20,7 @@ const positionClasses = ref([
 </script>
 
 <template>
-    <div class="w-full h-screen bg-light relative inline-flex flex-col items-center justify-between 2xl:justify-evenly">
+    <div class="w-full h-screen md:h-fit xl:h-screen 2xl:h-screen gap-y-0 md:gap-y-10 xl:gap-y-0 bg-light relative inline-flex flex-col items-center justify-between 2xl:justify-evenly">
 
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/2 md:w-1/5 h-fit absolute top-0 left-0" />
@@ -28,7 +28,7 @@ const positionClasses = ref([
         <div class="absolute bottom-[18%] md:bottom-[20%] left-[10%]">
             <img 
                 src="@/assets/images/top_left_str.svg" 
-                alt=""
+                alt="top left"
                 class="w-2/5 md:w-fit">
             <TextBox class="w-[172px] md:w-[196px] text-xs md:text-sm font-light">
                 Click on any icon to find some cool stuff
@@ -41,24 +41,23 @@ const positionClasses = ref([
             </TextBox>
             <img 
                 src="@/assets/images/bottom_right_str.svg" 
-                alt=""
+                alt="bottom right"
                 class="w-2/5 md:w-fit">
         </div>
 
-        <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-[200px] md:w-[300px] h-fit mt-7 md:mt-10" />
+        <img src="@/assets/images/main_logo_dark.svg" alt="Main logo" class="w-[200px] md:w-[250px] h-fit mt-7 md:mt-5" />
 
-        <div class="h-[250px] md:h-[500px] aspect-square relative grid my-10 ">
-            <div class="min-h-[80%] md:min-h-[70%] min-w-[80%] md:min-w-[70%] grid items-center justify-center m-auto">
-                <div class="grid-overlap clock-wise min-w-[70%] md:min-w-[55%] min-h-[70%] md:min-h-[55%] border-primary border-2 shrink-0"></div>
+        <div class="h-[250px] md:h-[500px] aspect-square relative grid items-center justify-center">
+            <div class="h-[200px] aspect-square grid">
+                <div class="grid-overlap clock-wise h-[70%] md:h-[80%] aspect-square border-primary border-2 m-auto"></div>
                 <div
-                    class="grid-overlap counter-clock-wise min-w-[70%] md:min-w-[55%] min-h-[70%] md:min-h-[55%] aspect-square border-primary border-2 shrink-0">
+                    class="grid-overlap counter-clock-wise h-[70%] md:h-[80%] aspect-square border-primary border-2 m-auto">
                 </div>
-                <AnimatedLogo class="grid-overlap w-[90%] m-auto" />
+                <AnimatedLogo class="grid-overlap w-[132px] md:w-[156px] m-auto" />
             </div>
             <LogoCircle v-for="project in mainProjects.apps" :borderColor="project.borderColor"
                 :backgroundColor="project.bgColor" :Logo="project.logoImage" sizeClass="small"
                 :class="['absolute top-[38%] md:top-[42.6%] left-[38%] md:left-[42.6%] block', positionClasses[mainProjects.apps.indexOf(project)]]" />
-
         </div>
 
         <a href="#about">

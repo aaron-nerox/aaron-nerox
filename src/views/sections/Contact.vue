@@ -44,19 +44,19 @@ const redirectToContact = (contactPoint, contactType) => {
 <template>
     <section 
         id="contact" 
-        class="w-full h-fit md:h-screen 2xl:h-fit bg-light inline-flex flex-col items-center jutify-evenly relative">
+        class="w-full h-fit xl:h-screen 2xl:h-[80vh] bg-light inline-flex flex-col items-center justify-evenly relative">
 
         <bgOverlay class="w-1/5 h-fit absolute bottom-0 right-0" />
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[10%]"/>
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute left-0 bottom-[10%] rotate-180"/>
 
         <TextBox
-            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10 md:my-[5%]">
+            class="w-[250px] md:w-[420px] !h-[64px] text-xl md:text-3xl font-semibold md:font-bold my-10">
             Contact Me
         </TextBox>
         
-        <div class="w-full h-fit md:h-[70%] px-5 md:px-[5%] 2xl:px-[24%] inline-flex flex-col md:flex-row items-center mb-10 md:mb-[3%] justify-evenly gap-y-8 md:gap-y-0">
-            <BaseContainer class="!w-full md:!w-[40%] h-fit">
+        <div class="w-full h-fit inline-flex flex-col md:flex-row items-center justify-evenly gap-x-0 md:gap-x-10 gap-y-8 md:gap-y-0 px-5 md:px-12 xl:px-[8%] 2xl:px-[25%] mb-10">
+            <BaseContainer class="!w-full md:!w-[50%] h-fit">
                 <div class="w-full h-full bg-dark inline-flex flex-col items-start justify-center p-7 gap-y-5">
                     <IconInput 
                         class="w-full"

@@ -6,24 +6,28 @@
     font-family: poppins;
     src: url('./fonts/poppins_rg.ttf');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_md.ttf');
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_sbld.ttf');
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_bld.ttf');
     font-weight: 700;
+    font-display: swap;
 }
 
 /* Animations */

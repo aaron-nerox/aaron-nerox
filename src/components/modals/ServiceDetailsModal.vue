@@ -13,7 +13,7 @@ defineEmits(['onDissmissRequest'])
             @click.self="$emit('onDissmissRequest')"
             class="min-w-full min-h-screen w-full h-screen fixed top-0 
                 bottom-0 right-0 left-0 bg-dark/30 backdrop-blur-md z-20 select-none grid">
-            <div class="w-[90%] md:w-[33%] 2xl:w-[25%] min-h-[75%] md:min-h-[70%] 2xl:min-h-[45%] bg-light m-auto p-4 md:p-10 inline-flex flex-col items-center justify-center">
+            <div class="w-[90%] md:w-[55%] xl:w-[33%] 2xl:w-[25%] min-h-[75%] md:min-h-[70%] 2xl:min-h-[45%] bg-light m-auto p-4 md:p-10 inline-flex flex-col items-center justify-center">
                 <div class="w-full h-fit inline-flex flex-col md:flex-row items-center md:justify-between gap-y-4 md:gap-y-0">
                     <LogoCircle 
                         :Logo="props.serviceDetails.image"

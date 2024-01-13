@@ -44,7 +44,7 @@ watchEffect(() => {
                         v-if="props.Logo"
                         :src="props.Logo" 
                         alt="product logo"
-                        loading="lazy"
+                        loading="eager"
                         class="h-full w-full rounded-full" />
                     <icon 
                         v-else class="w-[70%] h-[70%] m-auto" />
@@ -57,7 +57,7 @@ watchEffect(() => {
                     <img 
                         v-if="props.Logo"
                         :src="props.Logo" 
-                        loading="lazy"
+                        loading="eager"
                         alt="product logo"
                         class="h-full w-full rounded-full" />
                     <icon 
