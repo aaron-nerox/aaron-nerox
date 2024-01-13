@@ -9,6 +9,7 @@ import part3Logo from '@/assets/images/logo_part3.svg'
         <kinesis-container class="w-full h-full grid">
             <kinesis-element 
                 tag="img"
+                alt="logo image"
                 :src="part3Logo"
                 :strength="-15"
                 type="depth"
@@ -17,6 +18,7 @@ import part3Logo from '@/assets/images/logo_part3.svg'
                 class="x" />
             <kinesis-element 
                 tag="img"
+                alt="logo image"
                 :src="part1Logo"
                 :strength="15"
                 type="depth"
@@ -25,6 +27,7 @@ import part3Logo from '@/assets/images/logo_part3.svg'
                 class="x" />
             <kinesis-element 
                 tag="img"
+                alt="logo image"
                 :src="part2Logo"
                 :strength="10"
                 type="depth"

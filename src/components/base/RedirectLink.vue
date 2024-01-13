@@ -1,5 +1,5 @@
 <script setup>
-import Link from '../../assets/icons/link.vue';
+import Link from '@/assets/icons/vue/link.vue';
 const props = defineProps(['name', 'href'])
 
 const redirect = ()=>{
@@ -8,13 +8,13 @@ const redirect = ()=>{
 </script>
 
 <template>
-    <div class="inline-flex flex-row items-center min-w-fit 
-        fill-white text-white hover:fill-primary 
-        hover:text-primary cursor-pointer transition-all my-1"
+    <div class="inline-flex flex-row items-center min-w-fit fill-white
+    text-white hover:fill-primary hover:text-primary 
+    cursor-pointer transition-all gap-x-1 md:gap-x-3 my-1"
         @click="redirect">
-        <Link class="w-4 h-4 mr-2"/>
-        <p class="min-w-fit">
+        <p class="text-xs md:text-md font-normal md:font-medium">
             {{props.name}}
         </p>
+        <Link class="w-3 h-3"/>
     </div>
 </template>

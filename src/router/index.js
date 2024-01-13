@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import SplashScreen from '../views/SplashScreen.vue'
+import SplashScreen from '../views/misc/Splash.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,12 +17,22 @@ const router = createRouter({
     {
       path: '/product/neowalls/guidelines',
       name: 'neowalls guidelines',
-      component: () => import('../views/NeowallsPolicy.vue')
+      component: () => import('../views/misc/NeowallsPolicy.vue')
+    },
+    {
+      path: '/skills',
+      name: 'Skills',
+      component: () => import('../views/misc/Skills.vue')
+    },
+    {
+      path: '/linkhub',
+      name: 'LinkHub',
+      component: () => import('../views/misc/LinkHub.vue')
     },
     { 
       path: '/:pathMatch(.*)*', 
       name: 'NotFound', 
-      component: () => import('../views/NotFound.vue')
+      component: () => import('../views/misc/NotFound.vue')
     }, 
     // {
     //   path: '/about',

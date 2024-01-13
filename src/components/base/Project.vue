@@ -1,6 +1,6 @@
 <script setup>
-import Github from '../../assets/icons/github.vue';
-import Link from '../../assets/icons/link.vue';
+import Github from '@/assets/icons/vue/github.vue';
+import Link from '@/assets/icons/vue/link.vue';
 import AnimatedLogo from '../extended/AnimatedLogo.vue';
 
 const props = defineProps(['title','description', 'git', 'link', 'stack'])

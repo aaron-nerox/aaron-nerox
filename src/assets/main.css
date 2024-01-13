@@ -6,24 +6,28 @@
     font-family: poppins;
     src: url('./fonts/poppins_rg.ttf');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_md.ttf');
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_sbld.ttf');
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: poppins;
     src: url('./fonts/poppins_bld.ttf');
     font-weight: 700;
+    font-display: swap;
 }
 
 /* Animations */
@@ -43,6 +47,7 @@ opacity: 0;
 @layer base {
     html {
         font-family: poppins;
+        -webkit-tap-highlight-color: transparent;
     }
 
     /* Additional self made tailwind rules */
@@ -58,5 +63,14 @@ opacity: 0;
     
     .bg-diamond-light{
         background-image: url('@/assets/icons/ic_diamond.svg');
+    }
+
+    .grid-cols-4{
+        grid-template-columns: repeat(3, auto);
+        gap: 25px;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, auto);
     }
 }
