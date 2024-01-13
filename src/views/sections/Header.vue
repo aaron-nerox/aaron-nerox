@@ -20,7 +20,7 @@ const positionClasses = ref([
 </script>
 
 <template>
-    <div class="w-full h-screen md:h-fit xl:h-screen 2xl:h-screen gap-y-0 md:gap-y-10 xl:gap-y-0 bg-light relative inline-flex flex-col items-center justify-between 2xl:justify-evenly">
+    <div class="w-full h-screen md:h-[105vh] xl:h-screen 2xl:h-screen gap-y-0 md:gap-y-0 xl:gap-y-0 bg-light relative inline-flex flex-col items-center justify-between 2xl:justify-evenly">
 
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 top-[60%]" />
         <TopLeft class="w-1/2 md:w-1/5 h-fit absolute top-0 left-0" />
@@ -49,11 +49,11 @@ const positionClasses = ref([
 
         <div class="h-[250px] md:h-[500px] aspect-square relative grid items-center justify-center">
             <div class="h-[200px] aspect-square grid">
-                <div class="grid-overlap clock-wise h-[70%] md:h-[80%] aspect-square border-primary border-2 m-auto"></div>
+                <div class="grid-overlap clock-wise h-[70%] xl:h-[80%] aspect-square border-primary border-2 m-auto"></div>
                 <div
-                    class="grid-overlap counter-clock-wise h-[70%] md:h-[80%] aspect-square border-primary border-2 m-auto">
+                    class="grid-overlap counter-clock-wise h-[70%] xl:h-[80%] aspect-square border-primary border-2 m-auto">
                 </div>
-                <AnimatedLogo class="grid-overlap w-[132px] md:w-[156px] m-auto" />
+                <AnimatedLogo class="grid-overlap w-[132px] xl:w-[156px] m-auto" />
             </div>
             <LogoCircle v-for="project in mainProjects.apps" :borderColor="project.borderColor"
                 :backgroundColor="project.bgColor" :Logo="project.logoImage" sizeClass="small"
@@ -138,6 +138,41 @@ const positionClasses = ref([
 }
 
 @media (min-width: 768px) {
+    .deg-0 {
+        transform: translate(160px)
+    }
+
+    .deg-45 {
+        transform: rotate(46deg) translate(160px) rotate(-46deg);
+    }
+
+    .deg-90 {
+        transform: rotate(91deg) translate(160px) rotate(-91deg);
+    }
+
+    .deg-135 {
+        transform: rotate(136deg) translate(160px) rotate(-136deg);
+    }
+
+    .deg-180 {
+        transform: rotate(181deg) translate(160px) rotate(-181deg);
+    }
+
+    .deg-225 {
+        transform: rotate(226deg) translate(160px) rotate(-226deg);
+    }
+
+    .deg-270 {
+        transform: rotate(271deg) translate(160px) rotate(-271deg);
+    }
+
+    .deg-315 {
+        transform: rotate(316deg) translate(160px) rotate(-316deg);
+    }
+
+}
+
+@media (min-width: 1280px) {
     .deg-0 {
         transform: translate(210px)
     }
