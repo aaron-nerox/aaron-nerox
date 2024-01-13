@@ -28,7 +28,7 @@ onMounted(async ()=>{
   </RouterView>
 </template>
 
-<style scoped>
+<style>
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

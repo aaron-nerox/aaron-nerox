@@ -24,7 +24,7 @@ const goBack = () => {
 </script>
 
 <template>
-    <div class="w-full h-fit md:h-screen bg-light inline-flex flex-col items-center justify-evenly relative">
+    <div class="w-full h-fit md:h-fit xl:h-screen bg-light inline-flex flex-col items-center justify-evenly relative">
         <lineSun class="h-[96px] md:h-[200px] w-fit absolute right-0 bottom-[10%]"/>
         <bgElement  class="w-[48px] md:w-[64px] absolute -top-16 left-[5%] -rotate-90"/>
 
@@ -38,7 +38,7 @@ const goBack = () => {
             Technical Skills
         </TextBox>
 
-        <div class="w-full h-fit md:h-[90%] px-5 md:px-[5%] 2xl:px-[18%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
+        <div class="w-full h-fit md:h-[110vh] xl:h-[90%] 2xl:h-[45%] px-5 md:px-[5%] 2xl:px-[18%] mb-[3%] inline-flex flex-col md:flex-row items-center justify-evenly">
             <BaseContainer 
                 v-for="skill in skills.skills"
                 class="w-full md:!w-[45%] !h-[95%] my-5 md:my-0">
