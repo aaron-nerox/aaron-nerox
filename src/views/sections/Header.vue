@@ -30,8 +30,8 @@ const positionClasses = ref([
                 src="@/assets/images/top_left_str.svg" 
                 alt="top left"
                 class="w-2/5 md:w-fit">
-            <TextBox class="w-[172px] md:w-[196px] text-xs md:text-sm font-light">
-                Click on any icon to find some cool stuff
+            <TextBox class="w-[172px] md:w-[210px] text-xs md:text-sm font-light">
+                Curious about those icons? scroll down to learn more.
             </TextBox>
         </div>
 
