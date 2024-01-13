@@ -28,7 +28,7 @@ const goToSkills = () => {
         <div class="w-full h-full inline-flex flex-col md:flex-row items-center md:items-start">
             <div class="h-full w-[30%] 2xl:w-[33%] hidden md:grid items-center">
                 <img 
-                src="@/assets/images/self_image.svg" 
+                src="@/assets/images/self_image.jpg" 
                 alt="" 
                 class="w-full h-full object-cover grid-overlap flex-shrink-0" />
 
