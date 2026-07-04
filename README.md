@@ -35,16 +35,16 @@ My Current tech stack for Web is React/Typescript, Nextjs, NestJs, Mosquitto, Mo
 ## Rapidfire
 <table><tr><td valign="top" width="100%">
 
-- 🔭 I’m currently working on building out [Aaron Nerox studio](nerox.app)
+- 🔭 I’m currently working on building out [Qwainox Studios Brand](Qwainox.com)
 
 
-- 🌱 I’m currently learning Kotlin Multiplatform and compose for desktop.
+- 🌱 I’m currently learning Agentic AI, Kotlin Multiplatform and Spring AI.
 
 
-- ❓ Ask me about anything related to Android, Kotlin, React, web architectures and more (well versed in a lot more :shushing_face:)
+- ❓ Ask me about anything related to Android, Kotlin, React, Software Architectures and more (well versed in a lot more :shushing_face:)
 
 
-- ⚡ Fun fact: when i get bored i start a new coding project.
+- ⚡ Fun fact: when i get bored i start a new brand as a project.
 
 
 </td><td valign="top" width="50%">
